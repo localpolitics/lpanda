@@ -1,6 +1,6 @@
 Package: lpanda
 Title: Local Political Actor Network Diachronic Analysis Tools
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(person("Vaclav", "Bubenicek",
     email = "bubenicek@pef.czu.cz",

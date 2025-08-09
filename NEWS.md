@@ -1,4 +1,4 @@
-# lpanda (development version)
+# lpanda 0.1.1
 
 # lpanda 0.1.0
 
