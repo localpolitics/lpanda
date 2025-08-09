@@ -5,3 +5,4 @@
 ^\.github$
 ^\.Rprofile$
 ^lpanda_CRAN\.Rproj$
+^CRAN-SUBMISSION$
