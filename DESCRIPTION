@@ -1,13 +1,11 @@
 Package: lpanda
 Title: Local Political Actor Network Diachronic Analysis Tools
-Version: 0.1.1
-Authors@R: 
-    c(person("Vaclav", "Bubenicek",
-    email = "bubenicek@pef.czu.cz",
-    role = c("aut", "cre", "cph", "fnd"),
+Version: 0.1.0
+Authors@R: c(
+    person("Vaclav", "Bubenicek", email = "bubenicek@pef.czu.cz",
+    role = c("aut", "cre", "cph"),
     comment = c(ORCID = "0000-0002-0906-0750",
     affiliation = "Department of Humanities, FEM, CZU Prague")))
-Maintainer: Vaclav Bubenicek <bubenicek@pef.czu.cz>
 Description: Provides functions to prepare, visualize, and analyse diachronic 
     network data on local political actors, with a particular focus on
     the development of local party systems and identification of actor groups.
