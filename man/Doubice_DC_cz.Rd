@@ -10,7 +10,7 @@ An object of class \code{data.frame} with 151 rows and 14 columns.
 \source{
 \href{https://www.volby.cz/index_en.htm}{Czech Statistical Office},
 \href{https://oudoubice.cz/}{Municipality website},
-\href{https://acpo.vedeckecasopisy.cz/publicFiles/00085.pdf}{Acta Politologica article}
+\href{https://www.researchgate.net/publication/323573475_Konfliktni_linie_v_malych_obcich}{Acta Politologica article}
 }
 \usage{
 Doubice_DC_cz

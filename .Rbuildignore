@@ -3,3 +3,5 @@
 ^README\.Rmd$
 ^cran-comments\.md$
 ^\.github$
+^\.Rprofile$
+^lpanda_CRAN\.Rproj$

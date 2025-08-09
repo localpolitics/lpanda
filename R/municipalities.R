@@ -48,7 +48,7 @@
 #'
 #' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
 #' [Municipality website](https://oudoubice.cz/),
-#' [Acta Politologica article](https://acpo.vedeckecasopisy.cz/publicFiles/00085.pdf)
+#' [Acta Politologica article](https://www.researchgate.net/publication/323573475_Konfliktni_linie_v_malych_obcich)
 "Doubice_DC_cz"
 
 # --------------------------------------------------------------------------- #
