@@ -1,0 +1,746 @@
+"elections";"candidate";"list_name";"list_pos";"pref_votes";"elected";"nom_party";"pol_affil";"mayor";"dep_mayor";"board";"gov_support";"elig_voters";"ballots_cast"
+"1994";"Frejvald Jiří";"KSČM";1;568;1;"KSČM";"KSČM";0;0;0;0;3712;1978
+"1994";"Váňo Josef";"KSČM";2;493;1;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Zenkl František";"KSČM";3;426;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Vrba František";"KSČM";4;486;1;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"1994";"Hejzák Karel";"KSČM";5;410;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Jarolímková Marie";"KSČM";6;443;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Kravárik František";"KSČM";7;415;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Švejnoha Lubomír";"KSČM";8;412;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Sedláková Anna";"KSČM";9;402;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Mileretová Jarmila";"KSČM";10;430;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Zima Josef";"KSČM";11;542;1;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"1994";"Svaljavčík Josef";"KSČM";12;421;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"1994";"Svoboda Zdeněk";"KSČM";13;348;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Novák Petr";"KSČM";14;394;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Drien Jan";"KSČM";15;366;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Michovský Jindřich";"KSČM";16;403;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Žejdl Jarolím";"KSČM";17;328;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Svarcr Jan";"KSČM";18;329;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Janout Jaroslav";"KSČM";19;359;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Aronová Daniela";"KSČM";20;493;1;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"1994";"Kadlec Otakar";"KSČM";21;323;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1994";"Müller Jaroslav";"ČSSD";1;576;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1994";"Matoušek Petr";"ČSSD";2;734;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1994";"Schlösinger Petr";"ČSSD";3;743;1;"ČSSD";"BEZPP";0;1;1;1;NA;NA
+"1994";"Hloušek Bohuslav";"ČSSD";4;657;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1994";"Vinter Jan";"ČSSD";5;509;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1994";"Kalousová Anna";"ČSSD";6;832;1;"ČSSD";"BEZPP";0;0;1;1;NA;NA
+"1994";"Uhrecká Danuše";"ČSSD";7;504;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1994";"Bárta Miroslav (1)";"ČSSD";8;627;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1994";"Tomeš Jaroslav";"ČSSD";9;655;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1994";"Šebková Milada";"ČSSD";10;459;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1994";"Sovadinová Drahomíra";"ČSSD";11;626;1;"ČSSD";"BEZPP";0;0;1;1;NA;NA
+"1994";"Lašáková Soňa";"ČSSD";12;569;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1994";"Roučka Josef";"ČSSD";13;464;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1994";"Bartoš Miroslav";"ČSSD";14;553;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1994";"Patočka Miroslav";"ČSSD";15;568;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1994";"Siebertová Yvona";"ČSSD";16;399;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1994";"Obergries Bohumil";"ČSSD";17;386;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1994";"Pekár Pavel";"ČSSD";18;459;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1994";"Sajvera Radek";"ČSSD";19;388;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1994";"Sajverová Soňa";"ČSSD";20;337;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1994";"Foldynová Jindřiška";"ČSSD";21;530;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1994";"Bárta František";"ODS";1;888;1;"ODS";"ODS";0;0;0;1;NA;NA
+"1994";"Novák Lubomír";"ODS";2;955;1;"ODS";"BEZPP";1;0;1;1;NA;NA
+"1994";"Bartoš Vladimír";"ODS";3;757;1;"ODS";"ODS";0;0;1;1;NA;NA
+"1994";"Pošta Václav";"ODS";4;731;1;"ODS";"BEZPP";0;0;0;1;NA;NA
+"1994";"Šmíd Jiří";"ODS";5;781;1;"ODS";"BEZPP";0;0;0;1;NA;NA
+"1994";"Staňková Jarmila";"ODS";6;1108;1;"ODS";"BEZPP";0;0;1;1;NA;NA
+"1994";"Baníková Naděžda";"ODS";7;696;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1994";"Křemen Adolf";"ODS";8;977;1;"ODS";"ODS";0;0;0;1;NA;NA
+"1994";"Dvořáková Eva";"ODS";9;844;1;"ODS";"BEZPP";0;0;1;1;NA;NA
+"1994";"Schlüsinger Walter";"ODS";10;874;1;"ODS";"BEZPP";0;0;0;1;NA;NA
+"1994";"Tichý Josef";"ODS";11;590;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1994";"Lochman Miroslav";"ODS";12;765;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1994";"Kumstát Petr";"ODS";13;757;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1994";"Škrábal Jiří";"ODS";14;562;0;"ODS";"ODS";0;0;0;0;NA;NA
+"1994";"Novák Jaromír";"ODS";15;527;0;"ODS";"ODS";0;0;0;0;NA;NA
+"1994";"Petrašovič Jan";"ODS";16;627;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1994";"Slavík Josef";"ODS";17;645;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1994";"Bačkovský Karel";"ODS";18;696;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1994";"Novák Ladislav";"ODS";19;681;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1994";"Kukučková Milena";"ODS";20;598;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1994";"Růžička Václav";"ODS";21;659;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"1998";"Novák Lubomír";"SNK";1;682;1;"NK";"BEZPP";0;0;0;1;4051;1425
+"1998";"Kalousová Anna";"SNK";2;601;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"1998";"Pošta Václav";"SNK";3;452;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"1998";"Dvořáková Eva";"SNK";4;561;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"1998";"Staňková Jarmila";"SNK";5;745;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"1998";"Šmíd Jiří";"SNK";6;505;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"1998";"Hanzlová Jana";"SNK";7;636;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"1998";"Tichý Josef";"SNK";8;383;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"1998";"Vnučko Josef";"SNK";9;434;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"1998";"Holadová Alena";"SNK";10;453;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"1998";"Musil Alois";"SNK";11;426;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"1998";"Bačkovský Karel";"SNK";12;472;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"1998";"Růžička Václav";"SNK";13;397;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"1998";"Váňo Josef";"KSČM";1;375;1;"KSČM";"KSČM";0;0;1;1;NA;NA
+"1998";"Zenkl František";"KSČM";2;294;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Bőhmová Marie";"KSČM";3;453;1;"KSČM";"BEZPP";0;0;0;1;NA;NA
+"1998";"Kravárik František";"KSČM";4;295;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Švarcr Jan";"KSČM";5;243;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Svaljavčík Josef";"KSČM";6;292;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"1998";"Vostrádovská Jana";"KSČM";7;229;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Aron Lubomír";"KSČM";8;329;1;"KSČM";"KSČM";0;0;1;1;NA;NA
+"1998";"Makan Josef";"KSČM";9;271;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"1998";"Sedlák Miroslav";"KSČM";10;325;1;"KSČM";"KSČM";0;0;0;1;NA;NA
+"1998";"Frejvald Jiří";"KSČM";11;393;1;"KSČM";"KSČM";0;0;0;1;NA;NA
+"1998";"Schejbal Jiří";"KSČM";12;298;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Svoboda Zdeněk";"KSČM";13;236;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Novák Petr";"KSČM";14;242;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Lukešová Milena";"KSČM";15;226;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"1998";"Grym František";"KSČM";16;281;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"1998";"Milertová Jarmila";"KSČM";17;259;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"1998";"Macko Stanislav";"KSČM";18;322;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Švejnoha Luboš";"KSČM";19;251;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Dvořáková Zdena";"KSČM";20;201;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Janout Jaroslav";"KSČM";21;236;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"1998";"Schlösinger Petr";"ČSSD";1;917;1;"ČSSD";"BEZPP";1;0;1;1;NA;NA
+"1998";"Hloušek Bohuslav";"ČSSD";2;611;1;"ČSSD";"ČSSD";0;0;0;1;NA;NA
+"1998";"Wepsová Helena";"ČSSD";3;777;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1998";"Zibner Václav";"ČSSD";4;750;1;"ČSSD";"BEZPP";0;1;1;1;NA;NA
+"1998";"Říhová Helena";"ČSSD";5;707;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1998";"Sovadinová Drahomíra";"ČSSD";6;641;1;"ČSSD";"BEZPP";0;0;1;1;NA;NA
+"1998";"Bárta Miroslav (1)";"ČSSD";7;635;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1998";"Hrebičková Olga";"ČSSD";8;551;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1998";"Bartoš Miroslav";"ČSSD";9;580;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1998";"Stuchlík Jiří";"ČSSD";10;532;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"1998";"Gregor Václav";"ČSSD";11;478;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1998";"Černý Martin";"ČSSD";12;497;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1998";"Zemancová Daniela";"ČSSD";13;440;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1998";"Böhm Petr";"ČSSD";14;600;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1998";"Krejčíková Zdenka";"ČSSD";15;423;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1998";"Bílková Květa";"ČSSD";16;529;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1998";"Roučka Josef";"ČSSD";17;394;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1998";"Čekalová Blanka";"ČSSD";18;421;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1998";"Foldynová Jindřiška";"ČSSD";19;487;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"1998";"Petržílková Věra";"ČSSD";20;344;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1998";"Siebertová Ivona";"ČSSD";21;321;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"1998";"Pravdová Irena";"SPR-RSČ, SDČR";1;107;0;"SPR-RSČ";"SPR-RSČ";0;0;0;0;NA;NA
+"1998";"Zmeškal Petr";"SPR-RSČ, SDČR";2;144;0;"SPR-RSČ";"BEZPP";0;0;0;0;NA;NA
+"1998";"Žák Ladislav";"SPR-RSČ, SDČR";3;106;0;"SDČR";"BEZPP";0;0;0;0;NA;NA
+"2002";"Pinkava Miroslav";"SZ";1;72;0;"SZ";"BEZPP";0;0;0;0;4204;1571
+"2002";"Tomešková Jana";"SZ";2;68;0;"SZ";"BEZPP";0;0;0;0;NA;NA
+"2002";"Svoboda František";"SZ";3;139;0;"SZ";"BEZPP";0;0;0;0;NA;NA
+"2002";"Matúšových Hadviga";"SZ";4;111;0;"SZ";"BEZPP";0;0;0;0;NA;NA
+"2002";"Šenk Petr";"SZ";5;121;0;"SZ";"BEZPP";0;0;0;0;NA;NA
+"2002";"Culková Šárka";"SZ";6;79;0;"SZ";"BEZPP";0;0;0;0;NA;NA
+"2002";"Kozáková Markéta";"SZ";7;101;0;"SZ";"BEZPP";0;0;0;0;NA;NA
+"2002";"Hrebičková Olga";"ČSSD";1;373;1;"ČSSD";"ČSSD";0;0;0;1;NA;NA
+"2002";"Šmíd Jiří";"ČSSD";2;381;1;"ČSSD";"ČSSD";0;0;0;1;NA;NA
+"2002";"Gregor Václav";"ČSSD";3;285;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Bartoš Miroslav";"ČSSD";4;341;1;"ČSSD";"ČSSD";0;0;1;1;NA;NA
+"2002";"Michalec Lubomír (1)";"ČSSD";5;270;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Svoboda Richard";"ČSSD";6;269;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Adamec Vladimír";"ČSSD";7;322;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Honeiser Milan";"ČSSD";8;290;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Krejčíková Zdenka";"ČSSD";9;250;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Hloušek Bohuslav";"ČSSD";10;270;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Křivan Pavel";"ČSSD";11;204;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Steiningerová Irena";"ČSSD";12;206;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Rajchl Karel";"ČSSD";13;291;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2002";"Škoda Vlastimil";"ČSSD";14;393;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"2002";"Michalec Ladislav (1)";"ČSSD";15;257;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Meduna Zdeněk (1)";"ČSSD";16;275;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2002";"Roček Vladimír";"ČSSD";17;226;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2002";"Vídeňská Hana";"ČSSD";18;205;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2002";"Zoula Václav";"ČSSD";19;218;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2002";"Poláčková Marie";"ČSSD";20;192;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2002";"Mánková Miroslava";"ČSSD";21;182;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2002";"Váňo Josef";"KSČM";1;327;1;"KSČM";"KSČM";0;0;1;1;NA;NA
+"2002";"Sedlák Miroslav";"KSČM";2;230;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Aron Lubomír";"KSČM";3;268;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Frejvald Jiří";"KSČM";4;326;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Böhmová Marie";"KSČM";5;342;1;"KSČM";"BEZPP";0;0;0;1;NA;NA
+"2002";"Danihelková Dana";"KSČM";6;343;1;"KSČM";"BEZPP";0;0;0;1;NA;NA
+"2002";"Burkoňová Milena";"KSČM";7;234;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2002";"Beránek Miroslav (2)";"KSČM";8;272;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2002";"Fridrichová Martina";"KSČM";9;217;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Hrdlička Jan (1)";"KSČM";10;262;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2002";"Pačes Dalibor";"KSČM";11;222;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Švarcr Jan";"KSČM";12;182;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Kučerová Hana";"KSČM";13;348;1;"KSČM";"BEZPP";0;0;0;1;NA;NA
+"2002";"Kovář Petr";"KSČM";14;218;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Kravárik František";"KSČM";15;215;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Vrba František";"KSČM";16;211;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2002";"Kuchař Stanislav";"KSČM";17;211;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Černý Jaroslav";"KSČM";18;192;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2002";"Švejnoha Lubomír";"KSČM";19;197;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Macko Stanislav";"KSČM";20;243;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Rysner Jiří";"KSČM";21;184;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2002";"Schlösinger Petr";"SNK-ED";1;1061;1;"SNK ED";"BEZPP";1;0;1;1;NA;NA
+"2002";"Zibner Václav";"SNK-ED";2;1016;1;"SNK ED";"BEZPP";0;1;1;1;NA;NA
+"2002";"Wepsová Helena";"SNK-ED";3;901;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2002";"Kalousová Anna";"SNK-ED";4;909;1;"SNK ED";"BEZPP";0;0;1;1;NA;NA
+"2002";"Bárta Miroslav (1)";"SNK-ED";5;826;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2002";"Nedvědová Petra";"SNK-ED";6;820;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2002";"Stuchlík Jiří";"SNK-ED";7;783;1;"SNK ED";"BEZPP";0;0;1;1;NA;NA
+"2002";"Sýkorová Božena";"SNK-ED";8;796;1;"SNK ED";"BEZPP";0;0;1;1;NA;NA
+"2002";"Tomeš Jaroslav";"SNK-ED";9;798;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2002";"Engelhartová Jana";"SNK-ED";10;819;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2002";"Černý Martin";"SNK-ED";11;779;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2002";"Herzogová Eva";"SNK-ED";12;824;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2002";"Néma Petr";"SNK-ED";13;774;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2002";"Cachová Jaroslava";"SNK-ED";14;696;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2002";"Hanzlová Jana";"SNK-ED";15;928;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2002";"Říhová Helena";"SNK-ED";16;810;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2002";"Matoušek Petr";"SNK-ED";17;770;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2002";"Holpuchová Milada";"SNK-ED";18;924;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2002";"Pošta Václav";"SNK-ED";19;710;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2002";"Dvořáková Eva";"SNK-ED";20;760;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2002";"Kolář Jiří";"SNK-ED";21;702;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2006";"Rajchl Karel";"ČSSD";1;383;1;"ČSSD";"ČSSD";0;0;0;0;4246;1431
+"2006";"Bednaříková Jaromíra";"ČSSD";2;411;1;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2006";"Šmíd Jiří";"ČSSD";3;383;1;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Hrebičková Olga";"ČSSD";4;374;1;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Michalec Lubomír (1)";"ČSSD";5;305;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Bartoš Miroslav";"ČSSD";6;360;1;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Mánková Miroslava";"ČSSD";7;287;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Škoda Vlastimil";"ČSSD";8;444;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2006";"Netík Martin";"ČSSD";9;300;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Cyriusová Miluše";"ČSSD";10;355;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2006";"Krejčíková Zdenka";"ČSSD";11;293;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Honeiser Milan";"ČSSD";12;325;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Steiningerová Irena";"ČSSD";13;264;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Bulák Milan";"ČSSD";14;310;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2006";"Gregor Václav";"ČSSD";15;331;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Grežová Renata";"ČSSD";16;293;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2006";"Šanovec Alois";"ČSSD";17;338;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2006";"Roučka Josef";"ČSSD";18;243;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Bartišová Iveta";"ČSSD";19;292;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2006";"Adamec Vladimír";"ČSSD";20;277;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2006";"Škaloudová Olga";"ČSSD";21;308;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2006";"Váňo Josef";"KSČM";1;285;1;"KSČM";"KSČM";0;0;1;1;NA;NA
+"2006";"Sedlák Miroslav";"KSČM";2;224;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Kopiarová Pavlína";"KSČM";3;203;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2006";"Beránek Miroslav (2)";"KSČM";4;247;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2006";"Burkoňová Milena";"KSČM";5;225;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Sýkora Lukáš";"KSČM";6;238;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2006";"Váňo Pavel";"KSČM";7;207;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2006";"Duchoňová Olga";"KSČM";8;204;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Böhmová Marie";"KSČM";9;269;1;"KSČM";"BEZPP";0;0;0;1;NA;NA
+"2006";"Kotrasz Jaroslav (1)";"KSČM";10;211;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2006";"Frejvald Jiří";"KSČM";11;255;1;"KSČM";"KSČM";0;0;0;1;NA;NA
+"2006";"Aron Lubomír";"KSČM";12;226;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Pačes Dalibor";"KSČM";13;219;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Černý Jaroslav";"KSČM";14;200;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2006";"Pulcová Ilonka";"KSČM";15;178;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Kovář Petr";"KSČM";16;205;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Roďanová Marcela";"KSČM";17;187;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Svoboda Zdeněk";"KSČM";18;175;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Hrdlička Jan (1)";"KSČM";19;199;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2006";"Švarcr Jan";"KSČM";20;175;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Macko Stanislav";"KSČM";21;218;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2006";"Komůrka Petr";"PaS";1;80;0;"PaS";"BEZPP";0;0;0;0;NA;NA
+"2006";"Michalec Zdeněk (1)";"PaS";2;111;0;"PaS";"BEZPP";0;0;0;0;NA;NA
+"2006";"Kopecký Radoslav";"PaS";3;90;0;"PaS";"BEZPP";0;0;0;0;NA;NA
+"2006";"Kreisinger František";"PaS";4;60;0;"PaS";"BEZPP";0;0;0;0;NA;NA
+"2006";"Kopecký Jan";"PaS";5;86;0;"PaS";"BEZPP";0;0;0;0;NA;NA
+"2006";"Kubátová Petra";"PaS";6;76;0;"PaS";"BEZPP";0;0;0;0;NA;NA
+"2006";"Písařík Jiří";"PaS";7;76;0;"PaS";"BEZPP";0;0;0;0;NA;NA
+"2006";"Dvončová Jana";"PaS";8;61;0;"PaS";"BEZPP";0;0;0;0;NA;NA
+"2006";"Kopecká Petra";"PaS";9;84;0;"PaS";"BEZPP";0;0;0;0;NA;NA
+"2006";"Schlösinger Petr";"SNK-ED";1;819;1;"SNK ED";"BEZPP";1;0;1;1;NA;NA
+"2006";"Zibner Václav";"SNK-ED";2;798;1;"SNK ED";"BEZPP";0;1;1;1;NA;NA
+"2006";"Engelhartová Jana";"SNK-ED";3;739;1;"SNK ED";"BEZPP";0;0;1;1;NA;NA
+"2006";"Stuchlík Jiří";"SNK-ED";4;689;1;"SNK ED";"BEZPP";0;0;1;1;NA;NA
+"2006";"Sýkorová Božena";"SNK-ED";5;694;1;"SNK ED";"BEZPP";0;0;1;1;NA;NA
+"2006";"Néma Petr";"SNK-ED";6;699;1;"SNK ED";"BEZPP";0;0;1;1;NA;NA
+"2006";"Procházka Vladimír";"SNK-ED";7;683;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2006";"Tomeš Jaroslav";"SNK-ED";8;677;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2006";"Wepsová Helena";"SNK-ED";9;721;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2006";"Bárta Miroslav (2)";"SNK-ED";10;747;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2006";"Švíková Jitka";"SNK-ED";11;722;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2006";"Nesměrák Jan";"SNK-ED";12;699;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2006";"Hanzlová Jana";"SNK-ED";13;769;1;"SNK ED";"BEZPP";0;0;0;1;NA;NA
+"2006";"Myslivečková Šárka";"SNK-ED";14;686;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2006";"Říhová Helena";"SNK-ED";15;738;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2006";"Holpuchová Milada";"SNK-ED";16;774;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2006";"Raymond Pavel";"SNK-ED";17;674;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2006";"Cachová Jaroslava";"SNK-ED";18;607;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2006";"Matušek Jiří";"SNK-ED";19;638;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2006";"Kalousová Anna";"SNK-ED";20;668;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2006";"Herzogová Eva";"SNK-ED";21;669;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Hrebičková Olga";"ČSSD";1;659;1;"ČSSD";"ČSSD";0;1;1;1;4237;1952
+"2010";"Velebný Josef";"ČSSD";2;440;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Šmíd Jiří";"ČSSD";3;510;1;"ČSSD";"ČSSD";0;0;1;1;NA;NA
+"2010";"Gregor Václav";"ČSSD";4;490;1;"ČSSD";"ČSSD";0;0;0;1;NA;NA
+"2010";"Mánková Miroslava";"ČSSD";5;457;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Michalec Lubomír (2)";"ČSSD";6;483;1;"ČSSD";"ČSSD";0;0;1;1;NA;NA
+"2010";"Netík Martin";"ČSSD";7;438;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Krejčíková Zdenka";"ČSSD";8;421;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Zsilay Jan";"ČSSD";9;402;0;"ČSSD";"ČP";0;0;0;0;NA;NA
+"2010";"Meduna Zdeněk (2)";"ČSSD";10;482;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2010";"Mošnerová Jaroslava";"ČSSD";11;424;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2010";"Michalec Lubomír (1)";"ČSSD";12;420;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Škaloudová Olga";"ČSSD";13;487;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"2010";"Bláhová Alena";"ČSSD";14;367;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2010";"Křivanová Ivana";"ČSSD";15;379;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2010";"Havlík Miroslav";"ČSSD";16;384;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Mikš Olivier Jan";"ČSSD";17;410;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2010";"Jůn Martin";"ČSSD";18;332;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Roučka Josef";"ČSSD";19;336;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Adamec Vladimír";"ČSSD";20;391;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Steiningerová Irena";"ČSSD";21;316;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2010";"Váňo Josef";"KSČM";1;272;1;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Beránek Miroslav (2)";"KSČM";2;267;1;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2010";"Pechar Jaroslav";"KSČM";3;239;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2010";"Pulec Václav";"KSČM";4;176;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Váňo Pavel";"KSČM";5;197;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2010";"Lacinová Věra";"KSČM";6;183;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Pospíšilová Zuzana";"KSČM";7;189;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2010";"Frejvald Jiří";"KSČM";8;266;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Duchoňovská Lenka";"KSČM";9;178;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2010";"Böhmová Marie";"KSČM";10;245;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2010";"Burkoňová Milena";"KSČM";11;208;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Duchoňová Olga";"KSČM";12;177;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Havlíčková Věra";"KSČM";13;165;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Kolář Josef (2)";"KSČM";14;191;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kotrasz Jaroslav (2)";"KSČM";15;227;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kovář Petr";"KSČM";16;185;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Aron Lubomír";"KSČM";17;180;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Kotrasz Jaroslav (1)";"KSČM";18;183;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2010";"Pulcová Ilonka";"KSČM";19;143;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Macko Stanislav";"KSČM";20;176;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Roďanová Marcela";"KSČM";21;145;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2010";"Kalvas Miroslav";"Občané Jílového";1;760;1;"NK";"BEZPP";1;0;1;1;NA;NA
+"2010";"Buchta Libor";"Občané Jílového";2;684;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"2010";"Sýkora Miloš";"Občané Jílového";3;666;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"2010";"Šenk Petr";"Občané Jílového";4;659;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"2010";"Kučerová Hana";"Občané Jílového";5;656;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2010";"Valterová Hanzlová Lucie";"Občané Jílového";6;636;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2010";"Pokorný Jiří";"Občané Jílového";7;612;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Loskotová Monika";"Občané Jílového";8;628;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Šára Vladislav";"Občané Jílového";9;610;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Klabík Martin";"Občané Jílového";10;676;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2010";"Medunová Klára";"Občané Jílového";11;700;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2010";"Wittichová Zdeňka";"Občané Jílového";12;543;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Lopušan Pavel";"Občané Jílového";13;610;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Řezníčková Alena";"Občané Jílového";14;585;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Hrabě Jaroslav";"Občané Jílového";15;534;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kácová Markéta";"Občané Jílového";16;589;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Zadražilová Jaroslava";"Občané Jílového";17;525;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Marek Jan";"Občané Jílového";18;550;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Fiřt Ladislav";"Občané Jílového";19;519;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Wurm Michal";"Občané Jílového";20;482;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Bednařík Radek";"Občané Jílového";21;515;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kalous Jiří";"ODS";1;364;1;"ODS";"ODS";0;0;0;0;NA;NA
+"2010";"Holoch Václav";"ODS";2;294;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Paur Jaromír";"ODS";3;297;0;"ODS";"ODS";0;0;0;0;NA;NA
+"2010";"Peterka Jiří";"ODS";4;273;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Just Michal";"ODS";5;274;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kulhánek Jan";"ODS";6;289;0;"ODS";"ODS";0;0;0;0;NA;NA
+"2010";"Radvan Jan";"ODS";7;255;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Doxanský Jan";"ODS";8;230;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Němečková Hana";"ODS";9;233;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Sovadinová Kamila";"ODS";10;311;1;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Horáková Yveta";"ODS";11;250;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Hloušková Lucie";"ODS";12;325;1;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kny Jindřich";"ODS";13;282;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Škopek Jiří";"ODS";14;290;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kroupa Jiří";"ODS";15;222;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Pekař Zdeněk";"ODS";16;237;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Huček Michal";"ODS";17;237;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Sucharda Zdeněk";"ODS";18;275;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Klika Karel";"ODS";19;253;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Hujčák Milan";"ODS";20;261;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kadlec Miloš";"ODS";21;189;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2010";"Schlösinger Petr";"SNK-ED";1;234;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Zibner Václav";"SNK-ED";2;306;1;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Engelhartová Jana";"SNK-ED";3;253;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Stuchlík Jiří";"SNK-ED";4;249;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Néma Petr";"SNK-ED";5;231;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Rosendorfová Zdeňka";"SNK-ED";6;344;1;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Bárta Miroslav (2)";"SNK-ED";7;297;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Nesměrák Jan";"SNK-ED";8;262;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Zámečníková Zdeňka";"SNK-ED";9;257;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Procházka Vladimír";"SNK-ED";10;257;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Straka Tomáš";"SNK-ED";11;219;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Mysliveček Karel";"SNK-ED";12;237;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Sýkorová Božena";"SNK-ED";13;269;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Trachtová Marie";"SNK-ED";14;237;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Švíková Jitka";"SNK-ED";15;202;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Říhová Helena";"SNK-ED";16;308;1;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Holpuchová Milada";"SNK-ED";17;292;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Labutová Jana";"SNK-ED";18;239;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Hanzlová Jana";"SNK-ED";19;285;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Krošová Vlasta";"SNK-ED";20;223;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Žilka Zdeněk";"SNK-ED";21;161;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2010";"Komůrka Petr";"SSO";1;93;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Syrový Jan";"SSO";2;99;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kopecký Radoslav";"SSO";3;143;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Vachulka Milan";"SSO";4;62;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Hendrych Jan";"SSO";5;80;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Brikner Václav";"SSO";6;55;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Kopecká Petra";"SSO";7;97;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Jetmarová Žaneta";"SSO";8;60;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Švihlíková Alena";"SSO";9;46;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Jetmar Vlastimil";"SSO";10;48;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Heřmánková Michaela";"SSO";11;55;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Heinrich Jiří (1)";"SSO";12;49;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Zima Jiří";"SSO";13;51;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Písařík Jiří";"SSO";14;57;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Hermann Vladimír";"SSO";15;50;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Hájková Michala";"SSO";16;49;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Beránková Radka";"SSO";17;55;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Máša Radek";"SSO";18;70;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Mášová Lenka";"SSO";19;63;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Zvoníček Radek";"SSO";20;56;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2010";"Smolík Zdeněk";"SSO";21;52;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Michalec Lubomír (1)";"ČSSD";1;219;1;"ČSSD";"BEZPP";0;1;1;1;4232;1695
+"2014";"Hrebičková Olga";"ČSSD";2;302;1;"ČSSD";"ČSSD";0;0;0;1;NA;NA
+"2014";"Šmíd Jiří";"ČSSD";3;232;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Michalec Lubomír (2)";"ČSSD";4;238;1;"ČSSD";"ČSSD";0;0;0;1;NA;NA
+"2014";"Havlík Miroslav";"ČSSD";5;183;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Straka Tomáš";"ČSSD";6;204;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2014";"Gregor Václav";"ČSSD";7;209;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Rajchl Karel";"ČSSD";8;249;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Krejčíková Zdenka";"ČSSD";9;177;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Mánková Miroslava";"ČSSD";10;173;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Velebný Josef";"ČSSD";11;172;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Zsilay Jan";"ČSSD";12;159;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Netík Martin";"ČSSD";13;203;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2014";"Aichingerová Pavlína";"ČSSD";14;149;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2014";"Meduna Zdeněk (2)";"ČSSD";15;187;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2014";"Jůn Martin";"ČSSD";16;170;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Mikš Olivier Jan";"ČSSD";17;174;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Králová Marie";"ČSSD";18;178;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2014";"Adamec Vladimír";"ČSSD";19;171;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Lešáková Lenka";"ČSSD";20;218;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2014";"Steiningerová Irena";"ČSSD";21;133;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2014";"Pulec Václav";"KSČM";1;124;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Zima Josef";"KSČM";2;150;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2014";"Havlíčková Věra";"KSČM";3;115;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Váňo Pavel";"KSČM";4;144;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Žákovič Jan";"KSČM";5;116;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Duchoňová Lenka";"KSČM";6;126;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2014";"Váňo Josef";"KSČM";7;183;1;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Matějková Danuše";"KSČM";8;133;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2014";"Kolář Josef (2)";"KSČM";9;126;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2014";"Pechar Jaroslav";"KSČM";10;136;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2014";"Marek Josef";"KSČM";11;114;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Frejvald Jiří";"KSČM";12;164;1;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Beránek Miroslav (2)";"KSČM";13;147;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2014";"Vyhnálek Ladislav";"KSČM";14;109;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2014";"Duchoňová Olga";"KSČM";15;111;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Burkoňová Milena";"KSČM";16;130;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Pulcová Ilonka";"KSČM";17;104;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Macko Stanislav";"KSČM";18;113;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Kotrasz Jaroslav (1)";"KSČM";19;121;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2014";"Havlíček Václav";"KSČM";20;100;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Vostradovská Jana";"KSČM";21;94;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2014";"Šembera Kamil";"KDU-ČSL";1;173;1;"KDU-ČSL";"KDU-ČSL";0;0;0;0;NA;NA
+"2014";"Kutílek Roman";"KDU-ČSL";2;131;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Russ Robert";"KDU-ČSL";3;126;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Nesměráková Barbora";"KDU-ČSL";4;91;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Matoušová Ivana";"KDU-ČSL";5;99;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Jiskra Filip";"KDU-ČSL";6;87;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Heinrich Jiří (2)";"KDU-ČSL";7;76;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Švachová Lenka";"KDU-ČSL";8;90;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Havránek Michal";"KDU-ČSL";9;75;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Klicpera Vít";"KDU-ČSL";10;106;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Matouš Ivan";"KDU-ČSL";11;92;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Krchová Lucie";"KDU-ČSL";12;78;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Poláčková Marie";"KDU-ČSL";13;72;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Králová Renata";"KDU-ČSL";14;72;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Černá Zdeňka";"KDU-ČSL";15;71;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Poláček Michal";"KDU-ČSL";16;73;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Šanovec Jiří";"KDU-ČSL";17;77;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Kylerová Oldřiška";"KDU-ČSL";18;65;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Poštová Miluše";"KDU-ČSL";19;73;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Vaňková Julie";"KDU-ČSL";20;64;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Krchová Renata";"KDU-ČSL";21;60;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2014";"Frkal Zdeněk";"PRO Sp. a Zdr.";1;207;1;"PRO ZS";"BEZPP";0;0;1;1;NA;NA
+"2014";"Sýkorová Kateřina";"PRO Sp. a Zdr.";2;173;1;"PRO ZS";"BEZPP";0;0;1;1;NA;NA
+"2014";"Pták Václav";"PRO Sp. a Zdr.";3;151;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Čukanová Jana";"PRO Sp. a Zdr.";4;162;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Matušková Ivana";"PRO Sp. a Zdr.";5;169;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Knepr Rudolf";"PRO Sp. a Zdr.";6;122;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Drien Vratislav";"PRO Sp. a Zdr.";7;129;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Šotola Pavel";"PRO Sp. a Zdr.";8;110;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Mikšovský Václav";"PRO Sp. a Zdr.";9;107;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Končelová Zdeňka";"PRO Sp. a Zdr.";10;109;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Jurišová Ivana";"PRO Sp. a Zdr.";11;104;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Sigmund Vít";"PRO Sp. a Zdr.";12;120;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Beránek Miroslav (1)";"PRO Sp. a Zdr.";13;122;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Misařová Jana";"PRO Sp. a Zdr.";14;96;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Křikava Jiří";"PRO Sp. a Zdr.";15;95;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Hanzlík Pavel";"PRO Sp. a Zdr.";16;101;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Michalec Ladislav (2)";"PRO Sp. a Zdr.";17;116;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Misař Tomáš";"PRO Sp. a Zdr.";18;100;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Musil Michal";"PRO Sp. a Zdr.";19;93;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Šimek Karel";"PRO Sp. a Zdr.";20;76;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Zahula Michal";"PRO Sp. a Zdr.";21;76;0;"PRO ZS";"BEZPP";0;0;0;0;NA;NA
+"2014";"Kalvas Miroslav";"Občané Jílového";1;665;1;"NK";"BEZPP";1;0;1;1;NA;NA
+"2014";"Buchta Libor";"Občané Jílového";2;500;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"2014";"Sýkora Miloš";"Občané Jílového";3;474;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2014";"Valterová Hanzlová Lucie";"Občané Jílového";4;489;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"2014";"Mošner Pavel";"Občané Jílového";5;567;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"2014";"Loskotová Monika";"Občané Jílového";6;495;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2014";"Pokorný Jiří";"Občané Jílového";7;438;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2014";"Kácová Markéta";"Občané Jílového";8;470;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Tejmer Milan";"Občané Jílového";9;495;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Severová Iveta";"Občané Jílového";10;439;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Uhrová Zámečníková Zdeňka";"Občané Jílového";11;467;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Šanovec Alois";"Občané Jílového";12;482;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Marek Jan";"Občané Jílového";13;437;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Šenk Petr";"Občané Jílového";14;444;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Wittichová Zdeňka";"Občané Jílového";15;415;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Jetmar Rudolf";"Občané Jílového";16;426;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Šára Vladislav";"Občané Jílového";17;424;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Lopušan Pavel";"Občané Jílového";18;431;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Klabík Martin";"Občané Jílového";19;471;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Wurm Michal";"Občané Jílového";20;372;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Zadražilová Jaroslava";"Občané Jílového";21;361;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Peterka Jiří";"Jistota Otevřenosti";1;289;1;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Musil Alois";"Jistota Otevřenosti";2;250;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Jílková Michaela";"Jistota Otevřenosti";3;242;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Kalous Jiří";"Jistota Otevřenosti";4;319;1;"NK";"ODS";0;0;0;0;NA;NA
+"2014";"Kasl Václav";"Jistota Otevřenosti";5;199;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Horáková Yveta";"Jistota Otevřenosti";6;228;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Musilová Věra";"Jistota Otevřenosti";7;241;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Sovadinová Kamila";"Jistota Otevřenosti";8;257;1;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Hendrychová Martina";"Jistota Otevřenosti";9;202;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Štěpánek Jiří";"Jistota Otevřenosti";10;211;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Volenec Rudolf";"Jistota Otevřenosti";11;193;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Cachová Irena";"Jistota Otevřenosti";12;224;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Vondrovský Kamil";"Jistota Otevřenosti";13;219;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Šebestová Žaneta";"Jistota Otevřenosti";14;219;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Krátký Jiří";"Jistota Otevřenosti";15;199;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Rynešová Šárka";"Jistota Otevřenosti";16;222;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Kondrys Pavel";"Jistota Otevřenosti";17;236;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Neušlová Daniela";"Jistota Otevřenosti";18;172;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Paur Jaromír";"Jistota Otevřenosti";19;200;0;"NK";"ODS";0;0;0;0;NA;NA
+"2014";"Lorenz Matěj";"Jistota Otevřenosti";20;181;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Špaček Radek";"Jistota Otevřenosti";21;169;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Zibner Václav";"SNK-ED";1;388;1;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Rosendorfová Zdeňka";"SNK-ED";2;361;1;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Kozemčáková Věra";"SNK-ED";3;247;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Mysliveček Karel";"SNK-ED";4;230;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Drobný David";"SNK-ED";5;241;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Vysoký Zdeněk";"SNK-ED";6;217;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Špačková Ivana";"SNK-ED";7;269;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Novotný Milan";"SNK-ED";8;201;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Bertl Jiří";"SNK-ED";9;227;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Drozd Roman";"SNK-ED";10;240;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Vnučková Štěpánka";"SNK-ED";11;234;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Matušek Jiří";"SNK-ED";12;250;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Stuchlík Jiří";"SNK-ED";13;227;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Hájek Martin";"SNK-ED";14;180;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Tichý Josef";"SNK-ED";15;180;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Krošová Vlasta";"SNK-ED";16;238;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Pekár Pavel";"SNK-ED";17;193;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Holpuchová Milada";"SNK-ED";18;271;1;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Fatr Jarmil";"SNK-ED";19;155;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Nesměráková Adriana";"SNK-ED";20;206;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Trachtová Marie";"SNK-ED";21;174;0;"SNK ED";"BEZPP";0;0;0;0;NA;NA
+"2014";"Komůrka Petr";"SSO";1;78;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Syrový Jan";"SSO";2;70;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Smolíková Jana";"SSO";3;46;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Kopiarová Pavlína";"SSO";4;49;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Král Mikoláš";"SSO";5;81;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Smolík Zdeněk";"SSO";6;48;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Pfleger Martin";"SSO";7;33;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Máša Radek";"SSO";8;55;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Mášová Lenka";"SSO";9;43;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Zvoníček Radek";"SSO";10;49;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Zvoníčková Kamila";"SSO";11;48;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Kolář Oldřich";"SSO";12;42;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Zadražil Jiří";"SSO";13;46;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Hermann Vladimír";"SSO";14;32;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Fedorják Václav";"SSO";15;32;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Firman Jan";"SSO";16;38;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Firman Jiří";"SSO";17;37;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Heřmánková Michaela";"SSO";18;29;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Firmanová Romana";"SSO";19;32;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Tesař Milan";"SSO";20;41;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2014";"Pekař Zdeněk";"SSO";21;52;0;"Svobodní";"BEZPP";0;0;0;0;NA;NA
+"2018";"Michalec Lubomír (1)";"ČSSD";1;174;1;"ČSSD";"ČSSD";0;0;0;0;4182;1467
+"2018";"Vyskočil Jiří";"ČSSD";2;165;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Havlík Miroslav";"ČSSD";3;132;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2018";"Michalec Lubomír (2)";"ČSSD";4;184;1;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2018";"Kopecká Petra";"ČSSD";5;165;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Zsilay Jan";"ČSSD";6;102;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2018";"Huček Michal";"ČSSD";7;161;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Malowanyj Stanislav";"ČSSD";8;140;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Krejčíková Zdenka";"ČSSD";9;129;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2018";"Mánková Miroslava";"ČSSD";10;131;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2018";"Honeiser Jan";"ČSSD";11;139;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Fiřt Ladislav";"ČSSD";12;114;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Hloušek Miroslav";"ČSSD";13;173;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Adamec Vladimír";"ČSSD";14;136;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2018";"Kopecký Jan";"ČSSD";15;152;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Jůn Martin";"ČSSD";16;144;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2018";"Mikš Olivier Jan";"ČSSD";17;123;0;"ČSSD";"ČSSD";0;0;0;0;NA;NA
+"2018";"Klabík Josef";"ČSSD";18;109;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Geletič Samuel";"ČSSD";19;119;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Havlíková Marie";"ČSSD";20;102;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Hejduk Jan";"ČSSD";21;102;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2018";"Kalous Jiří";"ODS, KDU-ČSL";1;433;1;"ODS";"ODS";0;0;0;0;NA;NA
+"2018";"Šembera Kamil";"ODS, KDU-ČSL";2;401;1;"KDU-ČSL";"KDU-ČSL";0;0;0;0;NA;NA
+"2018";"Sovadinová Kamila";"ODS, KDU-ČSL";3;369;1;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Špačková Ivana";"ODS, KDU-ČSL";4;345;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Šlesinger Pavel";"ODS, KDU-ČSL";5;302;0;"ODS";"ODS";0;0;0;0;NA;NA
+"2018";"Vnučková Štěpánka";"ODS, KDU-ČSL";6;315;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Schlösingerová Lenka";"ODS, KDU-ČSL";7;411;1;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Novotný Milan";"ODS, KDU-ČSL";8;316;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Nesměráková Barbora";"ODS, KDU-ČSL";9;291;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2018";"Cachová Irena";"ODS, KDU-ČSL";10;303;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Komůrka Petr";"ODS, KDU-ČSL";11;266;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Matoušová Ivana";"ODS, KDU-ČSL";12;285;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2018";"Pražáková Jiřina";"ODS, KDU-ČSL";13;265;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Ročková Krista";"ODS, KDU-ČSL";14;274;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Vojtěchová Regina";"ODS, KDU-ČSL";15;349;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2018";"Rosendorfová Zdeňka";"ODS, KDU-ČSL";16;364;1;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Fišerová Jaroslava";"ODS, KDU-ČSL";17;245;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2018";"Paur Radek";"ODS, KDU-ČSL";18;264;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Matouš Ivan";"ODS, KDU-ČSL";19;268;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2018";"Šebestová Žaneta";"ODS, KDU-ČSL";20;278;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2018";"Švach Michal";"ODS, KDU-ČSL";21;220;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2018";"Váňo Pavel";"KSČM";1;149;1;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2018";"Matějková Danuše";"KSČM";2;137;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Kolář Josef (2)";"KSČM";3;140;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Vaňková Lenka";"KSČM";4;133;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Svitáková Pavla";"KSČM";5;124;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Spevák Patrik";"KSČM";6;118;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Havlíčková Věra";"KSČM";7;113;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2018";"Váňo Josef";"KSČM";8;151;1;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2018";"Lacinová Věra";"KSČM";9;126;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Kolář Josef (1)";"KSČM";10;137;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Kovář Martin";"KSČM";11;131;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Duchoňová Olga";"KSČM";12;107;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Frejvald Jiří";"KSČM";13;158;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2018";"Libánská Renata";"KSČM";14;116;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Beránek Miroslav (2)";"KSČM";15;138;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Burkoňová Milena";"KSČM";16;125;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2018";"Kotrasz Jaroslav (1)";"KSČM";17;123;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Havlíček Václav";"KSČM";18;104;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2018";"Hejna Jaroslav";"KSČM";19;103;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2018";"Svaljavčík Josef";"KSČM";20;125;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2018";"Grulichová Christina";"KSČM";21;104;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2018";"Sýkorová Kateřina";"PRO Zdr. a Sp.";1;348;1;"PRO Zdraví";"BEZPP";0;1;1;1;NA;NA
+"2018";"Frkal Zdeněk";"PRO Zdr. a Sp.";2;329;1;"PRO Zdraví";"BEZPP";0;0;1;1;NA;NA
+"2018";"Hrebičková Olga";"PRO Zdr. a Sp.";3;286;1;"PRO Zdraví";"BEZPP";0;0;1;1;NA;NA
+"2018";"Matušková Ivana";"PRO Zdr. a Sp.";4;281;1;"PRO Zdraví";"BEZPP";0;0;0;1;NA;NA
+"2018";"Pták Václav";"PRO Zdr. a Sp.";5;248;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Pechová Anna";"PRO Zdr. a Sp.";6;220;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Hercík Martin";"PRO Zdr. a Sp.";7;242;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Jirušková Andrea";"PRO Zdr. a Sp.";8;193;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Michálek Pavel";"PRO Zdr. a Sp.";9;254;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Mentlík Václav";"PRO Zdr. a Sp.";10;195;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Hrdlička Michael";"PRO Zdr. a Sp.";11;198;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Podráský Ondřej";"PRO Zdr. a Sp.";12;259;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Petrůj Karel";"PRO Zdr. a Sp.";13;189;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Urban František";"PRO Zdr. a Sp.";14;182;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Pokorná Zdeňka";"PRO Zdr. a Sp.";15;194;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Doležalová Jana";"PRO Zdr. a Sp.";16;243;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Pohlreichová Šárka";"PRO Zdr. a Sp.";17;241;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Špidus Aleš";"PRO Zdr. a Sp.";18;223;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Šmíd Jiří";"PRO Zdr. a Sp.";19;201;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Lešáková Lenka";"PRO Zdr. a Sp.";20;263;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Aichingerová Pavlína";"PRO Zdr. a Sp.";21;157;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2018";"Kalvas Miroslav";"Občané Jílového";1;539;1;"NK";"BEZPP";1;0;1;1;NA;NA
+"2018";"Buchta Libor";"Občané Jílového";2;464;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2018";"Mošner Pavel";"Občané Jílového";3;571;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"2018";"Valterová Hanzlová Lucie";"Občané Jílového";4;468;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2018";"Loskotová Monika";"Občané Jílového";5;490;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2018";"Drugová Petra";"Občané Jílového";6;528;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"2018";"Kácová Markéta";"Občané Jílového";7;488;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2018";"Tejmer Milan";"Občané Jílového";8;531;1;"NK";"BEZPP";0;0;1;1;NA;NA
+"2018";"Pokorný Jiří";"Občané Jílového";9;448;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Sýkora Miloš";"Občané Jílového";10;474;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Uhrová Zámečníková Zdeňka";"Občané Jílového";11;483;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Šanovec Alois";"Občané Jílového";12;499;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Lysák Milan";"Občané Jílového";13;424;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Severová Iveta";"Občané Jílového";14;436;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Marek Jan";"Občané Jílového";15;453;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Rynešová Šárka";"Občané Jílového";16;431;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Wittichová Zdeňka";"Občané Jílového";17;374;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Jetmar Rudolf";"Občané Jílového";18;404;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Šára Vladislav";"Občané Jílového";19;397;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Lopušan Pavel";"Občané Jílového";20;448;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Wurm Michal";"Občané Jílového";21;370;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Kalous Jiří";"ODS, KDU-ČSL";1;339;1;"ODS";"ODS";0;0;0;0;4126;1680
+"2022";"Šembera Kamil";"ODS, KDU-ČSL";2;305;0;"KDU-ČSL";"KDU-ČSL";0;0;0;0;NA;NA
+"2022";"Schlösingerová Lenka";"ODS, KDU-ČSL";3;326;1;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2022";"Sovadinová Kamila";"ODS, KDU-ČSL";4;281;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2022";"Chytrý Václav";"ODS, KDU-ČSL";5;344;1;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2022";"Šebestová Žaneta";"ODS, KDU-ČSL";6;240;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2022";"Šlesinger Pavel";"ODS, KDU-ČSL";7;237;0;"ODS";"ODS";0;0;0;0;NA;NA
+"2022";"Ročková Krista";"ODS, KDU-ČSL";8;217;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2022";"Paur Radek";"ODS, KDU-ČSL";9;222;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2022";"Faktorová Daniela";"ODS, KDU-ČSL";10;208;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2022";"Kříž Jan";"ODS, KDU-ČSL";11;218;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2022";"Brejchová Anna";"ODS, KDU-ČSL";12;180;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2022";"Matouš Ivan";"ODS, KDU-ČSL";13;216;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2022";"Fišerová Jaroslava";"ODS, KDU-ČSL";14;188;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2022";"Honzík Pavel";"ODS, KDU-ČSL";15;202;0;"ODS";"BEZPP";0;0;0;0;NA;NA
+"2022";"Kolář Michal";"ODS, KDU-ČSL";16;182;0;"ODS";"ODS";0;0;0;0;NA;NA
+"2022";"Švach Michal";"ODS, KDU-ČSL";17;173;0;"KDU-ČSL";"BEZPP";0;0;0;0;NA;NA
+"2022";"Váňo Pavel";"KSČM";1;118;1;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2022";"Váňová Radka";"KSČM";2;88;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2022";"Koluchová Danuše";"KSČM";3;95;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Jaroš František";"KSČM";4;82;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Kolář Josef (1)";"KSČM";6;96;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Kovář Martin";"KSČM";7;96;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Kovářová Marie";"KSČM";8;78;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Váňová Miluše";"KSČM";9;88;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Duchoňová Olga";"KSČM";10;77;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Havlíčková Věra";"KSČM";12;77;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2022";"Šafr Martin";"KSČM";13;77;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Žáčková Zdeňka";"KSČM";14;72;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Beránek Miroslav (2)";"KSČM";15;89;0;"KSČM";"BEZPP";0;0;0;0;NA;NA
+"2022";"Burkoňová Milena";"KSČM";16;80;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2022";"Hejna Jaroslav";"KSČM";17;75;0;"KSČM";"KSČM";0;0;0;0;NA;NA
+"2022";"Sýkorová Kateřina";"Občané Jílového";1;667;1;"NK";"BEZPP";1;0;1;1;NA;NA
+"2022";"Hloušková Lucie";"Občané Jílového";2;583;1;"NK";"BEZPP";0;1;1;1;NA;NA
+"2022";"Kácová Markéta";"Občané Jílového";3;488;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2022";"Matušková Ivana";"Občané Jílového";4;488;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2022";"Jůn Martin";"Občané Jílového";5;512;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Pavlas Martin";"Občané Jílového";6;447;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Mošner Pavel";"Občané Jílového";7;622;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2022";"Řeřichová Věra";"Občané Jílového";8;522;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Frkal Zdeněk";"Občané Jílového";9;560;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2022";"Šterclová Jitka";"Občané Jílového";10;481;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Jarkovský Jaromír";"Občané Jílového";11;446;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Hrdlička Jan (2)";"Občané Jílového";12;417;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Ehl Iveta";"Občané Jílového";13;477;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Křišťan Ladislav";"Občané Jílového";14;462;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Huček Michal";"Občané Jílového";15;466;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Lopušan Petr";"Občané Jílového";16;451;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Česnek Jan";"Občané Jílového";17;396;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Michalec Lubomír (2)";"SPD";1;364;1;"SPD";"BEZPP";0;0;1;1;NA;NA
+"2022";"Kopecká Petra";"SPD";2;360;1;"SPD";"BEZPP";0;0;1;1;NA;NA
+"2022";"Tůma Vladimír";"SPD";3;319;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Ondroušek Jan";"SPD";4;333;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Hloušek Miroslav";"SPD";5;379;1;"SPD";"BEZPP";0;0;0;1;NA;NA
+"2022";"Kulhánek Luděk";"SPD";6;368;1;"SPD";"BEZPP";0;0;1;1;NA;NA
+"2022";"Havlík Radek";"SPD";7;313;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Michalec Zdeněk (2)";"SPD";8;319;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Mordačík Josef";"SPD";9;352;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Procházka Vladimír";"SPD";10;313;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Horyna Miroslav";"SPD";11;340;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Vachulka Václav Jan";"SPD";12;299;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Hanus Zdeněk";"SPD";13;280;0;"SPD";"SPD";0;0;0;0;NA;NA
+"2022";"Mánková Miroslava";"SPD";14;309;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Havlík Miroslav";"SPD";15;233;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Krejčíková Zdenka";"SPD";16;295;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Kopecký Jan";"SPD";17;283;0;"SPD";"BEZPP";0;0;0;0;NA;NA
+"2022";"Tejmer Milan";"Zdr. Sp. Prosp.";1;447;1;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Hrebičková Olga";"Zdr. Sp. Prosp.";2;326;1;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Špačková Ivana";"Zdr. Sp. Prosp.";3;343;1;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Králová Marie";"Zdr. Sp. Prosp.";4;304;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Kozemčáková Věra";"Zdr. Sp. Prosp.";5;265;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Horáková Soňa";"Zdr. Sp. Prosp.";6;274;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Mandažiev Petr";"Zdr. Sp. Prosp.";7;318;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Kršíková Kamila";"Zdr. Sp. Prosp.";8;262;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Šmíd Jiří";"Zdr. Sp. Prosp.";9;259;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Pechová Anna";"Zdr. Sp. Prosp.";10;259;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Jusková Eliška";"Zdr. Sp. Prosp.";11;296;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Cachová Irena";"Zdr. Sp. Prosp.";12;286;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Karkulová Martina";"Zdr. Sp. Prosp.";13;256;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Vaněk Jiří";"Zdr. Sp. Prosp.";14;281;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Špidus Aleš";"Zdr. Sp. Prosp.";15;299;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Pohlreichová Šárka";"Zdr. Sp. Prosp.";16;281;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
+"2022";"Fišerová Kamila";"Zdr. Sp. Prosp.";17;269;0;"PRO Zdraví";"BEZPP";0;0;0;0;NA;NA
