@@ -1,8 +1,8 @@
 # lpanda 0.1.1
 
-# lpanda 0.1.0
-
 * Initial CRAN submission.
+
+# lpanda 0.1.0
 
 ## New functions
 
