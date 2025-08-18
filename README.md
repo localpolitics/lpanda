@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# lpanda
+# lpanda <a href="https://github.com/localpolitics/lpanda"><img src="man/figures/lpanda_logo.png" align="right" height="120" /></a>
 
 <!-- badges: start -->
 
@@ -10,21 +10,23 @@
 
 ## Overview
 
-The R package ‘lpanda’ provides functions to prepare, visualize, and
-analyse diachronic network data on local political actors, with a
-particular focus on the development of local party systems’ format and
-identification of actor groups.
+The R package ‘lpanda’ provides tools for preparing, analyzing and
+visualizing diachronic network data from municipal election results. It
+is designed to make  
+it easier to study local political actor networks, with a particular
+focus on the development of local party systems’ format, especially in
+small municipalities.
 
 ## Installation
 
-From CRAN (soon):
+You can install the released version of `lpanda` from CRAN with (soon):
 
 ``` r
 install.packages("lpanda")
 ```
 
-You can install the development version of `lpanda` from
-[GitHub](https://github.com/) with:
+Or install the development version from [GitHub](https://github.com/)
+with:
 
 ``` r
 devtools::install_github("localpolitics/lpanda")
