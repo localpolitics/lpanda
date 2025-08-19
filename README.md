@@ -12,10 +12,9 @@
 
 The R package ‘lpanda’ provides tools for preparing, analyzing and
 visualizing diachronic network data from municipal election results. It
-is designed to make  
-it easier to study local political actor networks, with a particular
-focus on the development of local party systems’ format, especially in
-small municipalities.
+is designed to make it easier to study local political actor networks,
+with a particular focus on the development of local party systems’
+format, especially in small municipalities.
 
 ## Installation
 
