@@ -2,11 +2,11 @@
 
 This is a resubmission. In this version I have:
 
-* Added references in the DESCRIPTION file as requested.
+* Added references in the DESCRIPTION file as requested (ISSN and ISBN).
 * Ensured that graphical parameters in plot_continuity() are restored 
   using on.exit() as recommended.
 
-## Test environments
+## Test environments (rerun before resubmission)
 
 * Local: Windows 11 x64 (R-4.5.0)
 * Win-builder: R-oldrelease 4.4.3; R-release 4.5.1;
@@ -26,7 +26,9 @@ This is a resubmission. In this version I have:
 ## Notes for CRAN editors
 
 * NOTE (Win-builder): “Diachronic/diachronic” in DESCRIPTION is a correct
-  technical term referring to diachronic analysis.
+  technical term referring to diachronic analysis. Other words flagged as
+  possibly misspelled are proper names (Bubenicek, Kubalek, Cmejrek, Copik)
+  or standard identifiers (ISSN).
 
-* NOTE (Win-builder, R-oldrelease) about `Author:` field: current DESCRIPTION
-  does not contain `Author:` and matches `Authors@R`.
+* NOTE (Win-builder, R-oldrelease): "Author field differs from that derived 
+  from Authors@R" - DESCRIPTION correctly uses Authors@R with ORCID.
