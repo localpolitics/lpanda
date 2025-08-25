@@ -225,6 +225,14 @@ plot_continuity <- function(netdata,
                             ...
 ) {
   
+  # ------------------------------------------------------------------------- #
+  # Ulozeni grafickych parametru pro pripadnou potrebu obnoveni, kdyby funkce
+  # skoncila drive:
+  # ------------------------------------------------------------------------- #
+  
+  old_par <- graphics::par(no.readonly = TRUE);
+  on.exit(graphics::par(old_par), add = TRUE);
+  
   
   # ######################################################################### #
   # ------------------------------------------------------------------------- #

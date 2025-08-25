@@ -1,3 +1,11 @@
+## Resubmission
+
+This is a resubmission. In this version I have:
+
+* Added references in the DESCRIPTION file as requested.
+* Ensured that graphical parameters in plot_continuity() are restored 
+  using on.exit() as recommended.
+
 ## Test environments
 
 * Local: Windows 11 x64 (R-4.5.0)
