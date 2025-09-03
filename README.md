@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/localpolitics/lpanda/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/localpolitics/lpanda/actions/workflows/R-CMD-check.yaml)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/lpanda)](https://CRAN.R-project.org/package=lpanda)
 <!-- badges: end -->
 
 ## Overview
@@ -18,7 +20,7 @@ format, especially in small municipalities.
 
 ## Installation
 
-You can install the released version of `lpanda` from CRAN with (soon):
+You can install the released version of `lpanda` from CRAN with:
 
 ``` r
 install.packages("lpanda")

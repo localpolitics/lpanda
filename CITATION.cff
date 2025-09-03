@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: 'To cite package "lpanda" in publications use:'
+title: lpanda
+version: 0.1.1
+date-released: '2025-09-01'
+type: software
+license: MIT
+authors:
+  - given-names: Vaclav
+    family-names: Bubenicek
+    email: bubenicek@pef.czu.cz
+    orcid: 'https://orcid.org/0000-0002-0906-0750'
+abstract: >-
+  Provides tools for preparing, analyzing and visualizing
+  diachronic network data from municipal election results.
+keywords:
+  - local politics
+  - party system format
+  - election results
+  - political actors
+  - network analysis
+  - diachronic analysis
+  - continuity diagram
+repository-code: 'https://github.com/localpolitics/lpanda'
+url: 'https://CRAN.R-project.org/package=lpanda'
+identifiers:
+  - type: doi
+    value: 10.32614/CRAN.package.lpanda
+    description: CRAN package DOI.
+preferred-citation:
+  type: software
+  title: 'lpanda: Local Political Actor Network Diachronic Analysis Tools'
+  authors:
+    - given-names: Vaclav
+      family-names: Bubenicek
+      orcid: 'https://orcid.org/0000-0002-0906-0750'
+  year: 2025
+  version: 0.1.1
+  notes: 'R package version 0.1.1'
+  url: 'https://CRAN.R-project.org/package=lpanda'
+  doi: 10.32614/CRAN.package.lpanda
