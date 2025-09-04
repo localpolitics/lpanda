@@ -39,10 +39,16 @@ jobs:
         shell: Rscript {0}
 
       - name: Upload to Codecov
+        if: ${{ github.event_name != 'pull_request' || !github.event.pull_request.head.repo.fork }}
         uses: codecov/codecov-action@v5
         with:
           files: ./cobertura.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
+      
+      - name: Skip Codecov on forked PRs (no secrets)
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork }}
+        run: echo "Skipping Codecov upload on forks (no token available)."
 
       - name: Show testthat output
         if: always()
