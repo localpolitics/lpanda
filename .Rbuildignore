@@ -7,3 +7,4 @@
 ^lpanda_CRAN\.Rproj$
 ^CRAN-SUBMISSION$
 ^\.Rproj\.user$
+^codecov\.yml$

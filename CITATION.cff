@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: 'To cite package "lpanda" in publications use:'
-title: lpanda
+message: 'To cite package "lpanda" in publications, please use:'
+title: 'lpanda: Local Political Actor Network Diachronic Analysis Tools'
 version: 0.1.1
 date-released: '2025-09-01'
 type: software
@@ -26,7 +26,10 @@ url: 'https://CRAN.R-project.org/package=lpanda'
 identifiers:
   - type: doi
     value: 10.32614/CRAN.package.lpanda
-    description: CRAN package DOI.
+    description: CRAN package DOI
+  - type: doi
+    value: 10.5281/zenodo.17049362
+    description: Zenodo concept DOI
 preferred-citation:
   type: software
   title: 'lpanda: Local Political Actor Network Diachronic Analysis Tools'
