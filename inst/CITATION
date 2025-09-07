@@ -1,14 +1,16 @@
 meta <- utils::packageDescription("lpanda")
 
-citHeader("To cite 'lpanda' in publications, please use:")
-
 bibentry(
-  bibtype = "Manual",
-  title   = sprintf("{%s}: %s", meta$Package, meta$Title),
-  author  = eval(parse(text = meta$`Authors@R`)),
-  year    = if (!is.null(meta$Date)) substr(meta$Date, 1, 4) else
-              format(Sys.Date(), "%Y"),
-  note    = sprintf("R package version %s", meta$Version),
-  url     = if (!is.null(meta$URL)) strsplit(meta$URL, ",")[[1]][1],
-  doi     = "10.32614/CRAN.package.lpanda"
+  bibtype     = "Manual",
+  header      = "To cite 'lpanda' in publications, please use:",
+  textVersion = paste("Bubenicek, V. (2025). lpanda: Local Political Actor Network",
+                "Diachronic Analysis Tools. R package version 0.1.1.",
+                "https://doi.org/10.32614/CRAN.package.lpanda."),
+  title       = sprintf("{%s}: %s", meta$Package, meta$Title),
+  author      = eval(parse(text = meta$`Authors@R`)),
+  year        = if (!is.null(meta$Date)) substr(meta$Date, 1, 4) else
+                  format(Sys.Date(), "%Y"),
+  note        = sprintf("R package version %s", meta$Version),
+  url         = if (!is.null(meta$URL)) strsplit(meta$URL, ",")[[1]][1],
+  doi         = "10.32614/CRAN.package.lpanda"
 )

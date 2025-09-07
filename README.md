@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# lpanda <a href="https://github.com/localpolitics/lpanda"><img src="man/figures/lpanda_logo.png" align="right" height="135" /></a>
+# lpanda <a href="https://github.com/localpolitics/lpanda"><img src="man/figures/lpanda_logo.png" align="right" height="138" alt="lpanda" /></a>
 
 Local Political Actor Network Diachronic Analysis Tools
 
@@ -12,6 +12,8 @@ Local Political Actor Network Diachronic Analysis Tools
 coverage](https://codecov.io/gh/localpolitics/lpanda/graph/badge.svg)](https://app.codecov.io/gh/localpolitics/lpanda)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/lpanda)](https://CRAN.R-project.org/package=lpanda)
+[![CRAN
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/lpanda)](https://CRAN.R-project.org/package=lpanda)
 [![project
 DOI](https://img.shields.io/badge/project%20DOI-10.32614/CRAN.package.lpanda-blue.svg)](https://doi.org/10.32614/CRAN.package.lpanda)
 [![version
