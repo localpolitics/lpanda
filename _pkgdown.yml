@@ -1,4 +1,41 @@
+title: "lpanda"
 url: https://localpolitics.github.io/lpanda/
 template:
   bootstrap: 5
+  bslib:
+    bootswatch: sandstone
 
+navbar:
+  structure:
+    right: [search, github, cran]
+  components:
+    cran:
+      icon: fab fa-r-project
+      href: https://CRAN.R-project.org/package=lpanda
+      aria-label: CRAN
+
+reference:
+  - title: "Data preparation"
+    contents:
+      - prepare_network_data
+  - title: "Visualization"
+    contents:
+      - plot_continuity
+  - title: "Datasets"
+  - subtitle: "Municipalities"
+    contents:
+      - Doubice_DC_cz
+      - Jilove_DC_cz
+  - subtitle: "Examples for testing"
+    contents:
+      - sample_data
+      - sample_diff_varnames
+      - sample_binary_values
+      - sample_no_continuity
+      - sample_no_crossing
+
+footer:
+  structure:
+    left: developed_by
+  components:
+    developed_by: "Developed by [Vaclav Bubenicek](https://github.com/vaclavbubenicek/)"
