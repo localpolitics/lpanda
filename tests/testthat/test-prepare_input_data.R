@@ -9,12 +9,17 @@ test_that("matrix is transformed to data.frame", {
   
 })
 
-test_that("you get error with empty data.frame", {
+test_that("you get error with empty data.frame, unnamed column or different input class", {
   
   df <- lpanda::sample_data;
-  df <- df[NULL,];
+  df_empty <- df[NULL,];
+  df_unnamed_col <- df;
+  colnames(df_unnamed_col)[sample(length(colnames(df_unnamed_col)), 1)] <- "";
+  df_vector <- df[,sample(length(colnames(df)), 1)];
   
-  expect_error(prepare_input_data(df));
+  expect_error(prepare_input_data(df_empty));
+  expect_error(prepare_input_data(df_unnamed_col));
+  expect_error(prepare_input_data(df_vector));
   
 })
 
@@ -29,6 +34,18 @@ test_that("it will stop with mistakes in tags", {
   # here it should be correct
   expect_no_error(suppressMessages(suppressWarnings(prepare_input_data(df,
                                                                        list(list_name = "party", elected = "seat")))));
+  
+})
+
+test_that("it will display a warning if there are mistakes in tags but variable exists", {
+  
+  df <- lpanda::sample_data;
+  
+  # "strana" instead of "party"
+  expect_warning(prepare_input_data(df, list(list_name = "strana")));
+  
+  # tag is OK but the variable is missing
+  expect_warning(prepare_input_data(df, list(board = "nomenklatura")));
   
 })
 
@@ -60,6 +77,15 @@ test_that("it will stop if any required variable contains NA or unexpected type"
   expect_error(suppressMessages(suppressWarnings(prepare_input_data(df_with_na(df, "candidate")))));
   expect_error(suppressMessages(suppressWarnings(prepare_input_data(df_with_na(df, "list_name")))));
   expect_no_error(suppressMessages(suppressWarnings(prepare_input_data(df_with_na(df, "elected")))));
+  
+})
+
+test_that("a message will be displayed if there are any extra columns", {
+  
+  df <- lpanda::sample_data;
+  df$extra <- "extra";
+  
+  expect_message(prepare_input_data(df));
   
 })
 
@@ -121,6 +147,15 @@ test_that("it changes variables to correct data class", {
   }
 })
 
+test_that("it will display a warning if there are any unrecognized logical values", {
+  
+  df <- lpanda::sample_data;
+  df$elected[sample(1:nrow(df),1)] <- "yeah"
+  
+  expect_warning(prepare_input_data(df));
+  
+})
+
 test_that("it changes variability names, add 'list_id' and 'const_size'", {
   
   df <- lpanda::sample_diff_varnames;
@@ -138,6 +173,14 @@ test_that("it changes variability names, add 'list_id' and 'const_size'", {
   expect_equal(sum(df_fixed$const_size, na.rm = TRUE),
                sum(df_fixed$elected))
   
+  # --- #
+  
+  df_list_id_error <- df_fixed;
+  df_list_id_error$list_id[sample(1:nrow(df),1)] <- "error";
+  
+  expect_no_error(df_fixed2 <- prepare_input_data(df_list_id_error));
+  expect_true(all(df_fixed$list_id == df_fixed2$list_id));
+  
 })
 
 test_that("if a 'list_votes' exist, it appears only once per list", {
@@ -149,6 +192,20 @@ test_that("if a 'list_votes' exist, it appears only once per list", {
     n_unique <- tapply(df$list_votes, df$list_id,
                        function(x) length(unique(na.omit(x))));
     expect_true(all(n_unique == 1))
+    
+    # --- #
+    
+    df$list_votes[!is.na(df$list_votes)][1] <- NA;
+    expect_warning(df2 <- prepare_input_data(df));
+    expect_false("list_votes" %in% names(df2));
+    
+    # --- #
+    
+    df$list_votes[!is.na(df$list_votes)] <- NA;
+    df$pref_votes <- NULL;
+    expect_warning(df2 <- prepare_input_data(df));
+    expect_false("list_votes" %in% names(df2));
+    
     
   } # konec IF zjistujici, ze existuje 'list_votes'
   
