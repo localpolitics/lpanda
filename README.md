@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# lpanda <a href="https://github.com/localpolitics/lpanda"><img src="man/figures/lpanda_logo.png" align="right" height="138" alt="lpanda" /></a>
+# lpanda <a href="https://localpolitics.github.io/lpanda/"><img src="man/figures/logo.png" align="right" height="138" alt="lpanda website" /></a>
 
 Local Political Actor Network Diachronic Analysis Tools
 
