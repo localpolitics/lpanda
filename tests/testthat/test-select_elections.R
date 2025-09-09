@@ -38,4 +38,14 @@ test_that("it throws error on invalid string format", {
   x <- c(1994, 1998, 2002)
   expect_error(suppressWarnings(select_elections(x, "1994/2002")))
   expect_error(suppressWarnings(select_elections(x, "komunalni volby 2010")))
+  expect_error(suppressWarnings(select_elections(x, data.frame(elections = c(1994, 1998)))))
+  expect_error(suppressWarnings(select_elections(x, list(elections = c(1994, 1998)))))
+  
+  expect_no_error(suppressWarnings(select_elections(x, matrix(data = c(1994, 1998)))))
+})
+
+test_that("it shows a warning if the input elections are not in the database", {
+  x <- c(1994, 1998, 2002.11)
+  expect_warning(select_elections(x, "1994, 2002.12"))
+  expect_warning(select_elections(x, c(1994, 2002.12)))
 })

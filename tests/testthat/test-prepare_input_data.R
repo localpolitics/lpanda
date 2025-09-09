@@ -42,10 +42,10 @@ test_that("it will display a warning if there are mistakes in tags but variable 
   df <- lpanda::sample_data;
   
   # "strana" instead of "party"
-  expect_warning(prepare_input_data(df, list(list_name = "strana")));
+  expect_warning(suppressMessages(prepare_input_data(df, list(list_name = "strana"))));
   
   # tag is OK but the variable is missing
-  expect_warning(prepare_input_data(df, list(board = "nomenklatura")));
+  expect_warning(suppressMessages(prepare_input_data(df, list(board = "nomenklatura"))));
   
 })
 
@@ -84,6 +84,7 @@ test_that("a message will be displayed if there are any extra columns", {
   
   df <- lpanda::sample_data;
   df$extra <- "extra";
+  df <- df[,c("elections", "candidate", "list_name", "extra")]
   
   expect_message(prepare_input_data(df));
   
@@ -152,7 +153,7 @@ test_that("it will display a warning if there are any unrecognized logical value
   df <- lpanda::sample_data;
   df$elected[sample(1:nrow(df),1)] <- "yeah"
   
-  expect_warning(prepare_input_data(df));
+  expect_warning(suppressMessages(prepare_input_data(df)));
   
 })
 

@@ -225,15 +225,6 @@ plot_continuity <- function(netdata,
                             ...
 ) {
   
-  # ------------------------------------------------------------------------- #
-  # Ulozeni grafickych parametru pro pripadnou potrebu obnoveni, kdyby funkce
-  # skoncila drive:
-  # ------------------------------------------------------------------------- #
-  
-  old_par <- graphics::par(no.readonly = TRUE);
-  on.exit(graphics::par(old_par), add = TRUE);
-  
-  
   # ######################################################################### #
   # ------------------------------------------------------------------------- #
   # ============ Kontrola dat a identifikace dostupnych promennych ============
@@ -379,6 +370,7 @@ plot_continuity <- function(netdata,
   # --- #
   
   do_not_print_to_console <- isTRUE(args$do_not_print_to_console);
+
   
   # ######################################################################### #
   # ------------------------------------------------------------------------- #
@@ -678,6 +670,16 @@ plot_continuity <- function(netdata,
   # =========================== Zobrazeni diagramu ============================
   # ------------------------------------------------------------------------- #
   # ######################################################################### #
+  
+  # ------------------------------------------------------------------------- #
+  # Ulozeni grafickych parametru pro pripadnou potrebu obnoveni, kdyby funkce
+  # skoncila drive:
+  # ------------------------------------------------------------------------- #
+  
+  old_par <- graphics::par(no.readonly = TRUE);
+  on.exit(graphics::par(old_par), add = TRUE);
+  
+  # ------------------------------------------------------------------------- #
   
   if (show_legend && !is.null(mark) && !is.null(skupiny)) {
     

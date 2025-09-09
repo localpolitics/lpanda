@@ -201,7 +201,7 @@ prepare_network_data <- function(df,
   skip_groups <- isTRUE(args$skip_groups);
   
   include_cores <- isTRUE(args$include_cores & !skip_groups);
-  if ("include_cores" %in% names(args)) {
+  if ("include_cores" %in% names(args) && verbose) {
     message("Note: core computation is experimental and may change \nin future ",
             "versions.")
   };

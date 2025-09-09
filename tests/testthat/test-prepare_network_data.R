@@ -1,9 +1,22 @@
 # --------------------------------------------------------------------------- #
-# Uvodni cast kontrolujici vstupni data
+# Kontrola, ze verbose funguje ve vsech pripadech
 # --------------------------------------------------------------------------- #
 
 data(sample_data, package = "lpanda");
 df <- sample_data;
+
+test_that("verbose = FALSE produces no console output", {
+  expect_silent(prepare_network_data(df, verbose = FALSE))
+})
+
+test_that("verbose = TRUE produces some output", {
+  expect_output(suppressMessages(suppressWarnings(prepare_network_data(df, verbose = TRUE))))
+})
+
+# --------------------------------------------------------------------------- #
+# Uvodni cast kontrolujici vstupni data
+# --------------------------------------------------------------------------- #
+
 result <- prepare_network_data(df, verbose = FALSE);
 
 test_that("it will stop if any required variable is missing", {
@@ -104,4 +117,25 @@ test_that("No NA values in edgelists", {
   for (net in names(result)) {
     expect_false(any(is.na(result[[net]]$edgelist)))
   }
+})
+
+# --------------------------------------------------------------------------- #
+# Testovani, ze zadani jader nezpusobi error
+# --------------------------------------------------------------------------- #
+
+df_cores <- sample_data[, c("elections", "candidate", "list_name")];
+
+test_that("including 'cores' will not cause an error", {
+  
+  expect_no_error(prepare_network_data(df, include_cores = TRUE,
+                                       verbose = FALSE, quick = TRUE));
+  expect_no_error(prepare_network_data(df, include_cores = TRUE, core_type = 1,
+                                       verbose = FALSE, quick = TRUE));
+  expect_no_error(prepare_network_data(df, include_cores = TRUE, core_type = 2,
+                                       verbose = FALSE, quick = TRUE));
+  expect_no_error(prepare_network_data(df, include_cores = TRUE, core_type = 3,
+                                       verbose = FALSE, quick = TRUE));
+  expect_no_error(prepare_network_data(df, include_cores = TRUE, core_type = 4,
+                                       verbose = FALSE, quick = TRUE));
+  
 })
