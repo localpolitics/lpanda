@@ -29,10 +29,11 @@ reference:
   - subtitle: "Examples for testing"
     contents:
       - sample_data
-      - sample_diff_varnames
+      - sample_different_varnames
       - sample_binary_values
       - sample_no_continuity
-      - sample_no_crossing
+      - sample_no_switching
+      - sample_no_pluralism
 
 footer:
   structure:

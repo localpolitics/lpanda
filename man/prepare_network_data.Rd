@@ -161,8 +161,8 @@ seats, plurality index, voter turnout for each election, etc.).
 }
 
 \examples{
-data(sample_diff_varnames, package = "lpanda")
-df <- sample_diff_varnames
+data(sample_different_varnames, package = "lpanda")
+df <- sample_different_varnames
 str(df) # different variable names: "party" and "seat"
 input_variable_map <- list(list_name = "party", elected = "seat")
 \donttest{

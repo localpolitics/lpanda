@@ -25,28 +25,28 @@ test_that("sample_binary_values contains binary values in elected and mayor", {
 
 # --------------------------------------------------------------------------- #
 
-# Test for sample_diff_varnames =====
+# Test for sample_different_varnames =====
 
-test_that("sample_diff_varnames contains same columns but with different names", {
-
-  expect_false(all(names(sample_diff_varnames) == names(sample_data)));
-
+test_that("sample_different_varnames contains same columns but with different names", {
+  
+  expect_false(all(names(sample_different_varnames) == names(sample_data)));
+  
   # Same number of rows
-  expect_equal(nrow(sample_diff_varnames), nrow(sample_data));
-
+  expect_equal(nrow(sample_different_varnames), nrow(sample_data));
+  
   # same values
-  for (i in 1:ncol(sample_diff_varnames)) {
-    expect_equal(sample_diff_varnames[[i]], sample_data[[i]]);
+  for (i in 1:ncol(sample_different_varnames)) {
+    expect_equal(sample_different_varnames[[i]], sample_data[[i]]);
   }
 })
 
 # --------------------------------------------------------------------------- #
 
-# Test for sample_no_crossing =====
+# Test for sample_no_switching =====
 
-test_that("sample_no_crossing doesn't have a candidate that changed group", {
+test_that("sample_no_switching doesn't have a candidate that changed group", {
 
-  df <- sample_no_crossing;
+  df <- sample_no_switching;
   df$list_id <- paste0(df$list_name, " (", df$elections, ")");
 
   elections <- sort(unique(df$elections));
@@ -84,12 +84,25 @@ test_that("No candidate in sample_no_continuity runs in more than one election",
 
 # --------------------------------------------------------------------------- #
 
+# Test for sample_no_pluralism =====
+
+test_that("in sample_no_pluralism only one candidate list runs in each election", {
+  
+  df <- sample_no_pluralism;
+  
+  lists_per_election <- tapply(df$list_name, df$elections, function(x) length(unique(x)));
+  expect_true(all(lists_per_election == 1));
+  
+})
+
+# --------------------------------------------------------------------------- #
+
 # Tests for all sample files =====
 
 test_that("sample datasets are consistent in data class", {
-
-  for (df in list(sample_data, sample_binary_values, sample_diff_varnames,
-                  sample_no_crossing, sample_no_continuity)) {
+  
+  for (df in list(sample_data, sample_binary_values, sample_different_varnames,
+                  sample_no_switching, sample_no_continuity, sample_no_pluralism)) {
     expect_s3_class(df,  "data.frame")
     expect_type(df[[1]], "double") # type = "double"; class = "numeric"
     expect_type(df[[2]], "character")

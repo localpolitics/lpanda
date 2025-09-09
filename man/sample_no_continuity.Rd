@@ -15,8 +15,8 @@ sample_no_continuity
 }
 \description{
 A variant of \code{\link{sample_data}} in which no candidate appears in more
-than one election. This breaks the continuity between elections, making it
-useful for testing whether network-building functions correctly handle datasets
-with no longitudinal links between candidate lists.
+than one election. This breaks the continuity between elections, making the
+dataset useful for testing whether network-building functions correctly handle
+cases with no longitudinal links across candidate lists.
 }
 \keyword{datasets}

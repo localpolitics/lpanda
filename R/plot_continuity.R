@@ -683,7 +683,7 @@ plot_continuity <- function(netdata,
   
   if (show_legend && !is.null(mark) && !is.null(skupiny)) {
     
-    if (mark[1] == "cores" & !is.null(cores)) {
+    if (mark[1] == "cores" && !is.null(cores)) {
       okno.legendy <- ifelse(any(
         nchar(netdata$cores$node_attr$group_label[unique(skupiny$membership)]) >
           (15 + 6)), 2, 1);
@@ -929,7 +929,7 @@ plot_continuity <- function(netdata,
   
   if (!do_not_print_to_console && !is.null(skupiny)) {
     
-    if (mark[1] == "cores" & !is.null(cores)) {
+    if (mark[1] == "cores" && !is.null(cores)) {
       cat("Cores: ", pocet.skupin, "\n", sep = "");
       cat(paste0(netdata$cores$node_attr$vertices[sort(unique(nodes$core))], ": ",
                  netdata$cores$node_attr$group_label[sort(unique(nodes$core))]),
@@ -982,7 +982,7 @@ plot_continuity <- function(netdata,
     
     graphics::par(mar = c(0,0,8,0));
     
-    legend_labels <- if (mark[1] == "cores" & !is.null(cores)) {
+    legend_labels <- if (mark[1] == "cores" && !is.null(cores)) {
       
       # odstraneni zavorky s procentem pomoci regularniho vyrazu:
       # " "           = mezera

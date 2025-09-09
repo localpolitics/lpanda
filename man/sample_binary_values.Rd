@@ -14,6 +14,8 @@ Fictitious data
 sample_binary_values
 }
 \description{
-A variant of \code{\link{sample_data}} containing binary values instead of TRUE/FALSE values.
+A variant of \code{\link{sample_data}} containing binary values (0/1) instead of
+TRUE/FALSE values. This is useful for testing functions that must correctly
+interpret both logical and numeric binary formats.
 }
 \keyword{datasets}

@@ -35,13 +35,13 @@ sample_binary_values[,c("elected", "mayor")] <- ifelse(
 # --------------------------------------------------------------------------- #
 
 # 3. Same data, different column names
-sample_diff_varnames <- sample_data;
-names(sample_diff_varnames) <- c("elections", "candidate", "party", "seat", "mayor");
+sample_different_varnames <- sample_data;
+names(sample_different_varnames) <- c("elections", "candidate", "party", "seat", "mayor");
 
 # --------------------------------------------------------------------------- #
 
-# 4. Sample with no crossing
-sample_no_crossing <- tibble::tribble(
+# 4. Sample with no party switching
+sample_no_switching <- tibble::tribble(
 
   ~elections, ~candidate, ~list_name, ~elected, ~mayor,
   14,        "c01",        "A",      TRUE,    TRUE,
@@ -88,11 +88,30 @@ sample_no_continuity <- tibble::tribble(
 
 # --------------------------------------------------------------------------- #
 
+# 6. Sample with no pluralism
+sample_no_pluralism <- tibble::tribble(
+  
+  ~elections, ~candidate, ~list_name, ~elected, ~mayor,
+  14,        "c01",        "A",      TRUE,    TRUE,
+  14,        "c02",        "A",      TRUE,    FALSE,
+  14,        "c03",        "A",      TRUE,    FALSE,
+  18,        "c01",        "B",      TRUE,    FALSE,
+  18,        "c03",        "B",      TRUE,    TRUE,
+  18,        "c04",        "B",      TRUE,    FALSE,
+  22,        "c03",        "C",      TRUE,    TRUE,
+  22,        "c04",        "C",      TRUE,    FALSE,
+  22,        "c05",        "C",      TRUE,    FALSE
+  
+);
+
+# --------------------------------------------------------------------------- #
+
 # Save all datasets into package /data/ directory
 usethis::use_data(
   sample_data,
   sample_binary_values,
-  sample_diff_varnames,
-  sample_no_crossing,
+  sample_different_varnames,
+  sample_no_switching,
   sample_no_continuity,
+  sample_no_pluralism,
   overwrite = TRUE)

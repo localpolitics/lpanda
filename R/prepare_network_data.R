@@ -155,12 +155,12 @@
 #' @importFrom igraph components vcount induced_subgraph make_clusters
 #' @importFrom stats aggregate sd setNames
 #' @importFrom dplyr group_by summarise left_join n_distinct rename_with select
-#' @importFrom dplyr filter mutate rename
+#' @importFrom dplyr filter mutate rename all_of
 #' @importFrom utils tail txtProgressBar setTxtProgressBar
 #'
 #' @examples
-#' data(sample_diff_varnames, package = "lpanda")
-#' df <- sample_diff_varnames
+#' data(sample_different_varnames, package = "lpanda")
+#' df <- sample_different_varnames
 #' str(df) # different variable names: "party" and "seat"
 #' input_variable_map <- list(list_name = "party", elected = "seat")
 #' \donttest{
@@ -904,7 +904,7 @@ prepare_network_data <- function(df,
         
         vysledna.tmp <- vysledna.tabulka %>%
           dplyr::mutate(from = .data$vertices) %>%
-          dplyr::select(.data$from, .data$core)
+          dplyr::select(all_of(c("from", "core")))
         
         bp.with.core <- bp.edgelist %>%
           dplyr::left_join(vysledna.tmp, by = "from")
@@ -927,7 +927,7 @@ prepare_network_data <- function(df,
                                               .data$core_elected,
                                               .data$core_all)) %>%
             dplyr::mutate(vertices = .data$to, core = .data$core_final) %>%
-            dplyr::select(.data$vertices, .data$core)
+            dplyr::select(all_of(c("vertices", "core")))
           
         } else {
           
@@ -935,7 +935,7 @@ prepare_network_data <- function(df,
             dplyr::group_by(.data$to) %>%
             dplyr::summarise(core = get_major_core(.data$core), .groups = "drop") %>%
             dplyr::mutate(vertices = .data$to) %>%
-            dplyr::select(.data$vertices, .data$core)
+            dplyr::select(all_of(c("vertices", "core")))
           
         } # konec IF-ELSE pro zjisteni core pro kandidatni listiny
         

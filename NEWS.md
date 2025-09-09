@@ -1,5 +1,19 @@
 # lpanda (development version)
 
+## Changes
+* Renamed sample datasets used for testing:
+  - `sample_different_varnames` (formerly `sample_diff_varnames`). 
+  - `sample_no_switching` (formerly `sample_no_crossing`).
+
+## New data
+* Added new sample dataset for testing:
+  - `sample_no_pluralism` - variant of `sample_data` with only one candidate
+    list per election.
+
+## Documentation
+* `help("lpanda")` / `?lpanda` now display basic package information.
+* Updated documentation for sample datasets.
+
 # lpanda 0.1.1 (2025-08-26)
 
 ## Bug fixes

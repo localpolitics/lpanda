@@ -23,8 +23,8 @@
 #'
 #' @examples
 #' \donttest{
-#' data(sample_diff_varnames, package = "lpanda")
-#' df <- sample_diff_varnames
+#' data(sample_different_varnames, package = "lpanda")
+#' df <- sample_different_varnames
 #' str(df)
 #'
 #' # checks data usability, changes variable names for analysis purposes,

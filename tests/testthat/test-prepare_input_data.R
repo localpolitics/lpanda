@@ -25,7 +25,7 @@ test_that("you get error with empty data.frame, unnamed column or different inpu
 
 test_that("it will stop with mistakes in tags", {
   
-  df <- lpanda::sample_diff_varnames;
+  df <- lpanda::sample_different_varnames;
   
   # list_names instead of list_name
   expect_error(suppressMessages(suppressWarnings(prepare_input_data(df,
@@ -159,7 +159,7 @@ test_that("it will display a warning if there are any unrecognized logical value
 
 test_that("it changes variability names, add 'list_id' and 'const_size'", {
   
-  df <- lpanda::sample_diff_varnames;
+  df <- lpanda::sample_different_varnames;
   df_fixed <- suppressMessages(suppressWarnings(prepare_input_data(df,
                                                                    list(list_name = "party",
                                                                         elected = "seat"))));
