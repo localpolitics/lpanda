@@ -3,7 +3,7 @@
 
 # lpanda <a href="https://localpolitics.github.io/lpanda/"><img src="man/figures/logo.png" align="right" height="138" alt="lpanda website" /></a>
 
-Local Political Actor Network Diachronic Analysis Tools
+### Local Political Actor Network Diachronic Analysis Tools
 
 <!-- badges: start -->
 

@@ -12,6 +12,7 @@
 
 ## Documentation
 * `help("lpanda")` / `?lpanda` now display basic package information.
+* Added pkgdown website: <https://localpolitics.github.io/lpanda/>.
 * Updated documentation for sample datasets.
 
 # lpanda 0.1.1 (2025-08-26)
