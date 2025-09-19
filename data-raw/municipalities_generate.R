@@ -2,7 +2,8 @@
 
 # List of municipalities (without .csv extension)
 municipalities <- c("Doubice_DC_cz",
-                    "Jilove_DC_cz");
+                    "Jilove_DC_cz",
+                    "Roztoky_PZ_cz");
 
 for (m in municipalities) {
   adresa.csv <- file.path("data-raw", paste0(m, ".csv"));

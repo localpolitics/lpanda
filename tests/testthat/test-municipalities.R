@@ -3,7 +3,8 @@
 test_that("municipality datasets are valid election datasets", {
   
   municipalities_list <- list(Doubice_DC_cz = Doubice_DC_cz,
-                              Jilove_DC_cz  = Jilove_DC_cz);
+                              Jilove_DC_cz  = Jilove_DC_cz,
+                              Roztoky_PZ_cz = Roztoky_PZ_cz);
   
   expected_cols <- c("elections", "candidate", "list_name", "list_pos",
                      "pref_votes", "elected", "nom_party", "pol_affil",

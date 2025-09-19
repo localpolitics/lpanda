@@ -78,3 +78,29 @@
 "Jilove_DC_cz"
 
 # --------------------------------------------------------------------------- #
+
+#' @title Municipal Election Data: Roztoky (PZ, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Roztoky (district Praha-zapad, Czech republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Roztoky |
+#' |District:                   | Praha-zapad |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 8 |
+#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022 |
+#' |Number of candidacies (rows): | 1079 |
+#' |Note:                         | [Municipality website](https://www.roztoky.cz/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
+#' [Municipality website](https://www.roztoky.cz/),
+#' [Acta Politologica article](https://www.researchgate.net/publication/323573707_Charakter_lokalni_politiky_v_suburbannim_politickem_prostoru)
+"Roztoky_PZ_cz"
+
+# --------------------------------------------------------------------------- #

@@ -6,7 +6,9 @@
   - `sample_no_switching` (formerly `sample_no_crossing`).
 
 ## New data
-* Added new sample dataset for testing:
+* Added municipalities:
+  - `Roztoky_PZ_cz`
+* New sample dataset for testing:
   - `sample_no_pluralism` - variant of `sample_data` with only one candidate
     list per election.
 
