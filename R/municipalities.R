@@ -53,6 +53,35 @@
 
 # --------------------------------------------------------------------------- #
 
+#' @title Municipal Election Data: Bublava (SO, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Bublava (district Sokolov, Czech republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Bublava |
+#' |District:                   | Sokolov |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 8 |
+#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022 |
+#' |Number of candidacies (rows): | 193 |
+#' |Note:                         | [Municipality website](https://www.obecbublava.cz/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
+#' [Municipality website](https://www.obecbublava.cz/),
+#' [Dissertation thesis](https://dspace.cuni.cz/handle/20.500.11956/177784?locale-attribute=en),
+#' [Student thesis](https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en),
+#' [Case study in a book chapter](https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996),
+#' [Article in NISPAcee Journal of Public Administration and Policy](https://doi.org/10.2478/nispa-2020-0002)
+"Bublava_SO_cz"
+
+# --------------------------------------------------------------------------- #
+
 #' @title Municipal Election Data: Jilove (DC, CZ)
 #'
 #' @description

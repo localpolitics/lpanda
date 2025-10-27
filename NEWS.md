@@ -7,6 +7,7 @@
 
 ## New data
 * Added municipalities:
+  - `Bublava_SO_cz`
   - `Roztoky_PZ_cz`
 * New sample dataset for testing:
   - `sample_no_pluralism` - variant of `sample_data` with only one candidate
