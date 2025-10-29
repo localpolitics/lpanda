@@ -294,8 +294,10 @@ plot_continuity <- function(netdata,
   
   if (!is.null(mark)) {
     
-    if (tolower(mark[1]) %in% c("party")) mark[1] <- "parties";
-    if (tolower(mark[1]) %in% c("candidate", "c", "cand")) mark[1] <- "candidates";
+    mark[1] <- tolower(mark[1]);
+    
+    if (mark[1] %in% c("party")) mark[1] <- "parties";
+    if (mark[1] %in% c("candidate", "c", "cand")) mark[1] <- "candidates";
     
     mark[1] <- match.arg(mark[1], choices = c("parties", "candidates", "cores", "none"));
     

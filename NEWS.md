@@ -7,6 +7,7 @@
 
 ## New data
 * Added municipalities:
+  - `Dasnice_SO_cz`
   - `Bublava_SO_cz`
   - `Roztoky_PZ_cz`
 * New sample dataset for testing:

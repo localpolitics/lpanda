@@ -2,8 +2,9 @@
 
 test_that("municipality datasets are valid election datasets", {
   
-  municipalities_list <- list(Doubice_DC_cz = Doubice_DC_cz,
-                              Bublava_SO_cz = Bublava_SO_cz,
+  municipalities_list <- list(Bublava_SO_cz = Bublava_SO_cz,
+                              Dasnice_SO_cz = Dasnice_SO_cz,
+                              Doubice_DC_cz = Doubice_DC_cz,
                               Jilove_DC_cz  = Jilove_DC_cz,
                               Roztoky_PZ_cz = Roztoky_PZ_cz);
   
@@ -19,7 +20,7 @@ test_that("municipality datasets are valid election datasets", {
     expect_named(municipality, expected_cols, ignore.order = TRUE)
     expect_true(nrow(municipality) > 0)
     
-    expect_type(municipality$elections,    "integer")
+    expect_true(is.numeric(municipality$elections)) # type integer nefunguje kvuli napr. 2022.11 (double) a naopak
     expect_type(municipality$candidate,    "character")
     expect_type(municipality$list_name,    "character")
     expect_type(municipality$list_pos,     "integer")
