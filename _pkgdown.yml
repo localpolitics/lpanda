@@ -24,8 +24,9 @@ reference:
   - title: "Datasets"
   - subtitle: "Municipalities"
     contents:
-      - Doubice_DC_cz
       - Bublava_SO_cz
+      - Dasnice_SO_cz
+      - Doubice_DC_cz
       - Jilove_DC_cz
       - Roztoky_PZ_cz
   - subtitle: "Examples for testing"

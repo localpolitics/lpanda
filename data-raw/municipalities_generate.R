@@ -2,6 +2,7 @@
 
 # List of municipalities (without .csv extension)
 municipalities <- c("Doubice_DC_cz",
+                    "Dasnice_SO_cz",
                     "Bublava_SO_cz",
                     "Jilove_DC_cz",
                     "Roztoky_PZ_cz");

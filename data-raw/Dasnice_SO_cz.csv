@@ -1,0 +1,82 @@
+"elections";"candidate";"list_name";"list_pos";"pref_votes";"elected";"nom_party";"pol_affil";"mayor";"dep_mayor";"board";"gov_support";"elig_voters";"ballots_cast"
+"1994";"Cserge Koloman";"SNK";1;50;1;"NK";"BEZPP";NA;NA;NA;NA;230;80
+"1994";"Springl Martin";"SNK";2;38;1;"NK";"BEZPP";NA;NA;NA;NA;NA;NA
+"1994";"Forejtek Stanislav";"SNK";3;57;1;"NK";"BEZPP";NA;NA;NA;NA;NA;NA
+"1994";"Hettová Ivana";"SNK";4;37;0;"NK";"BEZPP";NA;NA;NA;NA;NA;NA
+"1994";"Lhotská Miluše";"Miluše Lhotská, NK";1;42;1;"NK";"BEZPP";NA;NA;NA;NA;NA;NA
+"1994";"Bráblík Richard";"ODS";1;42;1;"ODS";"ODS";NA;NA;NA;NA;NA;NA
+"1998";"Zimmel Karel";"ČSSD";1;38;1;"ČSSD";"BEZPP";NA;NA;NA;NA;250;43
+"1998";"Valevský Emil";"ČSSD";2;38;1;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"1998";"Zimmelová Zdeňka";"ČSSD";3;34;1;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"1998";"Voráčková Dana";"ČSSD";4;36;1;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"1998";"Godla Ján";"ČSSD";5;36;1;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"1998";"Cífková Renata";"ČSSD";6;36;1;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"1998";"Szabo Štefan";"ČSSD";7;35;1;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"2002";"Dubec František";"ČSSD";1;125;1;"ČSSD";"BEZPP";1;NA;NA;1;266;160
+"2002";"Forejtek Stanislav";"ČSSD";2;78;1;"ČSSD";"BEZPP";NA;NA;NA;1;NA;NA
+"2002";"Fischerová Renata";"ČSSD";3;84;1;"ČSSD";"ČSSD";NA;NA;NA;1;NA;NA
+"2002";"Holý René";"ČSSD";4;107;1;"ČSSD";"BEZPP";NA;NA;NA;1;NA;NA
+"2002";"Popovič Antonín";"ČSSD";5;113;1;"ČSSD";"BEZPP";NA;NA;NA;1;NA;NA
+"2002";"Pospíšil Petr";"ČSSD";6;102;0;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"2006";"Dubec František";"ČSSD";1;120;1;"ČSSD";"BEZPP";NA;NA;NA;NA;267;166
+"2006";"Popovič Antonín";"ČSSD";2;116;1;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"2006";"Svůra Zdeněk";"ČSSD";3;116;1;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"2006";"Hartmannová Růžena";"ČSSD";4;100;0;"ČSSD";"ČSSD";NA;NA;NA;NA;NA;NA
+"2006";"Kugel Antonín";"ČSSD";5;108;1;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"2006";"Holý René";"ČSSD";6;10;0;"ČSSD";"BEZPP";NA;NA;NA;NA;NA;NA
+"2006";"Forejtek Stanislav";"ODS";1;40;0;"ODS";"BEZPP";NA;NA;NA;NA;NA;NA
+"2006";"Bílá Ilona";"ODS";2;43;1;"ODS";"BEZPP";NA;NA;NA;NA;NA;NA
+"2006";"Žižka Jan";"ODS";3;31;0;"ODS";"BEZPP";NA;NA;NA;NA;NA;NA
+"2006";"Forejtek Pavel";"ODS";4;32;0;"ODS";"BEZPP";NA;NA;NA;NA;NA;NA
+"2006";"Bečková Jaroslava";"ODS";5;29;0;"ODS";"BEZPP";NA;NA;NA;NA;NA;NA
+"2010";"Dubcová Ladislava";"ČSSD";1;95;1;"ČSSD";"ČSSD";1;0;0;1;279;147
+"2010";"Kugel Antonín";"ČSSD";2;100;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"2010";"Gubran Štěpán";"ČSSD";3;105;1;"ČSSD";"BEZPP";0;1;0;1;NA;NA
+"2010";"Šaradin Petr";"ČSSD";4;71;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2010";"Bach Petr";"ČSSD";5;61;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2010";"Krajský Jiří";"Nezávislí";1;71;1;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Pochyba Štefan";"Nezávislí";2;50;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Springlová Jarmila";"Nezávislí";3;21;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Perman Jindřich";"Nezávislí";4;28;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2010";"Vaněk Oldřich";"Nezávislí";5;61;1;"NK";"BEZPP";0;0;0;0;NA;NA
+"2014";"Dubcová Ladislava";"ČSSD";1;47;1;"ČSSD";"ČSSD";1;0;0;1;254;79
+"2014";"Kugel Antonín";"ČSSD";2;16;1;"ČSSD";"ČSSD";0;0;0;1;NA;NA
+"2014";"Vaněk Oldřich";"ČSSD";3;16;1;"ČSSD";"BEZPP";0;1;0;1;NA;NA
+"2014";"Lhotský Jaroslav";"ČSSD";4;22;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"2014";"Radl Jiří";"ČSSD";5;17;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"2015.09";"Dubcová Ladislava";"ČSSD";1;66;1;"ČSSD";"ČSSD";1;0;0;1;254;173
+"2015.09";"Hanuščinová Ludmila";"ČSSD";2;62;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2015.09";"Radl Jiří";"ČSSD";3;61;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2015.09";"Kalousová Ivana";"ČSSD";4;57;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2015.09";"Lhotský Jaroslav";"ČSSD";5;65;1;"ČSSD";"BEZPP";0;0;0;1;NA;NA
+"2015.09";"Bach Petr";"ČSSD";6;8;0;"ČSSD";"BEZPP";0;0;0;0;NA;NA
+"2015.09";"Gubranová Kateřina";"SNK do zastup. obce Dasnice	";1;109;1;"NK";"BEZPP";0;0;0;0;NA;NA
+"2015.09";"Turnerová Gabriela";"SNK do zastup. obce Dasnice	";2;107;1;"NK";"BEZPP";0;0;0;0;NA;NA
+"2015.09";"Prokopová Petra";"SNK do zastup. obce Dasnice	";3;97;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2015.09";"Popovič Antonín";"SNK do zastup. obce Dasnice	";4;106;1;"NK";"BEZPP";0;0;0;0;NA;NA
+"2015.09";"Šaradin Petr";"SNK do zastup. obce Dasnice	";5;91;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2015.09";"Blažková Blažena";"SNK do zastup. obce Dasnice	";6;13;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2016.04";"Gubranová Kateřina";"SNK do zastup. obce Dasnice";1;85;1;"NK";"BEZPP";0;0;0;1;238;103
+"2016.04";"Turnerová Gabriela";"SNK do zastup. obce Dasnice";2;92;1;"NK";"BEZPP";1;0;0;1;NA;NA
+"2016.04";"Popovič Antonín";"SNK do zastup. obce Dasnice";3;88;1;"NK";"BEZPP";0;1;0;1;NA;NA
+"2016.04";"Prokopová Petra";"SNK do zastup. obce Dasnice";4;82;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2016.04";"Blažková Blažena";"SNK do zastup. obce Dasnice";5;85;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2016.04";"Šaradin Petr";"SNK do zastup. obce Dasnice";6;18;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Turnerová Gabriela";"Spokojené Dasnice";1;82;1;"NK";"BEZPP";1;0;0;1;231;91
+"2018";"Popovič Antonín";"Spokojené Dasnice";2;68;1;"NK";"BEZPP";0;1;0;1;NA;NA
+"2018";"Fídlerová Taťána";"Spokojené Dasnice";3;52;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2018";"Blažková Blažena";"Spokojené Dasnice";4;66;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2018";"Gubran Michal";"Spokojené Dasnice";5;62;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2018";"Feketeová Eva";"Spokojené Dasnice";6;61;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2018";"Vaněk Oldřich";"Spokojené Dasnice";7;57;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2018";"Prokopová Petra";"Spokojené Dasnice";8;26;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2018";"Krajský Jiří";"Spokojené Dasnice";9;21;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Turnerová Gabriela";"Spokojené Dasnice";1;50;1;"NK";"BEZPP";1;0;0;1;221;63
+"2022";"Popovič Antonín";"Spokojené Dasnice";2;48;1;"NK";"BEZPP";0;1;0;1;NA;NA
+"2022";"Feketeová Eva";"Spokojené Dasnice";3;42;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2022";"Vaněk Oldřich";"Spokojené Dasnice";4;50;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2022";"Fídlerová Taťána";"Spokojené Dasnice";5;25;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2022";"Gubran Michal";"Spokojené Dasnice";6;40;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2022";"Bílá Markéta";"Spokojené Dasnice";7;38;1;"NK";"BEZPP";0;0;0;1;NA;NA
+"2022";"Fischerová Lenka";"Spokojené Dasnice";8;26;0;"NK";"BEZPP";0;0;0;0;NA;NA
+"2022";"Popovič Lukáš";"Spokojené Dasnice";9;14;0;"NK";"BEZPP";0;0;0;0;NA;NA
