@@ -4,6 +4,7 @@
 municipalities <- c("Doubice_DC_cz",
                     "Dasnice_SO_cz",
                     "Bublava_SO_cz",
+                    "Hradce_CB_cz",
                     "Jilove_DC_cz",
                     "Roztoky_PZ_cz");
 

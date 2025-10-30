@@ -48,34 +48,9 @@
 #'
 #' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
 #' [Municipality website](https://oudoubice.cz/),
+#' [Dissertation thesis](https://www.researchgate.net/publication/323573647_Lokalni_modely_demokracie_v_malych_obcich_CR),
 #' [Acta Politologica article](https://www.researchgate.net/publication/323573475_Konfliktni_linie_v_malych_obcich)
 "Doubice_DC_cz"
-
-# --------------------------------------------------------------------------- #
-
-#' @title Municipal Election Data: Dasnice (SO, CZ)
-#'
-#' @description
-#' A dataset containing individual-level candidacy records from municipal
-#' elections in the municipality of Dasnice (district Sokolov, Czech republic).
-#'
-#' @details
-#' |**Dataset overview:** ||
-#' |---------------------------|--------|
-#' |Municipality:               | Dasnice |
-#' |District:                   | Sokolov |
-#' |Country:                    | Czech Republic |
-#' |Number of elections:        | 10 |
-#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2015.09, 2016.04, 2018, 2022 |
-#' |Number of candidacies (rows): | 81 |
-#' |Note:                         | [Municipality website](https://www.dasnice.eu/) |
-#'
-#' @inheritSection Doubice_DC_cz Description of variables
-#'
-#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
-#' [Municipality website](https://www.dasnice.eu/),
-#' [Dissertation thesis](https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en)
-"Dasnice_SO_cz"
 
 # --------------------------------------------------------------------------- #
 
@@ -105,6 +80,59 @@
 #' [Case study in a book chapter](https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996),
 #' [Article in NISPAcee Journal of Public Administration and Policy](https://doi.org/10.2478/nispa-2020-0002)
 "Bublava_SO_cz"
+
+# --------------------------------------------------------------------------- #
+
+#' @title Municipal Election Data: Dasnice (SO, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Dasnice (district Sokolov, Czech republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Dasnice |
+#' |District:                   | Sokolov |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 10 |
+#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2015.09, 2016.04, 2018, 2022 |
+#' |Number of candidacies (rows): | 81 |
+#' |Note:                         | [Municipality website](https://www.dasnice.eu/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
+#' [Municipality website](https://www.dasnice.eu/),
+#' [Dissertation thesis](https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en)
+"Dasnice_SO_cz"
+
+# --------------------------------------------------------------------------- #
+
+#' @title Municipal Election Data: Hradce (CB, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Hradce (district Ceske Budejovice, Czech
+#' republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Hradce |
+#' |District:                   | Ceske Budejovice |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 10 |
+#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2016, 2017, 2018, 2022 |
+#' |Number of candidacies (rows): | 103 |
+#' |Note:                         | [Municipality website](https://www.hradce.cz/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
+#' [Municipality website](https://www.hradce.cz/),
+#' [Dissertation thesis](https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en)
+"Hradce_CB_cz"
 
 # --------------------------------------------------------------------------- #
 
