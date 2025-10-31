@@ -8,16 +8,21 @@
 An object of class \code{data.frame} with 1079 rows and 14 columns.
 }
 \source{
-\href{https://www.volby.cz/index_en.htm}{Czech Statistical Office},
-\href{https://www.roztoky.cz/}{Municipality website},
-\href{https://www.researchgate.net/publication/323573707_Charakter_lokalni_politiky_v_suburbannim_politickem_prostoru}{Acta Politologica article}
+The dataset was compiled primarily from official election results published by
+the Czech Statistical Office. Additional contextual or verification information
+(such as post-election roles) was obtained from publicly available municipal
+records and interviews with local political representatives.
+\itemize{
+\item \href{https://www.volby.cz/index_en.htm}{Czech Statistical Office}
+\item \href{https://www.roztoky.cz/}{Municipality website}
+}
 }
 \usage{
 Roztoky_PZ_cz
 }
 \description{
 A dataset containing individual-level candidacy records from municipal
-elections in the municipality of Roztoky (district Praha-zapad, Czech republic).
+elections in the municipality of Roztoky (district Praha-zapad, Czech Republic).
 }
 \details{
 \tabular{ll}{
@@ -58,7 +63,24 @@ positions (mayor, deputy mayor, member of the executive body).
 
 The dataset also includes contextual election-level information, such as the
 number of eligible voters and ballots cast, which can be used to calculate
-voter turnout and related indicators.
+voter turnout and related indicators. These variables appear only once per
+election and constituency (they may be stored in a single candidate row for
+that election/constituency)
 }
 
+\examples{
+# Basic inspection
+str(Roztoky_PZ_cz)
+
+# Quick continuity diagram (basic and unformatted version)
+\donttest{plot_continuity(Roztoky_PZ_cz, elections = "2002-")}
+}
+\references{
+\itemize{
+\item Kubalek, M., & Bubenicek, V. (2012). Charakter lokalni politiky v suburbannim
+politickem prostoru (The Nature of Local Politics in Suburban Political Space).
+\emph{Acta Politologica}, 4(3), 284-305.
+[\href{https://www.researchgate.net/publication/323573707_Charakter_lokalni_politiky_v_suburbannim_politickem_prostoru}{Full text}]
+}
+}
 \keyword{datasets}

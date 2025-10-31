@@ -52,7 +52,7 @@
 #' The dataset was compiled primarily from official election results published by
 #' the Czech Statistical Office. Additional contextual or verification information
 #' (such as post-election roles) was obtained from publicly available municipal
-#' records and relevant academic works listed below.
+#' records and interviews with local political representatives.
 #'
 #' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
 #' - [Municipality website](https://oudoubice.cz/)
@@ -85,8 +85,8 @@
 #' # Basic inspection
 #' str(Doubice_DC_cz)
 #'
-#' # Quick continuity diagram
-#' \donttest{plot_continuity(Doubice_DC_cz)}
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(Doubice_DC_cz, elections = "2010-")}
 "Doubice_DC_cz"
 
 # --------------------------------------------------------------------------- #
@@ -115,6 +115,7 @@
 #' the Czech Statistical Office. Additional contextual or verification information
 #' (such as post-election roles) was obtained from publicly available municipal
 #' records.
+#' 
 #' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
 #' - [Municipality website](https://www.obecbublava.cz/)
 #'
@@ -137,7 +138,7 @@
 #' # Basic inspection
 #' str(Bublava_SO_cz)
 #'
-#' # Quick continuity diagram
+#' # Quick continuity diagram (basic and unformatted version)
 #' \donttest{plot_continuity(Bublava_SO_cz)}
 "Bublava_SO_cz"
 
@@ -162,9 +163,27 @@
 #'
 #' @inheritSection Doubice_DC_cz Description of variables
 #'
-#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
-#' [Municipality website](https://www.dasnice.eu/),
-#' [Dissertation thesis](https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en)
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records.
+#'
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.dasnice.eu/)
+#'
+#' @references
+#' - Krpalkova, S. (2024). *Permanentni opakovani komunalnich voleb: zablokovane obce?*
+#'   (Permanent repetition of municipal election: blocked municipalities?).
+#'   Dissertation thesis. Charles University.
+#'   [[Full text](https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Dasnice_SO_cz)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(Dasnice_SO_cz, elections = "2010-")}
 "Dasnice_SO_cz"
 
 # --------------------------------------------------------------------------- #
@@ -189,9 +208,27 @@
 #'
 #' @inheritSection Doubice_DC_cz Description of variables
 #'
-#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
-#' [Municipality website](https://www.hradce.cz/),
-#' [Dissertation thesis](https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en)
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records.
+#' 
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.hradce.cz/)
+#'
+#' @references
+#' - Krpalkova, S. (2024). *Permanentni opakovani komunalnich voleb: zablokovane obce?*
+#'   (Permanent repetition of municipal election: blocked municipalities?).
+#'   Dissertation thesis. Charles University.
+#'   [[Full text](https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Hradce_CB_cz)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(Hradce_CB_cz, elections = "2006-")}
 "Hradce_CB_cz"
 
 # --------------------------------------------------------------------------- #
@@ -215,9 +252,24 @@
 #'
 #' @inheritSection Doubice_DC_cz Description of variables
 #'
-#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
-#' [Municipality website](https://www.mujilove.cz/),
-#' [Student thesis](https://theses.cz/id/e46aac/?lang=en)
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records and diploma thesis listed below.
+#'
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.mujilove.cz/)
+#' - Pohlreich, D. (2023). *Vyvoj mistni samospravy ve meste Jilove*
+#'   (The Development of Local Government in the Municipality of Jilove).
+#'   Diploma thesis. [[Full text](https://theses.cz/id/e46aac/?lang=en)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Jilove_DC_cz)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(Jilove_DC_cz, elections = "1994-2010")}
 "Jilove_DC_cz"
 
 # --------------------------------------------------------------------------- #
@@ -241,9 +293,27 @@
 #'
 #' @inheritSection Doubice_DC_cz Description of variables
 #'
-#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
-#' [Municipality website](https://www.roztoky.cz/),
-#' [Acta Politologica article](https://www.researchgate.net/publication/323573707_Charakter_lokalni_politiky_v_suburbannim_politickem_prostoru)
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records and interviews with local political representatives.
+#'
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.roztoky.cz/)
+#'
+#' @references
+#' - Kubalek, M., & Bubenicek, V. (2012). Charakter lokalni politiky v suburbannim
+#'   politickem prostoru (The Nature of Local Politics in Suburban Political Space).
+#'   *Acta Politologica*, 4(3), 284-305.
+#'   [[Full text](https://www.researchgate.net/publication/323573707_Charakter_lokalni_politiky_v_suburbannim_politickem_prostoru)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Roztoky_PZ_cz)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(Roztoky_PZ_cz, elections = "2002-")}
 "Roztoky_PZ_cz"
 
 # --------------------------------------------------------------------------- #

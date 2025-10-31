@@ -11,7 +11,7 @@ An object of class \code{data.frame} with 151 rows and 14 columns.
 The dataset was compiled primarily from official election results published by
 the Czech Statistical Office. Additional contextual or verification information
 (such as post-election roles) was obtained from publicly available municipal
-records and relevant academic works listed below.
+records and interviews with local political representatives.
 \itemize{
 \item \href{https://www.volby.cz/index_en.htm}{Czech Statistical Office}
 \item \href{https://oudoubice.cz/}{Municipality website}
@@ -76,8 +76,8 @@ that election/constituency)
 # Basic inspection
 str(Doubice_DC_cz)
 
-# Quick continuity diagram
-\donttest{plot_continuity(Doubice_DC_cz)}
+# Quick continuity diagram (basic and unformatted version)
+\donttest{plot_continuity(Doubice_DC_cz, elections = "2010-")}
 }
 \references{
 \itemize{

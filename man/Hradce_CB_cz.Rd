@@ -8,9 +8,14 @@
 An object of class \code{data.frame} with 103 rows and 14 columns.
 }
 \source{
-\href{https://www.volby.cz/index_en.htm}{Czech Statistical Office},
-\href{https://www.hradce.cz/}{Municipality website},
-\href{https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en}{Dissertation thesis}
+The dataset was compiled primarily from official election results published by
+the Czech Statistical Office. Additional contextual or verification information
+(such as post-election roles) was obtained from publicly available municipal
+records.
+\itemize{
+\item \href{https://www.volby.cz/index_en.htm}{Czech Statistical Office}
+\item \href{https://www.hradce.cz/}{Municipality website}
+}
 }
 \usage{
 Hradce_CB_cz
@@ -18,7 +23,7 @@ Hradce_CB_cz
 \description{
 A dataset containing individual-level candidacy records from municipal
 elections in the municipality of Hradce (district Ceske Budejovice, Czech
-republic).
+Republic).
 }
 \details{
 \tabular{ll}{
@@ -59,7 +64,24 @@ positions (mayor, deputy mayor, member of the executive body).
 
 The dataset also includes contextual election-level information, such as the
 number of eligible voters and ballots cast, which can be used to calculate
-voter turnout and related indicators.
+voter turnout and related indicators. These variables appear only once per
+election and constituency (they may be stored in a single candidate row for
+that election/constituency)
 }
 
+\examples{
+# Basic inspection
+str(Hradce_CB_cz)
+
+# Quick continuity diagram (basic and unformatted version)
+\donttest{plot_continuity(Hradce_CB_cz, elections = "2006-")}
+}
+\references{
+\itemize{
+\item Krpalkova, S. (2024). \emph{Permanentni opakovani komunalnich voleb: zablokovane obce?}
+(Permanent repetition of municipal election: blocked municipalities?).
+Dissertation thesis. Charles University.
+[\href{https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en}{Full text}]
+}
+}
 \keyword{datasets}

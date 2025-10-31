@@ -72,7 +72,7 @@ that election/constituency)
 # Basic inspection
 str(Bublava_SO_cz)
 
-# Quick continuity diagram
+# Quick continuity diagram (basic and unformatted version)
 \donttest{plot_continuity(Bublava_SO_cz)}
 }
 \references{

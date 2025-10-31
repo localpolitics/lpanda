@@ -8,16 +8,24 @@
 An object of class \code{data.frame} with 745 rows and 14 columns.
 }
 \source{
-\href{https://www.volby.cz/index_en.htm}{Czech Statistical Office},
-\href{https://www.mujilove.cz/}{Municipality website},
-\href{https://theses.cz/id/e46aac/?lang=en}{Student thesis}
+The dataset was compiled primarily from official election results published by
+the Czech Statistical Office. Additional contextual or verification information
+(such as post-election roles) was obtained from publicly available municipal
+records and diploma thesis listed below.
+\itemize{
+\item \href{https://www.volby.cz/index_en.htm}{Czech Statistical Office}
+\item \href{https://www.mujilove.cz/}{Municipality website}
+\item Pohlreich, D. (2023). \emph{Vyvoj mistni samospravy ve meste Jilove}
+(The Development of Local Government in the Municipality of Jilove).
+Diploma thesis. [\href{https://theses.cz/id/e46aac/?lang=en}{Full text}]
+}
 }
 \usage{
 Jilove_DC_cz
 }
 \description{
 A dataset containing individual-level candidacy records from municipal
-elections in the municipality of Jilove (district Decin, Czech republic).
+elections in the municipality of Jilove (district Decin, Czech Republic).
 }
 \details{
 \tabular{ll}{
@@ -58,7 +66,16 @@ positions (mayor, deputy mayor, member of the executive body).
 
 The dataset also includes contextual election-level information, such as the
 number of eligible voters and ballots cast, which can be used to calculate
-voter turnout and related indicators.
+voter turnout and related indicators. These variables appear only once per
+election and constituency (they may be stored in a single candidate row for
+that election/constituency)
 }
 
+\examples{
+# Basic inspection
+str(Jilove_DC_cz)
+
+# Quick continuity diagram (basic and unformatted version)
+\donttest{plot_continuity(Jilove_DC_cz, elections = "1994-2010")}
+}
 \keyword{datasets}
