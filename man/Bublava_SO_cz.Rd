@@ -73,7 +73,7 @@ that election/constituency)
 str(Bublava_SO_cz)
 
 # Quick continuity diagram (basic and unformatted version)
-\donttest{plot_continuity(Bublava_SO_cz)}
+\donttest{plot_continuity(Bublava_SO_cz, elections = "2006-")}
 }
 \references{
 \itemize{
