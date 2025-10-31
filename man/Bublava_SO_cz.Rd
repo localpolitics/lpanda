@@ -8,19 +8,21 @@
 An object of class \code{data.frame} with 193 rows and 14 columns.
 }
 \source{
-\href{https://www.volby.cz/index_en.htm}{Czech Statistical Office},
-\href{https://www.obecbublava.cz/}{Municipality website},
-\href{https://dspace.cuni.cz/handle/20.500.11956/177784?locale-attribute=en}{Dissertation thesis},
-\href{https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en}{Student thesis},
-\href{https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996}{Case study in a book chapter},
-\href{https://doi.org/10.2478/nispa-2020-0002}{Article in NISPAcee Journal of Public Administration and Policy}
+The dataset was compiled primarily from official election results published by
+the Czech Statistical Office. Additional contextual or verification information
+(such as post-election roles) was obtained from publicly available municipal
+records.
+\itemize{
+\item \href{https://www.volby.cz/index_en.htm}{Czech Statistical Office}
+\item \href{https://www.obecbublava.cz/}{Municipality website}
+}
 }
 \usage{
 Bublava_SO_cz
 }
 \description{
 A dataset containing individual-level candidacy records from municipal
-elections in the municipality of Bublava (district Sokolov, Czech republic).
+elections in the municipality of Bublava (district Sokolov, Czech Republic).
 }
 \details{
 \tabular{ll}{
@@ -61,7 +63,33 @@ positions (mayor, deputy mayor, member of the executive body).
 
 The dataset also includes contextual election-level information, such as the
 number of eligible voters and ballots cast, which can be used to calculate
-voter turnout and related indicators.
+voter turnout and related indicators. These variables appear only once per
+election and constituency (they may be stored in a single candidate row for
+that election/constituency)
 }
 
+\examples{
+# Basic inspection
+str(Bublava_SO_cz)
+
+# Quick continuity diagram
+\donttest{plot_continuity(Bublava_SO_cz)}
+}
+\references{
+\itemize{
+\item Hornek, J. (2022). \emph{Zhroucene obce v Ceske republice} (Failed Municipalities in the Czech Republic).
+Dissertation thesis. Charles University.
+[\href{https://dspace.cuni.cz/handle/20.500.11956/177784?locale-attribute=en}{Full text}]
+\item Hornek, J., & Juptner, P. (2020). Endangered Municipalities? Case Study of Three Small
+and Critically Indebted Czech Municipalities.
+\emph{NISPAcee Journal of Public Administration and Policy}, 13(1), 35-59.
+[\href{https://doi.org/10.2478/nispa-2020-0002}{Full text}]
+\item Hornek, J. (2016). \emph{Politicke dopady zadluzovani malych obci v Ceske republice}
+(Political Impacts of Indebtedness of Small Municipalities in the Czech Republic)
+[\href{https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996}{Publisher link}]
+\item Hornek, J. (2014). \emph{Politicke dopady zadluzovani malych obci v CR}
+(Financing of Small Municipalities in the Czech Republic and its Political Impact).
+Master thesis. [\href{https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en}{Full text}]
+}
+}
 \keyword{datasets}

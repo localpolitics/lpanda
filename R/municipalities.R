@@ -110,12 +110,35 @@
 #'
 #' @inheritSection Doubice_DC_cz Description of variables
 #'
-#' @source [Czech Statistical Office](https://www.volby.cz/index_en.htm),
-#' [Municipality website](https://www.obecbublava.cz/),
-#' [Dissertation thesis](https://dspace.cuni.cz/handle/20.500.11956/177784?locale-attribute=en),
-#' [Student thesis](https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en),
-#' [Case study in a book chapter](https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996),
-#' [Article in NISPAcee Journal of Public Administration and Policy](https://doi.org/10.2478/nispa-2020-0002)
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records.
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.obecbublava.cz/)
+#'
+#' @references
+#' - Hornek, J. (2022). *Zhroucene obce v Ceske republice* (Failed Municipalities in the Czech Republic).
+#'   Dissertation thesis. Charles University.
+#'   [[Full text](https://dspace.cuni.cz/handle/20.500.11956/177784?locale-attribute=en)]
+#' - Hornek, J., & Juptner, P. (2020). Endangered Municipalities? Case Study of Three Small
+#'   and Critically Indebted Czech Municipalities.
+#'   *NISPAcee Journal of Public Administration and Policy*, 13(1), 35-59.
+#'   [[Full text](https://doi.org/10.2478/nispa-2020-0002)]
+#' - Hornek, J. (2016). *Politicke dopady zadluzovani malych obci v Ceske republice*
+#'   (Political Impacts of Indebtedness of Small Municipalities in the Czech Republic)
+#'   [[Publisher link](https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996)]
+#' - Hornek, J. (2014). *Politicke dopady zadluzovani malych obci v CR*
+#'   (Financing of Small Municipalities in the Czech Republic and its Political Impact).
+#'   Master thesis. [[Full text](https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Bublava_SO_cz)
+#'
+#' # Quick continuity diagram
+#' \donttest{plot_continuity(Bublava_SO_cz)}
 "Bublava_SO_cz"
 
 # --------------------------------------------------------------------------- #
