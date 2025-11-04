@@ -12,6 +12,13 @@
 #' }
 #'
 #' @source Fictitious data
+#'
+#' @examples
+#' # Basic inspection
+#' str(sample_data)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(sample_data)}
 "sample_data"
 
 # --------------------------------------------------------------------------- #
@@ -24,6 +31,13 @@
 #'
 #' @format A data frame with 18 rows and 5 variables (same structure as \code{\link{sample_data}}).
 #' @inherit sample_data source
+#'
+#' @examples
+#' # Basic inspection
+#' str(sample_binary_values)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(sample_binary_values)}
 "sample_binary_values"
 
 # --------------------------------------------------------------------------- #
@@ -36,6 +50,13 @@
 #'
 #' @format A data frame with 18 rows and 5 variables (same structure as \code{\link{sample_data}}).
 #' @inherit sample_data source
+#'
+#' @examples
+#' # Basic inspection
+#' str(sample_different_varnames)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(sample_different_varnames)}
 "sample_different_varnames"
 
 # --------------------------------------------------------------------------- #
@@ -50,6 +71,13 @@
 #'
 #' @format A data frame with 15 rows and 5 variables (same structure as \code{\link{sample_data}}).
 #' @inherit sample_data source
+#'
+#' @examples
+#' # Basic inspection
+#' str(sample_no_switching)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(sample_no_switching)}
 "sample_no_switching"
 
 # --------------------------------------------------------------------------- #
@@ -63,6 +91,13 @@
 #'
 #' @format A data frame with 15 rows and 5 variables (same structure as \code{\link{sample_data}}).
 #' @inherit sample_data source
+#'
+#' @examples
+#' # Basic inspection
+#' str(sample_no_continuity)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(sample_no_continuity)}
 "sample_no_continuity"
 
 # --------------------------------------------------------------------------- #
@@ -75,4 +110,11 @@
 #'
 #' @format A data frame with 9 rows and 5 variables (same structure as \code{\link{sample_data}}).
 #' @inherit sample_data source
+#'
+#' @examples
+#' # Basic inspection
+#' str(sample_no_pluralism)
+#'
+#' # Quick continuity diagram (basic and unformatted version)
+#' \donttest{plot_continuity(sample_no_pluralism)}
 "sample_no_pluralism"
