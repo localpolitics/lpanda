@@ -18,4 +18,11 @@ A variant of \code{\link{sample_data}} containing binary values (0/1) instead of
 TRUE/FALSE values. This is useful for testing functions that must correctly
 interpret both logical and numeric binary formats.
 }
+\examples{
+# Basic inspection
+str(sample_binary_values)
+
+# Quick continuity diagram (basic and unformatted version)
+\donttest{plot_continuity(sample_binary_values)}
+}
 \keyword{datasets}

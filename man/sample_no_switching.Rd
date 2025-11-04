@@ -20,4 +20,11 @@ they never switch between candidate list clusters, which makes the dataset
 useful for testing continuity logic under stable group membership (verifying
 that no cross-group transitions occur).
 }
+\examples{
+# Basic inspection
+str(sample_no_switching)
+
+# Quick continuity diagram (basic and unformatted version)
+\donttest{plot_continuity(sample_no_switching)}
+}
 \keyword{datasets}

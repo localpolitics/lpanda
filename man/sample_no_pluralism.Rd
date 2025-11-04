@@ -18,4 +18,11 @@ A variant of \code{\link{sample_data}} in which only one candidate list is
 running in each election. This removes party pluralism from the party system,
 making the dataset useful for testing functions under non-competitive conditions.
 }
+\examples{
+# Basic inspection
+str(sample_no_pluralism)
+
+# Quick continuity diagram (basic and unformatted version)
+\donttest{plot_continuity(sample_no_pluralism)}
+}
 \keyword{datasets}

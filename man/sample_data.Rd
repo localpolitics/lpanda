@@ -23,4 +23,11 @@ sample_data
 \description{
 Basic fictitious dataset simulating election results.
 }
+\examples{
+# Basic inspection
+str(sample_data)
+
+# Quick continuity diagram (basic and unformatted version)
+\donttest{plot_continuity(sample_data)}
+}
 \keyword{datasets}

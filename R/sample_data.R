@@ -56,7 +56,12 @@
 #' str(sample_different_varnames)
 #'
 #' # Quick continuity diagram (basic and unformatted version)
-#' \donttest{plot_continuity(sample_different_varnames)}
+#' \donttest{net <- prepare_network_data(sample_different_varnames,
+#'                                       input_variable_map = list(list_name = "party",
+#'                                                                 elected = "seat"),
+#'                                       verbose = FALSE,
+#'                                       skip_groups = TRUE)
+#' plot_continuity(net)}
 "sample_different_varnames"
 
 # --------------------------------------------------------------------------- #

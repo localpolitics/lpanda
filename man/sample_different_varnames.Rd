@@ -18,4 +18,16 @@ A variant of \code{\link{sample_data}} in which some variables have different
 names (\code{list_name} becomes \code{party} and \code{elected} becomes
 \code{seat}). This is useful for testing robustness of input handling.
 }
+\examples{
+# Basic inspection
+str(sample_different_varnames)
+
+# Quick continuity diagram (basic and unformatted version)
+\donttest{net <- prepare_network_data(sample_different_varnames,
+                                      input_variable_map = list(list_name = "party",
+                                                                elected = "seat"),
+                                      verbose = FALSE,
+                                      skip_groups = TRUE)
+plot_continuity(net)}
+}
 \keyword{datasets}

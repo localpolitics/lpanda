@@ -19,4 +19,11 @@ than one election. This breaks the continuity between elections, making the
 dataset useful for testing whether network-building functions correctly handle
 cases with no longitudinal links across candidate lists.
 }
+\examples{
+# Basic inspection
+str(sample_no_continuity)
+
+# Quick continuity diagram (basic and unformatted version)
+\donttest{plot_continuity(sample_no_continuity)}
+}
 \keyword{datasets}
