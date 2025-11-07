@@ -200,6 +200,13 @@ choice (for example, where voters support a prominent individual rather than
 the whole candidate list). In the case of a limited number of preferential votes,
 such an interpretation may be debatable and should therefore be used with caution.
 }
+
+\subsection{Text encoding}{
+
+Text encoding is controlled by a global option \code{lpanda.text_encoding}
+with values "auto"|"utf8"|"ascii" (default "auto"). If needed, \code{text_encoding}
+can be passed via \code{...}, e.g. \code{plot_continuity(netdata, text_encoding="ascii")}.
+}
 }
 \note{
 The \code{mark = "cores"} option is currently experimental, as the conversion

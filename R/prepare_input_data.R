@@ -198,6 +198,18 @@ prepare_input_data <- function(df, input_variable_map = list()) {
       df[[sloupec]] <- gsub("\u00A0", " ", as.character(df[[sloupec]]), fixed = TRUE);
       df[[sloupec]] <- as.character(df[[sloupec]]);
       
+      if (!isTRUE(l10n_info()[["UTF-8"]])) {
+        puvodni_sloupec <- df[[sloupec]];
+        sloupec_ASCII   <- iconv(puvodni_sloupec,
+                                 from = "", to = "ASCII//TRANSLIT",
+                                 sub = "?");
+        if (!identical(puvodni_sloupec, sloupec_ASCII)) {
+          df[[sloupec]] <- sloupec_ASCII
+          warning("Non-UTF-8 locale detected; column '", sloupec,
+                  "' was converted to ASCII (unknown characters replaced by '?').")
+        } # konec IF pro nahrazeni sloupce sloupcem prevedenym do ASCII
+      } # konec IF pro zjisteni, jestli locale je schopne pouzivat diakritiku
+      
       if (sloupec == 'candidate') {
         
         election_candidate <- paste(df$elections, df$candidate, sep = "_");

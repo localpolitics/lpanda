@@ -1,6 +1,6 @@
 Package: lpanda
 Title: Local Political Actor Network Diachronic Analysis Tools
-Version: 0.1.1.9000
+Version: 0.1.1.9001
 Authors@R: c(
     person("Vaclav", "Bubenicek", email = "bubenicek@pef.czu.cz",
     role = c("aut", "cre", "cph"),
@@ -26,7 +26,8 @@ Imports:
     RColorBrewer,
     scales
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    withr
 Config/testthat/edition: 3
 URL: https://localpolitics.github.io/lpanda/, https://CRAN.R-project.org/package=lpanda, https://github.com/localpolitics/lpanda
 BugReports: https://github.com/localpolitics/lpanda/issues

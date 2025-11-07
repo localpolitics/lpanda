@@ -20,6 +20,20 @@
 * Added pkgdown website: <https://localpolitics.github.io/lpanda/>.
 * Updated documentation for municipalities and sample datasets.
 
+## Bug fixes
+* Fixed crashes and encoding issues on non-UTF-8 systems caused by data
+  containing diacritics.
+  - Added automatic ASCII fallback for non-UTF-8 systems and locales.
+  - `plot_continuity()` now detects the UTF-8 capability of the current
+    graphics device. It automatically switches to ASCII mode when running in
+    non-interactive or CI environments, or when the device cannot render UTF-8.
+  - Added global options:
+    - `lpanda.text_encoding` — `"auto"` (default) | `"utf8"` | `"ascii"`
+    - `lpanda.plot_family` — default `"sans"`
+    - `lpanda.force_ascii` — default `FALSE`
+  - Text encoding can also be specified as a `text_encoding` argument via `...`
+    in plotting functions.
+
 # lpanda 0.1.1 (2025-08-26)
 
 ## Bug fixes

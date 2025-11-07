@@ -165,6 +165,12 @@
 #' choice (for example, where voters support a prominent individual rather than
 #' the whole candidate list). In the case of a limited number of preferential votes,
 #' such an interpretation may be debatable and should therefore be used with caution.
+#' 
+#' 
+#' ## Text encoding
+#' Text encoding is controlled by a global option \code{lpanda.text_encoding}
+#' with values "auto"|"utf8"|"ascii" (default "auto"). If needed, \code{text_encoding}
+#' can be passed via \code{...}, e.g. \code{plot_continuity(netdata, text_encoding="ascii")}.
 #'
 #' @note
 #' The `mark = "cores"` option is currently experimental, as the conversion
@@ -272,6 +278,7 @@ plot_continuity <- function(netdata,
   allowed_args <- c("cores",
                     "axis_distances",
                     "margins",
+                    "text_encoding",
                     "do_not_print_to_console");
   
   extra_args <- setdiff(names(args), allowed_args);
@@ -367,7 +374,20 @@ plot_continuity <- function(netdata,
   
   # --- #
   
+  text_encoding <- if (!is.null(args$text_encoding)) {
+    match.arg(args$text_encoding, c("auto","utf8","ascii"))
+  } else {
+    getOption("lpanda.text_encoding", "auto")
+  }; # konec IF-ELSE pro nastaveni text_encoding
+  
+  args$text_encoding <- NULL;
+  
+  use_ascii <- should_use_ascii(text_encoding);
+  
+  # --- #
+  
   plot_title <- plot_title;
+  if (!is.null(plot_title) && use_ascii) plot_title <- convert_utf8_to_ascii(plot_title);
   
   # --- #
   
@@ -666,6 +686,8 @@ plot_continuity <- function(netdata,
                                    round(V(g)$coef_var * 100,0), "%)", sep = "")
   } # konec IF pro pridani personalizace
   
+  if (use_ascii) upravene.nazvy.listin <- convert_utf8_to_ascii(upravene.nazvy.listin);
+  
   
   # ######################################################################### #
   # ------------------------------------------------------------------------- #
@@ -680,6 +702,10 @@ plot_continuity <- function(netdata,
   
   old_par <- graphics::par(no.readonly = TRUE);
   on.exit(graphics::par(old_par), add = TRUE);
+  
+  # ------------------------------------------------------------------------- #
+  
+  graphics::par(family = getOption("lpanda.plot_family", "sans"));
   
   # ------------------------------------------------------------------------- #
   
@@ -817,10 +843,12 @@ plot_continuity <- function(netdata,
          vertex.label = upravene.nazvy.listin,
          vertex.label.color = "black",
          vertex.label.cex = sizes$height * ifelse(show_legend, 0.045, 0.035) * ifelse(separate_groups, 1, 1.5),
+         vertex.label.family = getOption("lpanda.plot_family", "sans"),
          col = barvy.clenu.skupiny,
          edge.color = ifelse(igraph::crossing(skupiny, g), "black", "black"),
          edge.label = ifelse(igraph::E(g)$weight == 1, NA, paste("\n", igraph::E(g)$weight, sep = "")), # zobrazi se cislo jen, kdyz > 1
          edge.label.color = "black",
+         edge.label.family = getOption("lpanda.plot_family", "sans"),
          edge.lty = ifelse(igraph::crossing(skupiny, g), 2, 1),
          edge.label.cex = sizes$height * ifelse(show_legend, 0.05, 0.04) * ifelse(separate_groups, 1, 1.5),
          edge.width = log(igraph::E(g)$weight)+1, # neni idealni, ale...
@@ -856,10 +884,12 @@ plot_continuity <- function(netdata,
          vertex.label = upravene.nazvy.listin,
          vertex.label.color = "black",
          vertex.label.cex = 0.035 * sizes$height * ifelse(separate_groups, 0.8, 1.5),
+         vertex.label.family = getOption("lpanda.plot_family", "sans"),
          vertex.color = "white",
          edge.label = ifelse(igraph::E(g)$weight == 1, NA, paste0("\n", igraph::E(g)$weight)),
          edge.label.color = "black",
          edge.label.cex = 0.035 * sizes$height * ifelse(separate_groups, 0.8, 1.5),
+         edge.label.family = getOption("lpanda.plot_family", "sans"),
          edge.width = log(igraph::E(g)$weight)+1, # neni idealni, ale...
          edge.arrow.size = 0.2,
          xlim = range(koordinaty[,"x"]) + c(-0.2, 0.2),
@@ -1000,6 +1030,8 @@ plot_continuity <- function(netdata,
       gsub(" \\(\\d+%\\)", "",
            netdata$parties$node_attr$group_label[sort(unique(nodes$party))][poradi.skupin]);
     } # konec IF pro vyber textu v legende podle typu skupin
+    
+    legend_labels <- convert_utf8_to_ascii(legend_labels);
     
     max_label_width <- max(graphics::strwidth(legend_labels, units = "figure", cex = 1));
     legend_cex <- min(1, 0.9 / max_label_width);
