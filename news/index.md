@@ -1,0 +1,81 @@
+# Changelog
+
+## lpanda (development version)
+
+### Changes
+
+- Renamed sample datasets used for testing:
+  - `sample_different_varnames` (formerly `sample_diff_varnames`).
+  - `sample_no_switching` (formerly `sample_no_crossing`).
+
+### New data
+
+- Added municipalities:
+  - `Bublava_SO_cz`
+  - `Dasnice_SO_cz`
+  - `Hradce_CB_cz`
+  - `Roztoky_PZ_cz`
+- New sample dataset for testing:
+  - `sample_no_pluralism` - variant of `sample_data` with only one
+    candidate list per election.
+
+### Documentation
+
+- [`help("lpanda")`](https://localpolitics.github.io/lpanda/reference/lpanda-package.md)
+  /
+  [`?lpanda`](https://localpolitics.github.io/lpanda/reference/lpanda-package.md)
+  now display basic package information.
+- Added pkgdown website: <https://localpolitics.github.io/lpanda/>.
+- Updated documentation for municipalities and sample datasets.
+
+### Bug fixes
+
+- Fixed crashes and encoding issues on non-UTF-8 systems caused by data
+  containing diacritics.
+  - Added automatic ASCII fallback for non-UTF-8 systems and locales.
+  - [`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)
+    now detects the UTF-8 capability of the current graphics device. It
+    automatically switches to ASCII mode when running in non-interactive
+    or CI environments, or when the device cannot render UTF-8.
+  - Added global options:
+    - `lpanda.text_encoding` — `"auto"` (default) \| `"utf8"` \|
+      `"ascii"`
+    - `lpanda.plot_family` — default `"sans"`
+    - `lpanda.force_ascii` — default `FALSE`
+  - Text encoding can also be specified as a `text_encoding` argument
+    via `...` in plotting functions.
+
+## lpanda 0.1.1 (2025-08-26)
+
+CRAN release: 2025-09-01
+
+### Bug fixes
+
+- [`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)
+  now always restores graphical parameters (even if an error occurs).
+
+## lpanda 0.1.0 (2025-08-18)
+
+- Initial CRAN submission.
+
+### New features
+
+- [`prepare_network_data()`](https://localpolitics.github.io/lpanda/reference/prepare_network_data.md) -
+  creates network edgelists and node attributes for candidates, lists,
+  continuity, parties, cores and elections.
+- [`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md) -
+  visualizes the continuity of candidate lists across elections as a
+  time-based diagram using igraph package.
+
+### New data
+
+- Municipalities:
+  - `Doubice_DC_cz`
+  - `Jilove_DC_cz`
+- Example data:
+  - `sample_data`
+- Variants for tests:
+  - `sample_diff_varnames`
+  - `sample_binary_values`
+  - `sample_no_continuity`
+  - `sample_no_crossing`

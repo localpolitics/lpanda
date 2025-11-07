@@ -11,7 +11,7 @@ candidate transitions across elections."><meta property="og:image" content="http
 
     <a class="navbar-brand me-2" href="../index.html">lpanda</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9001</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -283,6 +283,15 @@ the whole candidate list). In the case of a limited number of preferential votes
 such an interpretation may be debatable and should therefore be used with caution.</p>
 </div>
 
+<div class="section">
+<h3 id="text-encoding">Text encoding<a class="anchor" aria-label="anchor" href="#text-encoding"></a></h3>
+
+
+<p>Text encoding is controlled by a global option <code>lpanda.text_encoding</code>
+with values "auto"|"utf8"|"ascii" (default "auto"). If needed, <code>text_encoding</code>
+can be passed via <code>...</code>, e.g. <code>plot_continuity(netdata, text_encoding="ascii")</code>.</p>
+</div>
+
     </div>
     <div class="section level2">
     <h2 id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a></h2>
@@ -353,7 +362,7 @@ change in future versions. Use with caution.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer></div>

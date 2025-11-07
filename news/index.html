@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">lpanda</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9001</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,6 +63,26 @@
 <li>Added pkgdown website: <a href="https://localpolitics.github.io/lpanda/" class="uri">https://localpolitics.github.io/lpanda/</a>.</li>
 <li>Updated documentation for municipalities and sample datasets.</li>
 </ul></div>
+<div class="section level3">
+<h3 id="bug-fixes-development-version">Bug fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-development-version"></a></h3>
+<ul><li>Fixed crashes and encoding issues on non-UTF-8 systems caused by data containing diacritics.
+<ul><li>Added automatic ASCII fallback for non-UTF-8 systems and locales.</li>
+<li>
+<code><a href="../reference/plot_continuity.html">plot_continuity()</a></code> now detects the UTF-8 capability of the current graphics device. It automatically switches to ASCII mode when running in non-interactive or CI environments, or when the device cannot render UTF-8.</li>
+<li>Added global options:
+<ul><li>
+<code>lpanda.text_encoding</code> — <code>"auto"</code> (default) | <code>"utf8"</code> | <code>"ascii"</code>
+</li>
+<li>
+<code>lpanda.plot_family</code> — default <code>"sans"</code>
+</li>
+<li>
+<code>lpanda.force_ascii</code> — default <code>FALSE</code>
+</li>
+</ul></li>
+<li>Text encoding can also be specified as a <code>text_encoding</code> argument via <code>...</code> in plotting functions.</li>
+</ul></li>
+</ul></div>
 </div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.1.1" id="lpanda-011-2025-08-26">lpanda 0.1.1 (2025-08-26)<a class="anchor" aria-label="anchor" href="#lpanda-011-2025-08-26"></a></h2><p class="text-muted">CRAN release: 2025-09-01</p>
@@ -108,7 +128,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer></div>
