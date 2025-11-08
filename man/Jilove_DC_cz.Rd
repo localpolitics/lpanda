@@ -11,13 +11,14 @@ An object of class \code{data.frame} with 745 rows and 14 columns.
 The dataset was compiled primarily from official election results published by
 the Czech Statistical Office. Additional contextual or verification information
 (such as post-election roles) was obtained from publicly available municipal
-records and diploma thesis listed below.
+records and diploma thesis cited below.
 \itemize{
 \item \href{https://www.volby.cz/index_en.htm}{Czech Statistical Office}
 \item \href{https://www.mujilove.cz/}{Municipality website}
 \item Pohlreich, D. (2023). \emph{Vyvoj mistni samospravy ve meste Jilove}
 (The Development of Local Government in the Municipality of Jilove).
-Diploma thesis. [\href{https://theses.cz/id/e46aac/?lang=en}{Full text}]
+Diploma thesis. Czech University of Life Sciences Prague.
+[\href{https://theses.cz/id/e46aac/?lang=en}{Full text}]
 }
 }
 \usage{
@@ -59,7 +60,7 @@ elections in the municipality of Jilove (district Decin, Czech Republic).
 }
 
 
-Each record describes one candidate’s run for office, including their candidate
+Each record describes one candidate's run for office, including their candidate
 list affiliation, position on the list, nominating party, political affiliation,
 number of preferential votes, and whether they were elected or held specific
 positions (mayor, deputy mayor, member of the executive body).
@@ -75,7 +76,7 @@ that election/constituency)
 # Basic inspection
 str(Jilove_DC_cz)
 
-# Quick continuity diagram (basic and unformatted version)
+# Example of a basic continuity diagram (unformatted version)
 \donttest{plot_continuity(Jilove_DC_cz, elections = "1994-2010")}
 }
 \keyword{datasets}

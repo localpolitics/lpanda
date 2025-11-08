@@ -37,7 +37,7 @@
 #' |elig_voters|Number of eligible voters (numeric)|
 #' |ballots_cast|Number of ballots cast (numeric)|
 #'
-#' Each record describes one candidate’s run for office, including their candidate
+#' Each record describes one candidate's run for office, including their candidate
 #' list affiliation, position on the list, nominating party, political affiliation,
 #' number of preferential votes, and whether they were elected or held specific
 #' positions (mayor, deputy mayor, member of the executive body).
@@ -75,17 +75,19 @@
 #' - Cmejrek, J. et al. (2009). *Participace obcanu na verejnem zivote venkovskych obci CR*
 #'   (Citizens' Participation in the Public Life of Rural Municipalities in the Czech Republic).
 #'   Prague: Kernberg Publishing.
+#'   [[ResearchGate](https://www.researchgate.net/publication/323579376_Participace_obcanu_na_verejnem_zivote_venkovskych_obci_CR)]
 #' - Bubenicek, V., Copik, J., Hajny, P., Kopriva, R., & Neumanova, T. (Eds.) (2005).
 #'   *Obce jako akteri politickeho procesu: komunitni studie regionalnich politickych systemu*
 #'   *a problematika metodiky jejich zpracovani* (Municipalities as Actors of the Political
 #'   Process: Case Studies of Regional Political Systems and Methodology of Their Elaboration).
 #'   Prague: FEM CZU Prague.
+#'   [[ResearchGate](https://www.researchgate.net/publication/40337386_Obce_jako_akteri_politickeho_procesu_Komunitni_studie_regionalnich_politickych_systemu_a_problematika_metodiky_jejich_zpracovani)]
 #'
 #' @examples
 #' # Basic inspection
 #' str(Doubice_DC_cz)
 #'
-#' # Quick continuity diagram (basic and unformatted version)
+#' # Example of a basic continuity diagram (unformatted version)
 #' \donttest{plot_continuity(Doubice_DC_cz, elections = "2010-")}
 "Doubice_DC_cz"
 
@@ -115,7 +117,6 @@
 #' the Czech Statistical Office. Additional contextual or verification information
 #' (such as post-election roles) was obtained from publicly available municipal
 #' records.
-#' 
 #' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
 #' - [Municipality website](https://www.obecbublava.cz/)
 #'
@@ -128,17 +129,19 @@
 #'   *NISPAcee Journal of Public Administration and Policy*, 13(1), 35-59.
 #'   [[Full text](https://doi.org/10.2478/nispa-2020-0002)]
 #' - Hornek, J. (2016). *Politicke dopady zadluzovani malych obci v Ceske republice*
-#'   (Political Impacts of Indebtedness of Small Municipalities in the Czech Republic)
+#'   (Political Impacts of Indebtedness of Small Municipalities in the Czech Republic).
+#'   Prague: Sociologicke nakladatelstvi (SLON).
 #'   [[Publisher link](https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996)]
 #' - Hornek, J. (2014). *Politicke dopady zadluzovani malych obci v CR*
 #'   (Financing of Small Municipalities in the Czech Republic and its Political Impact).
-#'   Master thesis. [[Full text](https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en)]
+#'   Master thesis. Charles University.
+#'   [[Full text](https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en)]
 #'
 #' @examples
 #' # Basic inspection
 #' str(Bublava_SO_cz)
 #'
-#' # Quick continuity diagram (basic and unformatted version)
+#' # Example of a basic continuity diagram (unformatted version)
 #' \donttest{plot_continuity(Bublava_SO_cz, elections = "2006-")}
 "Bublava_SO_cz"
 
@@ -182,7 +185,7 @@
 #' # Basic inspection
 #' str(Dasnice_SO_cz)
 #'
-#' # Quick continuity diagram (basic and unformatted version)
+#' # Example of a basic continuity diagram (unformatted version)
 #' \donttest{plot_continuity(Dasnice_SO_cz, elections = "2010-")}
 "Dasnice_SO_cz"
 
@@ -227,7 +230,7 @@
 #' # Basic inspection
 #' str(Hradce_CB_cz)
 #'
-#' # Quick continuity diagram (basic and unformatted version)
+#' # Example of a basic continuity diagram (unformatted version)
 #' \donttest{plot_continuity(Hradce_CB_cz, elections = "2006-")}
 "Hradce_CB_cz"
 
@@ -256,19 +259,20 @@
 #' The dataset was compiled primarily from official election results published by
 #' the Czech Statistical Office. Additional contextual or verification information
 #' (such as post-election roles) was obtained from publicly available municipal
-#' records and diploma thesis listed below.
+#' records and diploma thesis cited below.
 #'
 #' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
 #' - [Municipality website](https://www.mujilove.cz/)
 #' - Pohlreich, D. (2023). *Vyvoj mistni samospravy ve meste Jilove*
 #'   (The Development of Local Government in the Municipality of Jilove).
-#'   Diploma thesis. [[Full text](https://theses.cz/id/e46aac/?lang=en)]
+#'   Diploma thesis. Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/e46aac/?lang=en)]
 #'
 #' @examples
 #' # Basic inspection
 #' str(Jilove_DC_cz)
 #'
-#' # Quick continuity diagram (basic and unformatted version)
+#' # Example of a basic continuity diagram (unformatted version)
 #' \donttest{plot_continuity(Jilove_DC_cz, elections = "1994-2010")}
 "Jilove_DC_cz"
 
@@ -312,7 +316,7 @@
 #' # Basic inspection
 #' str(Roztoky_PZ_cz)
 #'
-#' # Quick continuity diagram (basic and unformatted version)
+#' # Example of a basic continuity diagram (unformatted version)
 #' \donttest{plot_continuity(Roztoky_PZ_cz, elections = "2002-")}
 "Roztoky_PZ_cz"
 

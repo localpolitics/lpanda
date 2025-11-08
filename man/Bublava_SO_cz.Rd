@@ -56,7 +56,7 @@ elections in the municipality of Bublava (district Sokolov, Czech Republic).
 }
 
 
-Each record describes one candidate’s run for office, including their candidate
+Each record describes one candidate's run for office, including their candidate
 list affiliation, position on the list, nominating party, political affiliation,
 number of preferential votes, and whether they were elected or held specific
 positions (mayor, deputy mayor, member of the executive body).
@@ -72,7 +72,7 @@ that election/constituency)
 # Basic inspection
 str(Bublava_SO_cz)
 
-# Quick continuity diagram (basic and unformatted version)
+# Example of a basic continuity diagram (unformatted version)
 \donttest{plot_continuity(Bublava_SO_cz, elections = "2006-")}
 }
 \references{
@@ -85,11 +85,13 @@ and Critically Indebted Czech Municipalities.
 \emph{NISPAcee Journal of Public Administration and Policy}, 13(1), 35-59.
 [\href{https://doi.org/10.2478/nispa-2020-0002}{Full text}]
 \item Hornek, J. (2016). \emph{Politicke dopady zadluzovani malych obci v Ceske republice}
-(Political Impacts of Indebtedness of Small Municipalities in the Czech Republic)
+(Political Impacts of Indebtedness of Small Municipalities in the Czech Republic).
+Prague: Sociologicke nakladatelstvi (SLON).
 [\href{https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996}{Publisher link}]
 \item Hornek, J. (2014). \emph{Politicke dopady zadluzovani malych obci v CR}
 (Financing of Small Municipalities in the Czech Republic and its Political Impact).
-Master thesis. [\href{https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en}{Full text}]
+Master thesis. Charles University.
+[\href{https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en}{Full text}]
 }
 }
 \keyword{datasets}

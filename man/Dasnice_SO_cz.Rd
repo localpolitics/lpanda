@@ -56,7 +56,7 @@ elections in the municipality of Dasnice (district Sokolov, Czech Republic).
 }
 
 
-Each record describes one candidate’s run for office, including their candidate
+Each record describes one candidate's run for office, including their candidate
 list affiliation, position on the list, nominating party, political affiliation,
 number of preferential votes, and whether they were elected or held specific
 positions (mayor, deputy mayor, member of the executive body).
@@ -72,7 +72,7 @@ that election/constituency)
 # Basic inspection
 str(Dasnice_SO_cz)
 
-# Quick continuity diagram (basic and unformatted version)
+# Example of a basic continuity diagram (unformatted version)
 \donttest{plot_continuity(Dasnice_SO_cz, elections = "2010-")}
 }
 \references{

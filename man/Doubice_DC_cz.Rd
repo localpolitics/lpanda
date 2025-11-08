@@ -60,7 +60,7 @@ elections in the municipality of Doubice (district Decin, Czech Republic).
 }
 
 
-Each record describes one candidate’s run for office, including their candidate
+Each record describes one candidate's run for office, including their candidate
 list affiliation, position on the list, nominating party, political affiliation,
 number of preferential votes, and whether they were elected or held specific
 positions (mayor, deputy mayor, member of the executive body).
@@ -76,7 +76,7 @@ that election/constituency)
 # Basic inspection
 str(Doubice_DC_cz)
 
-# Quick continuity diagram (basic and unformatted version)
+# Example of a basic continuity diagram (unformatted version)
 \donttest{plot_continuity(Doubice_DC_cz, elections = "2010-")}
 }
 \references{
@@ -94,11 +94,13 @@ Czech University of Life Sciences Prague.
 \item Cmejrek, J. et al. (2009). \emph{Participace obcanu na verejnem zivote venkovskych obci CR}
 (Citizens' Participation in the Public Life of Rural Municipalities in the Czech Republic).
 Prague: Kernberg Publishing.
+[\href{https://www.researchgate.net/publication/323579376_Participace_obcanu_na_verejnem_zivote_venkovskych_obci_CR}{ResearchGate}]
 \item Bubenicek, V., Copik, J., Hajny, P., Kopriva, R., & Neumanova, T. (Eds.) (2005).
 \emph{Obce jako akteri politickeho procesu: komunitni studie regionalnich politickych systemu}
 \emph{a problematika metodiky jejich zpracovani} (Municipalities as Actors of the Political
 Process: Case Studies of Regional Political Systems and Methodology of Their Elaboration).
 Prague: FEM CZU Prague.
+[\href{https://www.researchgate.net/publication/40337386_Obce_jako_akteri_politickeho_procesu_Komunitni_studie_regionalnich_politickych_systemu_a_problematika_metodiky_jejich_zpracovani}{ResearchGate}]
 }
 }
 \keyword{datasets}
