@@ -158,6 +158,8 @@ plot_continuity(netdata, mark = c("candidate", "c03"),
 
 - [`Bublava_SO_cz`](https://localpolitics.github.io/lpanda/reference/Bublava_SO_cz.md)
   : Municipal Election Data: Bublava (SO, CZ)
+- [`Cernosice_PZ_cz`](https://localpolitics.github.io/lpanda/reference/Cernosice_PZ_cz.md)
+  : Municipal Election Data: Cernosice (PZ, CZ)
 - [`Dasnice_SO_cz`](https://localpolitics.github.io/lpanda/reference/Dasnice_SO_cz.md)
   : Municipal Election Data: Dasnice (SO, CZ)
 - [`Doubice_DC_cz`](https://localpolitics.github.io/lpanda/reference/Doubice_DC_cz.md)

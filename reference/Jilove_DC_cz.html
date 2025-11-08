@@ -9,7 +9,7 @@ elections in the municipality of Jilove (district Decin, Czech Republic)."><meta
 
     <a class="navbar-brand me-2" href="../index.html">lpanda</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9002</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,11 +54,12 @@ elections in the municipality of Jilove (district Decin, Czech Republic).</p>
     <p>The dataset was compiled primarily from official election results published by
 the Czech Statistical Office. Additional contextual or verification information
 (such as post-election roles) was obtained from publicly available municipal
-records and diploma thesis listed below.</p><ul><li><p><a href="https://www.volby.cz/index_en.htm" class="external-link">Czech Statistical Office</a></p></li>
+records and diploma thesis cited below.</p><ul><li><p><a href="https://www.volby.cz/index_en.htm" class="external-link">Czech Statistical Office</a></p></li>
 <li><p><a href="https://www.mujilove.cz/" class="external-link">Municipality website</a></p></li>
 <li><p>Pohlreich, D. (2023). <em>Vyvoj mistni samospravy ve meste Jilove</em>
 (The Development of Local Government in the Municipality of Jilove).
-Diploma thesis. [<a href="https://theses.cz/id/e46aac/?lang=en" class="external-link">Full text</a>]</p></li>
+Diploma thesis. Czech University of Life Sciences Prague.
+[<a href="https://theses.cz/id/e46aac/?lang=en" class="external-link">Full text</a>]</p></li>
 </ul></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
@@ -67,7 +68,7 @@ Diploma thesis. [<a href="https://theses.cz/id/e46aac/?lang=en" class="external-
     <div class="section level2">
     <h2 id="description-of-variables">Description of variables<a class="anchor" aria-label="anchor" href="#description-of-variables"></a></h2>
 
-<table class="table table"><tr><td><strong>Variable</strong></td><td><strong>Description</strong></td></tr><tr><td>elections</td><td>Election identifiers (numeric)</td></tr><tr><td>candidate</td><td>Candidate's full name (character)</td></tr><tr><td>list_name</td><td>Name of the candidate list (character)</td></tr><tr><td>list_pos</td><td>Candidate's position on the list (numeric)</td></tr><tr><td>pref_votes</td><td>Number of preferential votes (numeric)</td></tr><tr><td>elected</td><td>Logical; TRUE if candidate was elected</td></tr><tr><td>nom_party</td><td>Nominating party (character)</td></tr><tr><td>pol_affil</td><td>Political affiliation (character)</td></tr><tr><td>mayor</td><td>TRUE if elected mayor</td></tr><tr><td>dep_mayor</td><td>TRUE if elected deputy mayor</td></tr><tr><td>board</td><td>TRUE if member of the executive board</td></tr><tr><td>gov_support</td><td>TRUE if supported the local government</td></tr><tr><td>elig_voters</td><td>Number of eligible voters (numeric)</td></tr><tr><td>ballots_cast</td><td>Number of ballots cast (numeric)</td></tr></table><p>Each record describes one candidate’s run for office, including their candidate
+<table class="table table"><tr><td><strong>Variable</strong></td><td><strong>Description</strong></td></tr><tr><td>elections</td><td>Election identifiers (numeric)</td></tr><tr><td>candidate</td><td>Candidate's full name (character)</td></tr><tr><td>list_name</td><td>Name of the candidate list (character)</td></tr><tr><td>list_pos</td><td>Candidate's position on the list (numeric)</td></tr><tr><td>pref_votes</td><td>Number of preferential votes (numeric)</td></tr><tr><td>elected</td><td>Logical; TRUE if candidate was elected</td></tr><tr><td>nom_party</td><td>Nominating party (character)</td></tr><tr><td>pol_affil</td><td>Political affiliation (character)</td></tr><tr><td>mayor</td><td>TRUE if elected mayor</td></tr><tr><td>dep_mayor</td><td>TRUE if elected deputy mayor</td></tr><tr><td>board</td><td>TRUE if member of the executive board</td></tr><tr><td>gov_support</td><td>TRUE if supported the local government</td></tr><tr><td>elig_voters</td><td>Number of eligible voters (numeric)</td></tr><tr><td>ballots_cast</td><td>Number of ballots cast (numeric)</td></tr></table><p>Each record describes one candidate's run for office, including their candidate
 list affiliation, position on the list, nominating party, political affiliation,
 number of preferential votes, and whether they were elected or held specific
 positions (mayor, deputy mayor, member of the executive body).</p>
@@ -98,7 +99,7 @@ that election/constituency)</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ elig_voters : int  3712 NA NA NA NA NA NA NA NA NA ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ ballots_cast: int  1978 NA NA NA NA NA NA NA NA NA ...</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># Quick continuity diagram (basic and unformatted version)</span></span></span>
+<span class="r-in"><span><span class="co"># Example of a basic continuity diagram (unformatted version)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="plot_continuity.html">plot_continuity</a></span><span class="op">(</span><span class="va">Jilove_DC_cz</span>, elections <span class="op">=</span> <span class="st">"1994-2010"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="Jilove_DC_cz-1.png" alt="" width="700" height="433"></span>
 </code></pre></div>

@@ -58,7 +58,7 @@ publicly available municipal records.
 | elig_voters  | Number of eligible voters (numeric)        |
 | ballots_cast | Number of ballots cast (numeric)           |
 
-Each record describes one candidate’s run for office, including their
+Each record describes one candidate's run for office, including their
 candidate list affiliation, position on the list, nominating party,
 political affiliation, number of preferential votes, and whether they
 were elected or held specific positions (mayor, deputy mayor, member of
@@ -84,12 +84,13 @@ candidate row for that election/constituency)
 
 - Hornek, J. (2016). *Politicke dopady zadluzovani malych obci v Ceske
   republice* (Political Impacts of Indebtedness of Small Municipalities
-  in the Czech Republic) \[[Publisher
+  in the Czech Republic). Prague: Sociologicke nakladatelstvi (SLON).
+  \[[Publisher
   link](https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996)\]
 
 - Hornek, J. (2014). *Politicke dopady zadluzovani malych obci v CR*
   (Financing of Small Municipalities in the Czech Republic and its
-  Political Impact). Master thesis. \[[Full
+  Political Impact). Master thesis. Charles University. \[[Full
   text](https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en)\]
 
 ## Examples
@@ -113,6 +114,6 @@ str(Bublava_SO_cz)
 #>  $ elig_voters : int  234 NA NA NA NA NA NA NA NA NA ...
 #>  $ ballots_cast: int  193 NA NA NA NA NA NA NA NA NA ...
 
-# Quick continuity diagram (basic and unformatted version)
+# Example of a basic continuity diagram (unformatted version)
 plot_continuity(Bublava_SO_cz, elections = "2006-")
 ```

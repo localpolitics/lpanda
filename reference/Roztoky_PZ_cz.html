@@ -9,7 +9,7 @@ elections in the municipality of Roztoky (district Praha-zapad, Czech Republic).
 
     <a class="navbar-brand me-2" href="../index.html">lpanda</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9002</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +64,7 @@ records and interviews with local political representatives.</p><ul><li><p><a hr
     <div class="section level2">
     <h2 id="description-of-variables">Description of variables<a class="anchor" aria-label="anchor" href="#description-of-variables"></a></h2>
 
-<table class="table table"><tr><td><strong>Variable</strong></td><td><strong>Description</strong></td></tr><tr><td>elections</td><td>Election identifiers (numeric)</td></tr><tr><td>candidate</td><td>Candidate's full name (character)</td></tr><tr><td>list_name</td><td>Name of the candidate list (character)</td></tr><tr><td>list_pos</td><td>Candidate's position on the list (numeric)</td></tr><tr><td>pref_votes</td><td>Number of preferential votes (numeric)</td></tr><tr><td>elected</td><td>Logical; TRUE if candidate was elected</td></tr><tr><td>nom_party</td><td>Nominating party (character)</td></tr><tr><td>pol_affil</td><td>Political affiliation (character)</td></tr><tr><td>mayor</td><td>TRUE if elected mayor</td></tr><tr><td>dep_mayor</td><td>TRUE if elected deputy mayor</td></tr><tr><td>board</td><td>TRUE if member of the executive board</td></tr><tr><td>gov_support</td><td>TRUE if supported the local government</td></tr><tr><td>elig_voters</td><td>Number of eligible voters (numeric)</td></tr><tr><td>ballots_cast</td><td>Number of ballots cast (numeric)</td></tr></table><p>Each record describes one candidate’s run for office, including their candidate
+<table class="table table"><tr><td><strong>Variable</strong></td><td><strong>Description</strong></td></tr><tr><td>elections</td><td>Election identifiers (numeric)</td></tr><tr><td>candidate</td><td>Candidate's full name (character)</td></tr><tr><td>list_name</td><td>Name of the candidate list (character)</td></tr><tr><td>list_pos</td><td>Candidate's position on the list (numeric)</td></tr><tr><td>pref_votes</td><td>Number of preferential votes (numeric)</td></tr><tr><td>elected</td><td>Logical; TRUE if candidate was elected</td></tr><tr><td>nom_party</td><td>Nominating party (character)</td></tr><tr><td>pol_affil</td><td>Political affiliation (character)</td></tr><tr><td>mayor</td><td>TRUE if elected mayor</td></tr><tr><td>dep_mayor</td><td>TRUE if elected deputy mayor</td></tr><tr><td>board</td><td>TRUE if member of the executive board</td></tr><tr><td>gov_support</td><td>TRUE if supported the local government</td></tr><tr><td>elig_voters</td><td>Number of eligible voters (numeric)</td></tr><tr><td>ballots_cast</td><td>Number of ballots cast (numeric)</td></tr></table><p>Each record describes one candidate's run for office, including their candidate
 list affiliation, position on the list, nominating party, political affiliation,
 number of preferential votes, and whether they were elected or held specific
 positions (mayor, deputy mayor, member of the executive body).</p>
@@ -103,7 +103,7 @@ politickem prostoru (The Nature of Local Politics in Suburban Political Space).
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ elig_voters : int  4631 NA NA NA NA NA NA NA NA NA ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ ballots_cast: int  3181 NA NA NA NA NA NA NA NA NA ...</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># Quick continuity diagram (basic and unformatted version)</span></span></span>
+<span class="r-in"><span><span class="co"># Example of a basic continuity diagram (unformatted version)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="plot_continuity.html">plot_continuity</a></span><span class="op">(</span><span class="va">Roztoky_PZ_cz</span>, elections <span class="op">=</span> <span class="st">"2002-"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="Roztoky_PZ_cz-1.png" alt="" width="700" height="433"></span>
 </code></pre></div>

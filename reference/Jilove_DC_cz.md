@@ -19,7 +19,7 @@ An object of class `data.frame` with 745 rows and 14 columns.
 The dataset was compiled primarily from official election results
 published by the Czech Statistical Office. Additional contextual or
 verification information (such as post-election roles) was obtained from
-publicly available municipal records and diploma thesis listed below.
+publicly available municipal records and diploma thesis cited below.
 
 - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
 
@@ -27,7 +27,8 @@ publicly available municipal records and diploma thesis listed below.
 
 - Pohlreich, D. (2023). *Vyvoj mistni samospravy ve meste Jilove* (The
   Development of Local Government in the Municipality of Jilove).
-  Diploma thesis. \[[Full text](https://theses.cz/id/e46aac/?lang=en)\]
+  Diploma thesis. Czech University of Life Sciences Prague. \[[Full
+  text](https://theses.cz/id/e46aac/?lang=en)\]
 
 ## Details
 
@@ -62,7 +63,7 @@ publicly available municipal records and diploma thesis listed below.
 | elig_voters  | Number of eligible voters (numeric)        |
 | ballots_cast | Number of ballots cast (numeric)           |
 
-Each record describes one candidate’s run for office, including their
+Each record describes one candidate's run for office, including their
 candidate list affiliation, position on the list, nominating party,
 political affiliation, number of preferential votes, and whether they
 were elected or held specific positions (mayor, deputy mayor, member of
@@ -95,6 +96,6 @@ str(Jilove_DC_cz)
 #>  $ elig_voters : int  3712 NA NA NA NA NA NA NA NA NA ...
 #>  $ ballots_cast: int  1978 NA NA NA NA NA NA NA NA NA ...
 
-# Quick continuity diagram (basic and unformatted version)
+# Example of a basic continuity diagram (unformatted version)
 plot_continuity(Jilove_DC_cz, elections = "1994-2010")
 ```

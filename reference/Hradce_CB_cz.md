@@ -58,7 +58,7 @@ publicly available municipal records.
 | elig_voters  | Number of eligible voters (numeric)        |
 | ballots_cast | Number of ballots cast (numeric)           |
 
-Each record describes one candidate’s run for office, including their
+Each record describes one candidate's run for office, including their
 candidate list affiliation, position on the list, nominating party,
 political affiliation, number of preferential votes, and whether they
 were elected or held specific positions (mayor, deputy mayor, member of
@@ -99,6 +99,6 @@ str(Hradce_CB_cz)
 #>  $ elig_voters : int  31 NA NA NA NA NA NA NA NA 29 ...
 #>  $ ballots_cast: int  25 NA NA NA NA NA NA NA NA 23 ...
 
-# Quick continuity diagram (basic and unformatted version)
+# Example of a basic continuity diagram (unformatted version)
 plot_continuity(Hradce_CB_cz, elections = "2006-")
 ```

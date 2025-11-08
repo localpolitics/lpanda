@@ -64,7 +64,7 @@ representatives.
 | elig_voters  | Number of eligible voters (numeric)        |
 | ballots_cast | Number of ballots cast (numeric)           |
 
-Each record describes one candidate’s run for office, including their
+Each record describes one candidate's run for office, including their
 candidate list affiliation, position on the list, nominating party,
 political affiliation, number of preferential votes, and whether they
 were elected or held specific positions (mayor, deputy mayor, member of
@@ -97,6 +97,7 @@ candidate row for that election/constituency)
   venkovskych obci CR* (Citizens' Participation in the Public Life of
   Rural Municipalities in the Czech Republic). Prague: Kernberg
   Publishing.
+  \[[ResearchGate](https://www.researchgate.net/publication/323579376_Participace_obcanu_na_verejnem_zivote_venkovskych_obci_CR)\]
 
 - Bubenicek, V., Copik, J., Hajny, P., Kopriva, R., & Neumanova, T.
   (Eds.) (2005). *Obce jako akteri politickeho procesu: komunitni studie
@@ -104,6 +105,7 @@ candidate row for that election/constituency)
   zpracovani* (Municipalities as Actors of the Political Process: Case
   Studies of Regional Political Systems and Methodology of Their
   Elaboration). Prague: FEM CZU Prague.
+  \[[ResearchGate](https://www.researchgate.net/publication/40337386_Obce_jako_akteri_politickeho_procesu_Komunitni_studie_regionalnich_politickych_systemu_a_problematika_metodiky_jejich_zpracovani)\]
 
 ## Examples
 
@@ -126,6 +128,6 @@ str(Doubice_DC_cz)
 #>  $ elig_voters : int  44 NA NA NA NA NA NA NA NA 57 ...
 #>  $ ballots_cast: int  36 NA NA NA NA NA NA NA NA 51 ...
 
-# Quick continuity diagram (basic and unformatted version)
+# Example of a basic continuity diagram (unformatted version)
 plot_continuity(Doubice_DC_cz, elections = "2010-")
 ```

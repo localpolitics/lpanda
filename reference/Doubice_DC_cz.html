@@ -9,7 +9,7 @@ elections in the municipality of Doubice (district Decin, Czech Republic)."><met
 
     <a class="navbar-brand me-2" href="../index.html">lpanda</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9002</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,7 +68,7 @@ Prague: Kernberg Publishing.</p></li>
     <div class="section level2">
     <h2 id="description-of-variables">Description of variables<a class="anchor" aria-label="anchor" href="#description-of-variables"></a></h2>
 
-<table class="table table"><tr><td><strong>Variable</strong></td><td><strong>Description</strong></td></tr><tr><td>elections</td><td>Election identifiers (numeric)</td></tr><tr><td>candidate</td><td>Candidate's full name (character)</td></tr><tr><td>list_name</td><td>Name of the candidate list (character)</td></tr><tr><td>list_pos</td><td>Candidate's position on the list (numeric)</td></tr><tr><td>pref_votes</td><td>Number of preferential votes (numeric)</td></tr><tr><td>elected</td><td>Logical; TRUE if candidate was elected</td></tr><tr><td>nom_party</td><td>Nominating party (character)</td></tr><tr><td>pol_affil</td><td>Political affiliation (character)</td></tr><tr><td>mayor</td><td>TRUE if elected mayor</td></tr><tr><td>dep_mayor</td><td>TRUE if elected deputy mayor</td></tr><tr><td>board</td><td>TRUE if member of the executive board</td></tr><tr><td>gov_support</td><td>TRUE if supported the local government</td></tr><tr><td>elig_voters</td><td>Number of eligible voters (numeric)</td></tr><tr><td>ballots_cast</td><td>Number of ballots cast (numeric)</td></tr></table><p>Each record describes one candidate’s run for office, including their candidate
+<table class="table table"><tr><td><strong>Variable</strong></td><td><strong>Description</strong></td></tr><tr><td>elections</td><td>Election identifiers (numeric)</td></tr><tr><td>candidate</td><td>Candidate's full name (character)</td></tr><tr><td>list_name</td><td>Name of the candidate list (character)</td></tr><tr><td>list_pos</td><td>Candidate's position on the list (numeric)</td></tr><tr><td>pref_votes</td><td>Number of preferential votes (numeric)</td></tr><tr><td>elected</td><td>Logical; TRUE if candidate was elected</td></tr><tr><td>nom_party</td><td>Nominating party (character)</td></tr><tr><td>pol_affil</td><td>Political affiliation (character)</td></tr><tr><td>mayor</td><td>TRUE if elected mayor</td></tr><tr><td>dep_mayor</td><td>TRUE if elected deputy mayor</td></tr><tr><td>board</td><td>TRUE if member of the executive board</td></tr><tr><td>gov_support</td><td>TRUE if supported the local government</td></tr><tr><td>elig_voters</td><td>Number of eligible voters (numeric)</td></tr><tr><td>ballots_cast</td><td>Number of ballots cast (numeric)</td></tr></table><p>Each record describes one candidate's run for office, including their candidate
 list affiliation, position on the list, nominating party, political affiliation,
 number of preferential votes, and whether they were elected or held specific
 positions (mayor, deputy mayor, member of the executive body).</p>
@@ -93,12 +93,14 @@ Czech University of Life Sciences Prague.
 [<a href="https://www.grada.cz/demokracie-v-lokalnim-politickem-prostoru-5880/" class="external-link">Publisher link</a>]</p></li>
 <li><p>Cmejrek, J. et al. (2009). <em>Participace obcanu na verejnem zivote venkovskych obci CR</em>
 (Citizens' Participation in the Public Life of Rural Municipalities in the Czech Republic).
-Prague: Kernberg Publishing.</p></li>
+Prague: Kernberg Publishing.
+[<a href="https://www.researchgate.net/publication/323579376_Participace_obcanu_na_verejnem_zivote_venkovskych_obci_CR" class="external-link">ResearchGate</a>]</p></li>
 <li><p>Bubenicek, V., Copik, J., Hajny, P., Kopriva, R., &amp; Neumanova, T. (Eds.) (2005).
 <em>Obce jako akteri politickeho procesu: komunitni studie regionalnich politickych systemu</em>
 <em>a problematika metodiky jejich zpracovani</em> (Municipalities as Actors of the Political
 Process: Case Studies of Regional Political Systems and Methodology of Their Elaboration).
-Prague: FEM CZU Prague.</p></li>
+Prague: FEM CZU Prague.
+[<a href="https://www.researchgate.net/publication/40337386_Obce_jako_akteri_politickeho_procesu_Komunitni_studie_regionalnich_politickych_systemu_a_problematika_metodiky_jejich_zpracovani" class="external-link">ResearchGate</a>]</p></li>
 </ul></div>
 
     <div class="section level2">
@@ -121,7 +123,7 @@ Prague: FEM CZU Prague.</p></li>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ elig_voters : int  44 NA NA NA NA NA NA NA NA 57 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ ballots_cast: int  36 NA NA NA NA NA NA NA NA 51 ...</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># Quick continuity diagram (basic and unformatted version)</span></span></span>
+<span class="r-in"><span><span class="co"># Example of a basic continuity diagram (unformatted version)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="plot_continuity.html">plot_continuity</a></span><span class="op">(</span><span class="va">Doubice_DC_cz</span>, elections <span class="op">=</span> <span class="st">"2010-"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="Doubice_DC_cz-1.png" alt="" width="700" height="433"></span>
 </code></pre></div>

@@ -58,7 +58,7 @@ publicly available municipal records.
 | elig_voters  | Number of eligible voters (numeric)        |
 | ballots_cast | Number of ballots cast (numeric)           |
 
-Each record describes one candidate’s run for office, including their
+Each record describes one candidate's run for office, including their
 candidate list affiliation, position on the list, nominating party,
 political affiliation, number of preferential votes, and whether they
 were elected or held specific positions (mayor, deputy mayor, member of
@@ -99,6 +99,6 @@ str(Dasnice_SO_cz)
 #>  $ elig_voters : int  230 NA NA NA NA NA 250 NA NA NA ...
 #>  $ ballots_cast: int  80 NA NA NA NA NA 43 NA NA NA ...
 
-# Quick continuity diagram (basic and unformatted version)
+# Example of a basic continuity diagram (unformatted version)
 plot_continuity(Dasnice_SO_cz, elections = "2010-")
 ```
