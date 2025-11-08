@@ -147,6 +147,65 @@
 
 # --------------------------------------------------------------------------- #
 
+#' @title Municipal Election Data: Cernosice (PZ, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Cernosice (district Praha-zapad, Czech
+#' Republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Cernosice |
+#' |District:                   | Praha-zapad  |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 8 |
+#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022 |
+#' |Number of candidacies (rows): | 971 |
+#' |Note:                         | [Municipality website](https://www.mestocernosice.cz/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records.
+#'
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm),
+#' - [Municipality website](https://www.mestocernosice.cz/)
+#'
+#' @references
+#' - Muller, K. B. (2018). *Dobre vladnuti ve verejnem nezajmu. Lokalni politicke*
+#'   *elity jako klicovi akteri demokratizace?* (Good Governance in Public Disinterest.
+#'   Local Political Elites as Key Actors of Democratization?).
+#'   Prague: Sociologicke nakladatelstvi (SLON).
+#'   [[Publisher link](https://karolinum.cz/en/books/muller-dobre-vladnuti-ve-verejnem-nezajmu-25018)]
+#' - Muller, K. B. (2018). Dobre vladnuti a jeho akteri v postkomunistickem
+#'   happyvillu aneb jak rozhodovat v zajmu tech, kteri nejsou slyset (Good
+#'   governance and its actors in a post-communist happyville. How to govern in
+#'   favour of those who remain salient). *Acta Politologica* 10(1), 57-85.
+#'   [[Full text](https://www.researchgate.net/publication/323280769_Dobre_vladnuti_a_jeho_akteri_v_postkomunistickem_happyvillu_aneb_jak_rozhodovat_v_zajmu_tech_kteri_nejsou_slyset)]
+#' - Formackova, M. (2013). Vyvoj mistni samospravy v obci Cernosice (The Development
+#'   of Local Government in the Municipality of CernoSice). Master thesis.
+#'   Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/l5jf3r/?lang=en)]
+#' - Hausmannova, H. (2011). *Obcanska spolecnost a politicke elity na komunalni urovni*
+#'   (Civil Society and Political Elites on Local Level). Bachelor thesis.
+#'   Prague University of Economics and Business.
+#'   [[Full text](https://vskp.vse.cz/english/27042)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Cernosice_PZ_cz)
+#'
+#' # Example of a basic continuity diagram (unformatted version)
+#' \donttest{plot_continuity(Cernosice_PZ_cz, elections = "2010-")}
+"Cernosice_PZ_cz"
+
+# --------------------------------------------------------------------------- #
+
 #' @title Municipal Election Data: Dasnice (SO, CZ)
 #'
 #' @description

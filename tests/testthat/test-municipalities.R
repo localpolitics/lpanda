@@ -3,6 +3,7 @@
 test_that("municipality datasets are valid election datasets", {
   
   municipalities_list <- list(Bublava_SO_cz = Bublava_SO_cz,
+                              Cernosice_PZ_cz = Cernosice_PZ_cz,
                               Dasnice_SO_cz = Dasnice_SO_cz,
                               Doubice_DC_cz = Doubice_DC_cz,
                               Hradce_CB_cz = Hradce_CB_cz,

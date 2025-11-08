@@ -1,9 +1,10 @@
 # Script for generating and saving municipal datasets from CSV files
 
 # List of municipalities (without .csv extension)
-municipalities <- c("Doubice_DC_cz",
+municipalities <- c("Bublava_SO_cz",
+                    "Cernosice_PZ_cz",
                     "Dasnice_SO_cz",
-                    "Bublava_SO_cz",
+                    "Doubice_DC_cz",
                     "Hradce_CB_cz",
                     "Jilove_DC_cz",
                     "Roztoky_PZ_cz");
