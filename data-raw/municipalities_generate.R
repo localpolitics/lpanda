@@ -7,6 +7,7 @@ municipalities <- c("Bublava_SO_cz",
                     "Doubice_DC_cz",
                     "Hradce_CB_cz",
                     "Jilove_DC_cz",
+                    "Kamenna_CB_cz",
                     "Roztoky_PZ_cz");
 
 for (m in municipalities) {

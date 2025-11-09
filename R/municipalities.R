@@ -343,6 +343,61 @@
 
 # --------------------------------------------------------------------------- #
 
+#' @title Municipal Election Data: Kamenna (CB, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Kamenna (district Ceske Budejovice, Czech
+#' Republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Kamenna |
+#' |District:                   | Ceske Budejovice  |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 8 |
+#' |Elections covered:          | 1998, 2002, 2006, 2010, 2011, 2014, 2018, 2022|
+#' |Number of candidacies (rows): | 178 |
+#' |Note:                         | [Municipality website](https://www.oukamenna.cz/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records and the master thesis cited below.
+#'
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.oukamenna.cz/)
+#' - Kotaskova, S. (2012). *Politicky proces v obci Kamenna* (The Political
+#'   Process in the Municipality of Kamenna). Master thesis. Czech University
+#'   of Life Sciences Prague. [[Full text](https://theses.cz/id/5kd433/?lang=en)]
+#'
+#' @references
+#' - Kotaskova, S. K. (2016). Cleavages and political pluralism in the small
+#'   municipality in Czech Republic. *Global Journal of Business, Economics*
+#'   *and Management: Current Issues*, 5(2), 63-69.
+#'   [[Full text](https://doi.org/10.18844/gjbem.v5i2.369)]
+#' - Kotaskova, S. (2012). *Politicky proces v obci Kamenna* (The Political
+#'   Process in the Municipality of Kamenna). Master thesis. Czech University
+#'   of Life Sciences Prague. [[Full text](https://theses.cz/id/5kd433/?lang=en)]
+#' - Kotaskova, S. (2010). *Analyza lokalniho stranickeho systemu v obci Kamenna*
+#'   (Analysis of the Local Party System in the Kamenna Municipality). Bachelor
+#'   thesis. Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/iorq3v/?lang=en)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Kamenna_CB_cz)
+#'
+#' # Example of a basic continuity diagram (unformatted version)
+#' \donttest{plot_continuity(Kamenna_CB_cz, elections = "2002-")}
+"Kamenna_CB_cz"
+
+# --------------------------------------------------------------------------- #
+
 #' @title Municipal Election Data: Roztoky (PZ, CZ)
 #'
 #' @description

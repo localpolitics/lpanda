@@ -11,6 +11,7 @@
   - `Cernosice_PZ_cz`
   - `Dasnice_SO_cz`
   - `Hradce_CB_cz`
+  - `Kamenna_CB_cz`
   - `Roztoky_PZ_cz`
 * New sample dataset for testing:
   - `sample_no_pluralism` - variant of `sample_data` with only one candidate
