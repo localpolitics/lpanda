@@ -89,7 +89,7 @@ governance and its actors in a post-communist happyville. How to govern in
 favour of those who remain salient). \emph{Acta Politologica} 10(1), 57-85.
 [\href{https://www.researchgate.net/publication/323280769_Dobre_vladnuti_a_jeho_akteri_v_postkomunistickem_happyvillu_aneb_jak_rozhodovat_v_zajmu_tech_kteri_nejsou_slyset}{Full text}]
 \item Formackova, M. (2013). Vyvoj mistni samospravy v obci Cernosice (The Development
-of Local Government in the Municipality of CernoSice). Master thesis.
+of Local Government in the Municipality of Cernosice). Master thesis.
 Czech University of Life Sciences Prague.
 [\href{https://theses.cz/id/l5jf3r/?lang=en}{Full text}]
 \item Hausmannova, H. (2011). \emph{Obcanska spolecnost a politicke elity na komunalni urovni}

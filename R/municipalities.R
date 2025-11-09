@@ -188,7 +188,7 @@
 #'   favour of those who remain salient). *Acta Politologica* 10(1), 57-85.
 #'   [[Full text](https://www.researchgate.net/publication/323280769_Dobre_vladnuti_a_jeho_akteri_v_postkomunistickem_happyvillu_aneb_jak_rozhodovat_v_zajmu_tech_kteri_nejsou_slyset)]
 #' - Formackova, M. (2013). Vyvoj mistni samospravy v obci Cernosice (The Development
-#'   of Local Government in the Municipality of CernoSice). Master thesis.
+#'   of Local Government in the Municipality of Cernosice). Master thesis.
 #'   Czech University of Life Sciences Prague.
 #'   [[Full text](https://theses.cz/id/l5jf3r/?lang=en)]
 #' - Hausmannova, H. (2011). *Obcanska spolecnost a politicke elity na komunalni urovni*
@@ -326,7 +326,13 @@
 #'   (The Development of Local Government in the Municipality of Jilove).
 #'   Diploma thesis. Czech University of Life Sciences Prague.
 #'   [[Full text](https://theses.cz/id/e46aac/?lang=en)]
-#'
+#' 
+#' @references
+#' - Pohlreich, D. (2023). *Vyvoj mistni samospravy ve meste Jilove*
+#'   (The Development of Local Government in the Municipality of Jilove).
+#'   Diploma thesis. Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/e46aac/?lang=en)]
+#'   
 #' @examples
 #' # Basic inspection
 #' str(Jilove_DC_cz)

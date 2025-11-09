@@ -79,4 +79,12 @@ str(Jilove_DC_cz)
 # Example of a basic continuity diagram (unformatted version)
 \donttest{plot_continuity(Jilove_DC_cz, elections = "1994-2010")}
 }
+\references{
+\itemize{
+\item Pohlreich, D. (2023). \emph{Vyvoj mistni samospravy ve meste Jilove}
+(The Development of Local Government in the Municipality of Jilove).
+Diploma thesis. Czech University of Life Sciences Prague.
+[\href{https://theses.cz/id/e46aac/?lang=en}{Full text}]
+}
+}
 \keyword{datasets}
