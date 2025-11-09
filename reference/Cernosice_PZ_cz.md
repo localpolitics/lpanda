@@ -87,7 +87,7 @@ candidate row for that election/constituency)
   text](https://www.researchgate.net/publication/323280769_Dobre_vladnuti_a_jeho_akteri_v_postkomunistickem_happyvillu_aneb_jak_rozhodovat_v_zajmu_tech_kteri_nejsou_slyset)\]
 
 - Formackova, M. (2013). Vyvoj mistni samospravy v obci Cernosice (The
-  Development of Local Government in the Municipality of CernoSice).
+  Development of Local Government in the Municipality of Cernosice).
   Master thesis. Czech University of Life Sciences Prague. \[[Full
   text](https://theses.cz/id/l5jf3r/?lang=en)\]
 

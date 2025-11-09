@@ -75,6 +75,13 @@ calculate voter turnout and related indicators. These variables appear
 only once per election and constituency (they may be stored in a single
 candidate row for that election/constituency)
 
+## References
+
+- Pohlreich, D. (2023). *Vyvoj mistni samospravy ve meste Jilove* (The
+  Development of Local Government in the Municipality of Jilove).
+  Diploma thesis. Czech University of Life Sciences Prague. \[[Full
+  text](https://theses.cz/id/e46aac/?lang=en)\]
+
 ## Examples
 
 ``` r

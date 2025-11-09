@@ -26,6 +26,8 @@
   : Municipal Election Data: Hradce (CB, CZ)
 - [`Jilove_DC_cz`](https://localpolitics.github.io/lpanda/reference/Jilove_DC_cz.md)
   : Municipal Election Data: Jilove (DC, CZ)
+- [`Kamenna_CB_cz`](https://localpolitics.github.io/lpanda/reference/Kamenna_CB_cz.md)
+  : Municipal Election Data: Kamenna (CB, CZ)
 - [`Roztoky_PZ_cz`](https://localpolitics.github.io/lpanda/reference/Roztoky_PZ_cz.md)
   : Municipal Election Data: Roztoky (PZ, CZ)
 
