@@ -9,6 +9,7 @@ test_that("municipality datasets are valid election datasets", {
                               Hradce_CB_cz = Hradce_CB_cz,
                               Jilove_DC_cz  = Jilove_DC_cz,
                               Kamenna_CB_cz = Kamenna_CB_cz,
+                              Prameny_CH_cz = Prameny_CH_cz,
                               Roztoky_PZ_cz = Roztoky_PZ_cz);
   
   expected_cols <- c("elections", "candidate", "list_name", "list_pos",
