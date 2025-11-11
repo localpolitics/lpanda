@@ -28,6 +28,8 @@
   : Municipal Election Data: Jilove (DC, CZ)
 - [`Kamenna_CB_cz`](https://localpolitics.github.io/lpanda/reference/Kamenna_CB_cz.md)
   : Municipal Election Data: Kamenna (CB, CZ)
+- [`Prameny_CH_cz`](https://localpolitics.github.io/lpanda/reference/Prameny_CH_cz.md)
+  : Municipal Election Data: Prameny (CH, CZ)
 - [`Roztoky_PZ_cz`](https://localpolitics.github.io/lpanda/reference/Roztoky_PZ_cz.md)
   : Municipal Election Data: Roztoky (PZ, CZ)
 

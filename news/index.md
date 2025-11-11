@@ -16,6 +16,7 @@
   - `Dasnice_SO_cz`
   - `Hradce_CB_cz`
   - `Kamenna_CB_cz`
+  - `Prameny_CH_cz`
   - `Roztoky_PZ_cz`
 - New sample dataset for testing:
   - `sample_no_pluralism` - variant of `sample_data` with only one
