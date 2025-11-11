@@ -696,12 +696,13 @@ plot_continuity <- function(netdata,
   # ######################################################################### #
   
   # ------------------------------------------------------------------------- #
-  # Ulozeni grafickych parametru pro pripadnou potrebu obnoveni, kdyby funkce
-  # skoncila drive:
+  # Ulozeni a obnoveni grafickych parametru po skonceni funkce, stejne tak jako
+  # reset layoutu (predevsim pro pripad, kdyby funkce skoncila drive):
   # ------------------------------------------------------------------------- #
   
   old_par <- graphics::par(no.readonly = TRUE);
   on.exit(graphics::par(old_par), add = TRUE);
+  on.exit(graphics::layout(1), add = TRUE);
   
   # ------------------------------------------------------------------------- #
   
@@ -721,15 +722,13 @@ plot_continuity <- function(netdata,
           (15 + 6)), 2, 1);
     } # konec IF-ELSE pro vyber velikosti okna pro legendu v mrizce
     
-    graphics::par(mar = margins,
-                  mfrow = c(1, 3 * pocet.voleb + okno.legendy));
+    graphics::par(mar = margins);
     mrizka <- graphics::layout(matrix(c(rep(1, pocet.voleb + 2 * okno.legendy),
                                         rep(2, okno.legendy)),
                                       ncol  = pocet.voleb + 3 * okno.legendy,
                                       byrow = TRUE));
   } else {
-    graphics::par(mar = margins,
-                  mfrow = c(1, 1));
+    graphics::par(mar = margins);
   } # konec IF-ELSE pro nastaveni zobrazeni pri vyberu legendy
   
   # ------------------------------------------------------------------------- #
