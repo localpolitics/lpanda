@@ -398,6 +398,53 @@
 
 # --------------------------------------------------------------------------- #
 
+#' @title Municipal Election Data: Potucky (KV, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Potucky (district Karlovy Vary, Czech
+#' Republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Potucky |
+#' |District:                   | Karlovy Vary |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 8 |
+#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022 |
+#' |Number of candidacies (rows): | 130 |
+#' |Note:                         | [Municipality website](https://www.potucky-obec.cz/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records.
+#'
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.potucky-obec.cz/)
+#'
+#' @references
+#' - Hornek, J. (2017). Komunalni politika v malych bohatych obcich v Ceske republice:
+#'   politicke souboje o zastupitelska kresla ci vsestranna kooperace ve prospech obci?
+#'   (Local Government in Small Rich Municipalities in the Czech Republic: Political
+#'   Battles for the Chairs of Representatives or Versatile Cooperation for the Benefits
+#'   of Municipalities?). *Scientia et Societas*, 13(4), 115-143.
+#'   [[Full text](https://www.sets.cz/index.php/ojs/issue/view/19)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Potucky_KV_cz)
+#'
+#' # Example of a basic continuity diagram (unformatted version)
+#' \donttest{plot_continuity(Potucky_KV_cz, elections = "2010-", lists = "elected")}
+"Potucky_KV_cz"
+
+# --------------------------------------------------------------------------- #
+
 #' @title Municipal Election Data: Prameny (CH, CZ)
 #'
 #' @description
