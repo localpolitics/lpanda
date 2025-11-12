@@ -36,7 +36,9 @@
     - `lpanda.force_ascii` — default `FALSE`
   - Text encoding can also be specified as a `text_encoding` argument via `...`
     in plotting functions.
-
+* `plot_continuity()` now properly resets layout to prevent occasional
+  overlapping plots.
+  
 # lpanda 0.1.1 (2025-08-26)
 
 ## Bug fixes

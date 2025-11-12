@@ -229,7 +229,17 @@ plot_continuity <- function(netdata,
                             show_legend = TRUE, # show legend? (just if mark is not NULL)
                             plot_title = NULL,
                             ...
-) {
+                            ) {
+  
+  # ------------------------------------------------------------------------- #
+  # Ulozeni a obnoveni grafickych parametru po skonceni funkce, stejne tak jako
+  # reset layoutu (predevsim pro pripad, kdyby funkce skoncila drive):
+  # ------------------------------------------------------------------------- #
+  
+  old_par <- graphics::par(no.readonly = TRUE);
+  on.exit(graphics::par(old_par), add = TRUE);
+  on.exit(graphics::layout(1), add = TRUE);
+  
   
   # ######################################################################### #
   # ------------------------------------------------------------------------- #
@@ -694,15 +704,6 @@ plot_continuity <- function(netdata,
   # =========================== Zobrazeni diagramu ============================
   # ------------------------------------------------------------------------- #
   # ######################################################################### #
-  
-  # ------------------------------------------------------------------------- #
-  # Ulozeni a obnoveni grafickych parametru po skonceni funkce, stejne tak jako
-  # reset layoutu (predevsim pro pripad, kdyby funkce skoncila drive):
-  # ------------------------------------------------------------------------- #
-  
-  old_par <- graphics::par(no.readonly = TRUE);
-  on.exit(graphics::par(old_par), add = TRUE);
-  on.exit(graphics::layout(1), add = TRUE);
   
   # ------------------------------------------------------------------------- #
   
