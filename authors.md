@@ -18,7 +18,7 @@ https://doi.org/10.32614/CRAN.package.lpanda.
       title = {{lpanda}: Local Political Actor Network Diachronic Analysis Tools},
       author = {Vaclav Bubenicek},
       year = {2025},
-      note = {R package version 0.1.1.9004},
+      note = {R package version 0.1.1.9005},
       url = {https://localpolitics.github.io/lpanda/},
       doi = {10.32614/CRAN.package.lpanda},
     }
