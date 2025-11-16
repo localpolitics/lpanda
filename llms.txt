@@ -170,6 +170,8 @@ plot_continuity(netdata, mark = c("candidate", "c03"),
   : Municipal Election Data: Jilove (DC, CZ)
 - [`Kamenna_CB_cz`](https://localpolitics.github.io/lpanda/reference/Kamenna_CB_cz.md)
   : Municipal Election Data: Kamenna (CB, CZ)
+- [`Nebanice_CH_cz`](https://localpolitics.github.io/lpanda/reference/Nebanice_CH_cz.md)
+  : Municipal Election Data: Nebanice (CH, CZ)
 - [`Potucky_KV_cz`](https://localpolitics.github.io/lpanda/reference/Potucky_KV_cz.md)
   : Municipal Election Data: Potucky (KV, CZ)
 - [`Prameny_CH_cz`](https://localpolitics.github.io/lpanda/reference/Prameny_CH_cz.md)
