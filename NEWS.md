@@ -12,6 +12,7 @@
   - `Dasnice_SO_cz`
   - `Hradce_CB_cz`
   - `Kamenna_CB_cz`
+  - `Nebanice_CH_cz`
   - `Potucky_KV_cz`
   - `Prameny_CH_cz`
   - `Roztoky_PZ_cz`

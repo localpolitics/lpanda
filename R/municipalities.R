@@ -398,6 +398,58 @@
 
 # --------------------------------------------------------------------------- #
 
+#' @title Municipal Election Data: Nebanice (CH, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Nebanice (district Cheb, Czech Republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Nebanice |
+#' |District:                   | Cheb  |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 9 |
+#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2019, 2022 |
+#' |Number of candidacies (rows): | 136 |
+#' |Note:                         | [Municipality website](https://www.nebanice.cz/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records.
+#'
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.nebanice.cz/)
+#'
+#' @references
+#' - Hornek, J., & Juptner, P. (2020). Endangered Municipalities? Case Study of Three Small
+#'   and Critically Indebted Czech Municipalities.
+#'   *NISPAcee Journal of Public Administration and Policy*, 13(1), 35-59.
+#'   [[Full text](https://doi.org/10.2478/nispa-2020-0002)]
+#' - Hornek, J. (2016). *Politicke dopady zadluzovani malych obci v Ceske republice*
+#'   (Political Impacts of Indebtedness of Small Municipalities in the Czech Republic).
+#'   Prague: Sociologicke nakladatelstvi (SLON).
+#'   [[Publisher link](https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996)]
+#' - Hornek, J. (2014). *Politicke dopady zadluzovani malych obci v CR*
+#'   (Financing of Small Municipalities in the Czech Republic and its Political Impact).
+#'   Master thesis. Charles University.
+#'   [[Full text](https://dspace.cuni.cz/handle/20.500.11956/67813?locale-attribute=en)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Nebanice_CH_cz)
+#'
+#' # Example of a basic continuity diagram (unformatted version)
+#' \donttest{plot_continuity(Nebanice_CH_cz, elections = "2010-")}
+"Nebanice_CH_cz"
+
+# --------------------------------------------------------------------------- #
+
 #' @title Municipal Election Data: Potucky (KV, CZ)
 #'
 #' @description

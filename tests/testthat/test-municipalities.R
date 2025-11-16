@@ -9,6 +9,7 @@ test_that("municipality datasets are valid election datasets", {
                               Hradce_CB_cz = Hradce_CB_cz,
                               Jilove_DC_cz = Jilove_DC_cz,
                               Kamenna_CB_cz = Kamenna_CB_cz,
+                              Nebanice_CH_cz = Nebanice_CH_cz,
                               Potucky_KV_cz = Potucky_KV_cz,
                               Prameny_CH_cz = Prameny_CH_cz,
                               Roztoky_PZ_cz = Roztoky_PZ_cz);
