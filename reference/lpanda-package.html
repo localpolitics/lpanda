@@ -9,7 +9,7 @@ Provides functions to prepare, visualize, and analyse diachronic network data on
 
     <a class="navbar-brand me-2" href="../index.html">lpanda</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9006</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9007</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +41,96 @@ Provides functions to prepare, visualize, and analyse diachronic network data on
     </div>
 
 
+    <div class="section level2">
+    <h2 id="main-functions">Main functions<a class="anchor" aria-label="anchor" href="#main-functions"></a></h2>
+
+
+<p>The main user-facing functions of <code>lpanda</code> are:</p><ul><li><p><code><a href="prepare_network_data.html">prepare_network_data</a></code>() - prepares network objects from
+municipal election results.</p></li>
+<li><p><code><a href="plot_continuity.html">plot_continuity</a></code>() - creates continuity diagrams of local
+political actors' candidacies over time.</p></li>
+</ul><p>Together, these functions facilitate diachronic analysis of local political
+actor networks and the evolution of local party systems, particularly in
+small municipalities.</p>
+    </div>
+    <div class="section level2">
+    <h2 id="basic-workflow">Basic workflow<a class="anchor" aria-label="anchor" href="#basic-workflow"></a></h2>
+
+
+<p>The typical workflow in <code>lpanda</code> centres on <em>continuity diagrams</em> that trace
+candidacies of local political actors across multiple elections.</p>
+<p>To create a continuity diagram of candidacies of local political actors,
+it is necessary to prepare election data containing at least unique names
+of candidates, unique names of their candidate lists and the years of the
+elections. In case of same names, they need to be distinguished, e.g., by
+adding numbers after the names of candidates (for example "Doe Jane (2)"
+or "Smith John, Jr.") or candidate lists (for example "Independents 3").</p>
+<p>For a basic continuity diagram, you can directly pass the data into the
+<code><a href="plot_continuity.html">plot_continuity</a></code>() function. However, for deeper analysis,
+it is recommended to first process the basic election data using
+<code><a href="prepare_network_data.html">prepare_network_data</a></code>(), which creates a list of network
+objects, and only then experiment with the various parameters offered
+by <code><a href="plot_continuity.html">plot_continuity</a></code>().</p>
+    </div>
+    <div class="section level2">
+    <h2 id="municipality-datasets">Municipality datasets<a class="anchor" aria-label="anchor" href="#municipality-datasets"></a></h2>
+
+
+<p>The <code>lpanda</code> package contains several datasets of municipal election results
+that have been the objects of case studies in various publications focused
+on Czech local politics. The datasets are compiled from publicly available
+data, and in some cases supplemented by findings from field research. They
+can be used to reproduce continuity diagrams published in studies referenced
+in the documentation of the datasets, for their deeper analysis, or simply
+to experiment with the workflow.</p>
+<p>List of municipality datasets:</p><ul><li><p><code><a href="Bublava_SO_cz.html">Bublava_SO_cz</a></code></p></li>
+<li><p><code><a href="Cernosice_PZ_cz.html">Cernosice_PZ_cz</a></code></p></li>
+<li><p><code><a href="Doubice_DC_cz.html">Doubice_DC_cz</a></code></p></li>
+<li><p><code><a href="Dasnice_SO_cz.html">Dasnice_SO_cz</a></code></p></li>
+<li><p><code><a href="Hradce_CB_cz.html">Hradce_CB_cz</a></code></p></li>
+<li><p><code><a href="Jilove_DC_cz.html">Jilove_DC_cz</a></code></p></li>
+<li><p><code><a href="Kamenna_CB_cz.html">Kamenna_CB_cz</a></code></p></li>
+<li><p><code><a href="Nebanice_CH_cz.html">Nebanice_CH_cz</a></code></p></li>
+<li><p><code><a href="Potucky_KV_cz.html">Potucky_KV_cz</a></code></p></li>
+<li><p><code><a href="Prameny_CH_cz.html">Prameny_CH_cz</a></code></p></li>
+<li><p><code><a href="Roztoky_PZ_cz.html">Roztoky_PZ_cz</a></code></p></li>
+</ul></div>
+    <div class="section level2">
+    <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
+    <p>The continuity diagram approach implemented in <code>lpanda</code> builds on earlier
+attempts to visualise candidate movements ("defections") between political
+parties across elections. Over time, these visualisations evolved into
+a more general method for analysing the continuity of local political
+actors' candidacies. The method has been progressively formalised and
+systematised so that it can be reused across different case studies.</p>
+<p>For an overview of the development of this approach and its applications
+in Czech local politics research, see the selected studies below, as well
+as the publications listed in the documentation of the individual datasets.</p>
+<p>Bubenicek, V. (2010). <em>Lokalni modely demokracie v malych obcich CR</em>
+(Local Models of Democracy in Small Municipalities). Dissertation thesis.
+Czech University of Life Sciences Prague.
+[<a href="https://www.researchgate.net/publication/323573647_Lokalni_modely_demokracie_v_malych_obcich_CR" class="external-link">Full text</a>]</p>
+<p>Bubenicek, V., &amp; Kubalek, M. (2010). Konfliktni linie v malych obcich
+(Cleavages in Small Municipalities). <em>Acta Politologica</em>, 2(3), 30-45.
+[<a href="https://www.researchgate.net/publication/323573475_Konfliktni_linie_v_malych_obcich" class="external-link">Full text</a>]</p>
+<p>Cmejrek, J., Bubenicek, V., &amp; Copik, J. (2010). <em>Demokracie v lokalnim politickem prostoru</em>
+(Democracy in Local Political Area). Prague: Grada.
+[<a href="https://www.grada.cz/demokracie-v-lokalnim-politickem-prostoru-5880/" class="external-link">Publisher link</a>]</p>
+<p>Kubalek, M., &amp; Bubenicek, V. (2012). Charakter lokalni politiky v suburbannim
+politickem prostoru (The Nature of Local Politics in Suburban Political Space).
+<em>Acta Politologica</em>, 4(3), 284-305.
+[<a href="https://www.researchgate.net/publication/323573707_Charakter_lokalni_politiky_v_suburbannim_politickem_prostoru" class="external-link">Full text</a>]</p>
+<p>Kotaskova, S. K. (2016). Cleavages and political pluralism in the small
+municipality in Czech Republic. <em>Global Journal of Business, Economics and Management: Current Issues</em>, 5(2), 63-69.
+[<a href="https://doi.org/10.18844/gjbem.v5i2.369" class="external-link">Full text</a>]</p>
+<p>Hornek, J. (2022). <em>Zhroucene obce v Ceske republice</em> (Failed Municipalities in the Czech Republic).
+Dissertation thesis. Charles University.
+[<a href="https://dspace.cuni.cz/handle/20.500.11956/177784?locale-attribute=en" class="external-link">Full text</a>]</p>
+<p>Krpalkova, S. (2024). <em>Permanentni opakovani komunalnich voleb: zablokovane obce?</em>
+(Permanent Repetition of Municipal Election: Blocked Municipalities?).
+Dissertation thesis. Charles University.
+[<a href="https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en" class="external-link">Full text</a>]</p>
+    </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
     <div class="dont-index"><p>Useful links:</p><ul><li><p><a href="https://localpolitics.github.io/lpanda/">https://localpolitics.github.io/lpanda/</a></p></li>
