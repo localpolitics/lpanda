@@ -20,11 +20,6 @@
   - `sample_no_pluralism` - variant of `sample_data` with only one candidate
     list per election.
 
-## Documentation
-* `help("lpanda")` / `?lpanda` now display basic package information.
-* Added pkgdown website: <https://localpolitics.github.io/lpanda/>.
-* Updated documentation for municipalities and sample datasets.
-
 ## Bug fixes
 * Fixed crashes and encoding issues on non-UTF-8 systems caused by data
   containing diacritics.
@@ -40,7 +35,13 @@
     in plotting functions.
 * `plot_continuity()` now properly resets layout to prevent occasional
   overlapping plots.
-  
+
+## Documentation
+* `help("lpanda")` / `?lpanda` now provide basic package information, including
+  an overview of the basic workflow, main functions, datasets, and references.
+* Added pkgdown website: <https://localpolitics.github.io/lpanda/>.
+* Updated documentation for municipalities and sample datasets.
+
 # lpanda 0.1.1 (2025-08-26)
 
 ## Bug fixes
