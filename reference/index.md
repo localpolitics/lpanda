@@ -52,9 +52,3 @@
 - [`sample_no_pluralism`](https://localpolitics.github.io/lpanda/reference/sample_no_pluralism.md)
   : Sample Dataset Without Party Pluralism (only one candidate list per
   election)
-
-## Package documentation
-
-- [`lpanda`](https://localpolitics.github.io/lpanda/reference/lpanda-package.md)
-  [`lpanda-package`](https://localpolitics.github.io/lpanda/reference/lpanda-package.md)
-  : lpanda: Local Political Actor Network Diachronic Analysis Tools
