@@ -128,9 +128,4 @@ Useful links:
 \strong{Maintainer}: Vaclav Bubenicek \email{bubenicek@pef.czu.cz} (\href{https://orcid.org/0000-0002-0906-0750}{ORCID}) [copyright holder]
 
 }
-\keyword{SNA}
-\keyword{elections}
-\keyword{local-politics}
-\keyword{networks}
-\keyword{package}
-\keyword{party-systems}
+\keyword{internal}
