@@ -6,18 +6,19 @@ data(sample_data, package = "lpanda");
 df <- sample_data;
 
 test_that("verbose = FALSE produces no console output", {
-  expect_silent(prepare_network_data(df, verbose = FALSE))
+  expect_silent(prepare_network_data(df, verbose = FALSE, quick = TRUE))
 })
 
 test_that("verbose = TRUE produces some output", {
-  expect_output(suppressMessages(suppressWarnings(prepare_network_data(df, verbose = TRUE))))
+  expect_output(suppressMessages(suppressWarnings(prepare_network_data(df, verbose = TRUE,
+                                                                       quick = TRUE))))
 })
 
 # --------------------------------------------------------------------------- #
 # Uvodni cast kontrolujici vstupni data
 # --------------------------------------------------------------------------- #
 
-result <- prepare_network_data(df, verbose = FALSE);
+result <- prepare_network_data(df, verbose = FALSE, quick = TRUE);
 
 test_that("it will stop if any required variable is missing", {
   
