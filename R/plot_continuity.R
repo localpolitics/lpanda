@@ -39,7 +39,7 @@
 #'                               lists are present for those years because of the
 #'                               selection. This is especially useful when
 #'                               visualizing groups that did not run in every
-#'                               election — empty columns help preserve the visual
+#'                               election - empty columns help preserve the visual
 #'                               continuity of timelines. Setting this to FALSE
 #'                               will omit those gaps. Recommended to keep TRUE
 #'                               when analyzing individual groups or when filtering
@@ -89,6 +89,17 @@
 #'
 #' @param show_legend Logical. Whether to display the legend (only applies when
 #'                    groups are marked). Default is TRUE.
+#'
+#' @param show_candidate_networks Logical. If TRUE, an additional bottom panel
+#'                                is drawn, displaying a snapshot of the
+#'                                candidate-candidate network for each selected
+#'                                election. Each snapshot shows the network
+#'                                structure of candidates running in that specific
+#'                                election, contextualised by candidates who
+#'                                appeared in previous selected elections (as
+#'                                determined by the `elections` argument).
+#'                                Default is FALSE. See *Details* for more
+#'                                information.
 #'
 #' @param plot_title Character. Title displayed above the diagram. Default is
 #'                   NULL (no title).
@@ -165,8 +176,54 @@
 #' choice (for example, where voters support a prominent individual rather than
 #' the whole candidate list). In the case of a limited number of preferential votes,
 #' such an interpretation may be debatable and should therefore be used with caution.
-#' 
-#' 
+#'
+#'
+#' ## Candidate network snapshots
+#' When `show_candidate_networks = TRUE`, the plot includes an additional bottom
+#' panel visualising candidate-candidate network snapshots for the selected
+#' elections.
+#'
+#' Each snapshot displays the network of candidates running in that particular
+#' election, together with candidates who appeared in earlier selected elections.
+#' Candidates in the focal election are drawn as larger nodes, while candidates
+#' from previous elections who did not run in that election are shown as smaller
+#' background nodes. This allows users to inspect continuity, connectivity, and
+#' the gradual formation or dissolution of clusters, as well as other structural
+#' changes across electoral periods, even when the selected elections are not
+#' consecutive.
+#'
+#' If grouping information is available (e.g., community-detected *parties* or
+#' *cores*), node colours represent the long-term group affiliation of each candidate.
+#' Node boundaries, however, reflect the candidate lists used in the specific
+#' election represented in each snapshot. This combination helps reveal
+#' whether individual candidate lists are internally cohesive or composed of
+#' candidates from different longer-term groupings, potentially indicating later
+#' fragmentation (splits), mergers, or realignments in subsequent elections.
+#'
+#' The candidate network snapshots can also be combined with
+#' `mark = c("candidate", "<name>")`, which highlights the chosen candidate across
+#' the continuity diagram and in all snapshot networks. Marking works both with
+#' and without identified groupings.
+#'
+#' The snapshots do not require the selected elections to be consecutive; if
+#' non-adjacent elections are included, the panel still displays one snapshot per
+#' election based on the available data.
+#'
+#'
+#' ## Additional arguments (`...`)
+#'
+#' The `...` argument is primarily intended for internal tuning and advanced use.
+#' It can be used to pass optional control parameters that are not part of the
+#' main user-facing interface and are therefore not listed in the formal
+#' argument list. These settings may change between versions and should
+#' generally not be needed in typical workflows.
+#'
+#' One such option is `do_not_print_to_console = TRUE`, which suppresses
+#' informational messages printed by `plot_continuity()` (for example, list
+#' of detected groups). This can be useful in automated scripts, examples,
+#' or pkgdown documentation where repeated console output would be distracting.
+#'
+#'
 #' ## Text encoding
 #' Text encoding is controlled by a global option \code{lpanda.text_encoding}
 #' with values "auto"|"utf8"|"ascii" (default "auto"). If needed, \code{text_encoding}
@@ -183,12 +240,13 @@
 #' @export
 #'
 #' @importFrom igraph V E graph_from_data_frame make_clusters membership
-#' @importFrom igraph communities crossing
+#' @importFrom igraph communities crossing layout_with_kk make_empty_graph
+#' @importFrom igraph bipartite_projection simplify add_edges add_vertices
 #' @importFrom stats setNames
 #' @importFrom RColorBrewer brewer.pal.info brewer.pal
 #' @importFrom grDevices colorRampPalette adjustcolor
 #' @importFrom graphics par strwidth layout segments text mtext points legend
-#' @importFrom scales grey_pal
+#' @importFrom scales grey_pal rescale
 #' @importFrom utils head tail
 #'
 #' @examples
@@ -202,34 +260,73 @@
 #'
 #' # highlighting groups
 #' plot_continuity(netdata, mark = "parties")
-#' plot_continuity(netdata, mark = c("parties", 3), order_lists = "seats")
-#' plot_continuity(netdata, mark = "parties", separate_groups = TRUE, show_legend = FALSE)
+#'
+#' plot_continuity(
+#'   netdata,
+#'   mark = c("parties", 3),
+#'   order_lists_by = "seats",
+#'   do_not_print_to_console = TRUE
+#' )
+#'
+#' plot_continuity(
+#'   netdata,
+#'   mark = "parties",
+#'   separate_groups = TRUE,
+#'   show_legend = FALSE,
+#'   do_not_print_to_console = TRUE
+#' )
+#'
+#' # candidate network snapshots coloured by groups and bordered by lists
+#' plot_continuity(
+#'   netdata,
+#'   mark = "parties",
+#'   show_candidate_networks = TRUE,
+#'   do_not_print_to_console = TRUE
+#' )
 #'
 #' # candidate tracking
-#' plot_continuity(netdata, mark = c("candidate", "c03"))
+#' plot_continuity(
+#'   netdata,
+#'   mark = c("candidate", "c03"),
+#'   show_candidate_networks = TRUE,
+#'   do_not_print_to_console = TRUE
+#' )
 #'
 #' # filtering elections and parties
-#' plot_continuity(netdata, mark = "parties", elections = "18-")
-#' plot_continuity(netdata, elections = c(14, 22), links = "all", show_elections_between = FALSE)
+#' plot_continuity(
+#'   netdata,
+#'   mark = "parties",
+#'   elections = "18-",
+#'   do_not_print_to_console = TRUE
+#' )
+#'
+#' plot_continuity(
+#'   netdata,
+#'   elections = c(14, 22),
+#'   links = "all",
+#'   show_elections_between = FALSE
+#' )
+#'
 #' plot_continuity(netdata, parties = 1)
 #'
 plot_continuity <- function(netdata,
-                            mark = NULL, # mark group of "parties" / "cores" / "candidate" / NULL = none
-                            separate_groups = FALSE, # each party in one line in the plot
-                            lists = c("all", "elected"), # elected = council only
-                            elections = NULL, # e.g., "2002-", "1994-2010" or "1994,2022"
-                            show_elections_between = TRUE, # lepsi TRUE tr. pri filtraci jedne skupiny
-                            parties = NULL, # e.g., c(1, 3, 5)
-                            links = c("continuity", "all"), # edges from continuity/lists network
-                            order_lists_by = c("votes", "seats"), # vertical order
-                            order_groups_by = c("elections", "votes", "seats"), # votes / seats / elections progression / NULL or "none" (only if separate_groups = TRUE)
-                            personalization = FALSE, # TRUE if $coef_var is available
+                            mark = NULL,
+                            separate_groups = FALSE,
+                            lists = c("all", "elected"),
+                            elections = NULL,
+                            show_elections_between = TRUE,
+                            parties = NULL,
+                            links = c("continuity", "all"),
+                            order_lists_by = c("votes", "seats"),
+                            order_groups_by = c("elections", "votes", "seats"),
+                            personalization = FALSE,
                             coloured = TRUE,
-                            group_colours = c(), # user's own colours for groups
-                            show_legend = TRUE, # show legend? (just if mark is not NULL)
+                            group_colours = c(),
+                            show_legend = TRUE,
+                            show_candidate_networks = FALSE,
                             plot_title = NULL,
                             ...
-                            ) {
+) {
   
   # ------------------------------------------------------------------------- #
   # Ulozeni a obnoveni grafickych parametru po skonceni funkce, stejne tak jako
@@ -240,7 +337,6 @@ plot_continuity <- function(netdata,
   on.exit(graphics::par(old_par), add = TRUE);
   on.exit(graphics::layout(1), add = TRUE);
   
-  
   # ######################################################################### #
   # ------------------------------------------------------------------------- #
   # ============ Kontrola dat a identifikace dostupnych promennych ============
@@ -250,7 +346,7 @@ plot_continuity <- function(netdata,
   # ------------------------------------------------------------------------- #
   # Kontrola netdata:
   # ------------------------------------------------------------------------- #
-
+  
   if (inherits(netdata, "list")) {
     
     if (!all(c("continuity", "elections") %in% names(netdata))) {
@@ -260,7 +356,8 @@ plot_continuity <- function(netdata,
     
   } else if (inherits(netdata, "data.frame")) {
     
-    if (is.null(mark) && separate_groups == FALSE) {
+    if ((is.null(mark[1]) || mark[1] %in% c("candidate", "c", "cand", "candidates")) &&
+        separate_groups == FALSE) {
       
       # only for displaying quick diagrams, so all messages and information are
       # suppressed (but not warnings)
@@ -292,6 +389,7 @@ plot_continuity <- function(netdata,
                     "do_not_print_to_console");
   
   extra_args <- setdiff(names(args), allowed_args);
+  
   if (length(extra_args) > 0) {
     warning("Unknown arguments in '...': ", paste(extra_args, collapse = ", "), ".")
   };
@@ -315,7 +413,7 @@ plot_continuity <- function(netdata,
     
     if (mark[1] %in% c("party")) mark[1] <- "parties";
     if (mark[1] %in% c("candidate", "c", "cand")) mark[1] <- "candidates";
-    
+
     mark[1] <- match.arg(mark[1], choices = c("parties", "candidates", "cores", "none"));
     
     if (mark[1] == "candidates") show_legend <- FALSE;
@@ -396,13 +494,22 @@ plot_continuity <- function(netdata,
   
   # --- #
   
+  if (isTRUE(show_candidate_networks)) {
+    if (!"candidates" %in% names(netdata)) {
+      warning(paste0("The candidate network snapshots cannot be displayed\n",
+                     "because the required data is missing in the input data.\n"));
+      show_candidate_networks <- FALSE;
+    };
+  }; # konec IF pro nastaveni show_candidate_networks
+  
+  # --- #
+  
   plot_title <- plot_title;
   if (!is.null(plot_title) && use_ascii) plot_title <- convert_utf8_to_ascii(plot_title);
   
   # --- #
   
   do_not_print_to_console <- isTRUE(args$do_not_print_to_console);
-
   
   # ######################################################################### #
   # ------------------------------------------------------------------------- #
@@ -411,7 +518,7 @@ plot_continuity <- function(netdata,
   # ######################################################################### #
   
   ## Filtrace ====
-
+  
   elections <- select_elections(netdata$elections$node_attr$vertices,
                                 filter = elections);
   
@@ -470,6 +577,7 @@ plot_continuity <- function(netdata,
   # ------------------------------------------------------------------------- #
   
   ## igraph objects =====
+  
   g <- igraph::graph_from_data_frame(d = edges, vertices = nodes, directed = TRUE);
   skupiny <- if ((is.null(mark) && separate_groups == FALSE) || is.null(group_membership)) {
     NULL
@@ -515,7 +623,7 @@ plot_continuity <- function(netdata,
   if (separate_groups && !is.null(skupiny)) {
     
     ### Oddelene skupiny =====
-
+    
     mezery.osy.y <- c();
     
     #### Poradi skupin =====
@@ -589,17 +697,16 @@ plot_continuity <- function(netdata,
     for (skupina in poradi.skupin) {
       
       listiny.skupiny <- skupiny[[skupina]];
-      
+
       for (i in 1:pocet.voleb) {
         
         listiny.voleb <- listiny.skupiny[which(
           V(g)$elections[V(g)$name %in% listiny.skupiny] == included_elections[i])];
         
         if (length(listiny.voleb) != 0) {
-          
+
           pocet.listin <- length(listiny.voleb);
           rozsah.y     <- axis_distances$y * (pocet.listin - 1) / 2;
-          
           osa.y <- seq(rozsah.y, -rozsah.y, length.out = pocet.listin);
           
           #### Poradi listin ---------------------------------------------------
@@ -641,14 +748,13 @@ plot_continuity <- function(netdata,
     ### Neoddelene skupiny =====
     
     for (i in 1:pocet.voleb) {
-      
+
       pozice.listin <- which(V(g)$elections == included_elections[i]);
       
       if (length(pozice.listin) != 0) {
-        
+
         pocet.listin  <- length(pozice.listin);
         rozsah.y     <- axis_distances$y * (pocet.listin - 1) / 2
-        
         osa.y <- seq(rozsah.y, -rozsah.y, length.out = pocet.listin)
         
         ### Poradi listin -----------------------------------------------------
@@ -661,14 +767,12 @@ plot_continuity <- function(netdata,
                                                decreasing = TRUE)];
         } # konec IF-ELSE IF pro serazeni listin
         
-        
         ### Vyplneni koordinatu -----------------------------------------------
         
         for (j in 1:pocet.listin) koordinaty[pozice.listin[j],] <- c(osa.x[i], osa.y[j]);
         
       } # konec IF pro zjisteni, jestli v danych volbach vubec nejaka listina kandidovala
     } # konec vnejsiho FOR loopu pro pripravu osy y a vyplneni koordinatu
-    
   }; # konec IF pro stanoveni koordinatu
   
   
@@ -679,7 +783,6 @@ plot_continuity <- function(netdata,
   # ######################################################################### #
   
   upravene.nazvy.listin <- V(g)$abbr;
-  
   upravene.nazvy.listin <- unlist(lapply(upravene.nazvy.listin,
                                          function (nazev) {
                                            ifelse(nchar(nazev) > 9,
@@ -707,30 +810,65 @@ plot_continuity <- function(netdata,
   
   # ------------------------------------------------------------------------- #
   
+  graphics::par(new = FALSE);
   graphics::par(family = getOption("lpanda.plot_family", "sans"));
   
   # ------------------------------------------------------------------------- #
   
   if (show_legend && !is.null(mark) && !is.null(skupiny)) {
-    
-    if (mark[1] == "cores" && !is.null(cores)) {
-      okno.legendy <- ifelse(any(
-        nchar(netdata$cores$node_attr$group_label[unique(skupiny$membership)]) >
-          (15 + 6)), 2, 1);
+
+    if (show_candidate_networks) {
+      
+      okno.legendy <- 1;
+      
     } else {
-      okno.legendy <- ifelse(any(
-        nchar(netdata$parties$node_attr$group_label[unique(skupiny$membership)]) >
-          (15 + 6)), 2, 1);
+      
+      if (mark[1] == "cores" && !is.null(cores)) {
+        okno.legendy <- ifelse(any(
+          nchar(netdata$cores$node_attr$group_label[unique(skupiny$membership)]) >
+            (15 + 6)), 2, 1);
+      } else {
+        okno.legendy <- ifelse(any(
+          nchar(netdata$parties$node_attr$group_label[unique(skupiny$membership)]) >
+            (15 + 6)), 2, 1);
+      } # konec IF-ELSE pro vyber velikosti okna pro legendu bez snapshotu
     } # konec IF-ELSE pro vyber velikosti okna pro legendu v mrizce
     
-    graphics::par(mar = margins);
-    mrizka <- graphics::layout(matrix(c(rep(1, pocet.voleb + 2 * okno.legendy),
-                                        rep(2, okno.legendy)),
-                                      ncol  = pocet.voleb + 3 * okno.legendy,
-                                      byrow = TRUE));
+    # --- #
+    
+    if (show_candidate_networks) {
+      
+      mrizka <- graphics::layout(matrix(c(rep(1, pocet.voleb),
+                                          rep(2, okno.legendy),
+                                          3:(pocet.voleb+2),
+                                          rep(2, okno.legendy)),
+                                        ncol  = pocet.voleb + okno.legendy,
+                                        byrow = TRUE),
+                                 heights = c(length(unique(skupiny$membership)),
+                                             length(unique(skupiny$membership))/3));
+      
+    } else {
+      
+      mrizka <- graphics::layout(matrix(c(rep(1, pocet.voleb + 2 * okno.legendy),
+                                          rep(2, okno.legendy)),
+                                        ncol  = pocet.voleb + 3 * okno.legendy,
+                                        byrow = TRUE));
+    }; # konec nastaveni layoutu pro graf s legendou
+    
   } else {
-    graphics::par(mar = margins);
-  } # konec IF-ELSE pro nastaveni zobrazeni pri vyberu legendy
+    
+    if (show_candidate_networks) {
+      
+      mrizka <- graphics::layout(matrix(c(rep(1, pocet.voleb),
+                                          2:(pocet.voleb+1)),
+                                        ncol  = pocet.voleb,
+                                        byrow = TRUE),
+                                 heights = c(3, 1));
+    } else {
+      
+      graphics::layout(1);
+    }; # konec nastaveni layout bez legendy
+  }; # konec IF-ELSE pro nastaveni zobrazeni pri vyberu legendy
   
   # ------------------------------------------------------------------------- #
   
@@ -760,8 +898,8 @@ plot_continuity <- function(netdata,
   # ------------------------------------------------------------------------- #
   
   if (!is.null(mark[1]) && !is.null(skupiny)) {
-    
-    if (!is.null(group_colours) &
+
+    if (!is.null(group_colours) &&
         length(group_colours) != pocet.skupin.celkem) {
       warning(paste0("The number of colours in the input does not match the ",
                      "number of groups. A custom colour palette will be created.\n",
@@ -772,9 +910,10 @@ plot_continuity <- function(netdata,
     
     if (coloured && is.null(group_colours)) {
       
-      paleta.barev <- "Paired"; # puvodne: "Pastel1"
+      paleta.barev <- "Paired";
 
       if (pocet.skupin.celkem <= RColorBrewer::brewer.pal.info[paleta.barev, "maxcolors"]) {
+        
         if (pocet.skupin.celkem < 3) {
           barvy <- RColorBrewer::brewer.pal(3, paleta.barev);
           barvy <- barvy[1:pocet.skupin.celkem];
@@ -783,12 +922,12 @@ plot_continuity <- function(netdata,
         } # konec IF-ELSE pro vyber barev v ramci moznych barev
         
       } else {
-        
+
         barvy <- RColorBrewer::brewer.pal(RColorBrewer::brewer.pal.info[paleta.barev, "maxcolors"], paleta.barev);
         barvy <- grDevices::colorRampPalette(barvy)(pocet.skupin.celkem);
       } # konec IF-ELSE pro nastaveni barev
       
-    } else if (!coloured && is.null(group_colours)) { # sedive
+    } else if (!coloured && is.null(group_colours)) {
       
       barvy <- scales::grey_pal(0.5,0.9)(pocet.skupin.celkem);
       
@@ -801,20 +940,21 @@ plot_continuity <- function(netdata,
     # ----------------------------------------------------------------------- #
     
     barvy.clenu.skupiny <- stats::setNames(barvy[igraph::membership(skupiny)],
-                                           names(membership(skupiny)));
+                                           names(igraph::membership(skupiny)));
     
     # ----------------------------------------------------------------------- #
-    
+
     if (length(mark) > 1) {
       
       if (mark[1] == "candidates") {
         
         mark.groups <- NULL;
-
+        
         bp.el <- netdata$bipartite$edgelist[,c("from", "to")];
         barvy.clenu.skupiny[!names(barvy.clenu.skupiny) %in%
                               bp.el$to[bp.el$from == mark[2]]] <- NA;
-        plot_title <- mark[2];
+        
+        if (is.null(plot_title)) plot_title <- mark[2];
         
       } else {
         groups.to.highlight <- mark[2:length(mark)][mark[2:length(mark)] %in%
@@ -833,6 +973,15 @@ plot_continuity <- function(netdata,
     
     # ----------------------------------------------------------------------- #
     
+    if (separate_groups || !is.null(plot_title)) {
+      graphics::par(mar = margins);
+    } else {
+      margins[3] <- 0;
+      graphics::par(mar = margins);
+    } # konec IF pro upravu margins v pripade zadani separate_groups
+    
+    # ------------------------------------------------------------------------- #
+    
     plot(x = skupiny,
          y = g,
          main = plot_title,
@@ -842,15 +991,15 @@ plot_continuity <- function(netdata,
          vertex.frame.color = "black",
          vertex.label = upravene.nazvy.listin,
          vertex.label.color = "black",
-         vertex.label.cex = sizes$height * ifelse(show_legend, 0.045, 0.035) * ifelse(separate_groups, 1, 1.5),
          vertex.label.family = getOption("lpanda.plot_family", "sans"),
+         vertex.label.cex = sizes$height * ifelse(show_legend, 0.045, 0.035) * ifelse(separate_groups, 1, 1.5),
          col = barvy.clenu.skupiny,
          edge.color = ifelse(igraph::crossing(skupiny, g), "black", "black"),
-         edge.label = ifelse(igraph::E(g)$weight == 1, NA, paste("\n", igraph::E(g)$weight, sep = "")), # zobrazi se cislo jen, kdyz > 1
+         edge.label = ifelse(igraph::E(g)$weight == 1, NA, paste("\n", igraph::E(g)$weight, sep = "")),
          edge.label.color = "black",
-         edge.label.family = getOption("lpanda.plot_family", "sans"),
          edge.lty = ifelse(igraph::crossing(skupiny, g), 2, 1),
          edge.label.cex = sizes$height * ifelse(show_legend, 0.05, 0.04) * ifelse(separate_groups, 1, 1.5),
+         edge.label.family = getOption("lpanda.plot_family", "sans"),
          edge.width = log(igraph::E(g)$weight)+1, # neni idealni, ale...
          edge.arrow.size = 0.2,
          mark.groups = mark.groups,
@@ -875,6 +1024,32 @@ plot_continuity <- function(netdata,
     
   } else {
     
+    zvyraznene.listiny <- stats::setNames(rep(NA, nrow(nodes)),
+                                          nodes$vertices);
+    
+    if (!is.null(mark)) {
+      
+      if (mark[1] == "candidates") {
+
+        listiny.s.kandidaty <- netdata$bipartite$edgelist[,c("from", "to")];
+        listiny.s.kandidaty <- listiny.s.kandidaty[listiny.s.kandidaty$to %in% nodes$vertices,];
+        zvyraznene.listiny[listiny.s.kandidaty$to[listiny.s.kandidaty$from == mark[2]]] <- "gray";
+        if (is.null(plot_title)) plot_title <- mark[2];
+        
+      }; # konec IF pro oznaceni listin, pokud mark[1] = c("candidate", "...")
+    }; # konec IF pro zjisteni, jestli mark neco obsahuje
+    
+    # ----------------------------------------------------------------------- #
+    
+    if (!is.null(plot_title)) {
+      graphics::par(mar = margins);
+    } else {
+      margins[3] <- 0;
+      graphics::par(mar = margins);
+    } # konec IF pro upravu margins v pripade zadani separate_groups
+    
+    # ------------------------------------------------------------------------- #
+    
     plot(g,
          main = plot_title,
          vertex.shape = "rectangle",
@@ -883,9 +1058,9 @@ plot_continuity <- function(netdata,
          vertex.frame.color = "black",
          vertex.label = upravene.nazvy.listin,
          vertex.label.color = "black",
-         vertex.label.cex = 0.035 * sizes$height * ifelse(separate_groups, 0.8, 1.5),
          vertex.label.family = getOption("lpanda.plot_family", "sans"),
-         vertex.color = "white",
+         vertex.label.cex = 0.035 * sizes$height * ifelse(separate_groups, 0.8, 1.5),
+         vertex.color = zvyraznene.listiny,
          edge.label = ifelse(igraph::E(g)$weight == 1, NA, paste0("\n", igraph::E(g)$weight)),
          edge.label.color = "black",
          edge.label.cex = 0.035 * sizes$height * ifelse(separate_groups, 0.8, 1.5),
@@ -934,7 +1109,7 @@ plot_continuity <- function(netdata,
                              format(round(statistiky.voleb$plurality, 1),
                                     nsmall = 1));
   }
-  
+
   posun.na.ose.y <- ifelse(separate_groups,
                            ifelse(length(parties) < 3, 1.4, 1.5),
                            1);
@@ -946,16 +1121,15 @@ plot_continuity <- function(netdata,
     x = osa.x,
     y = zaklad.y + radek.nad.y,
     labels = nadpisy.voleb1,
-    cex = sizes$width * ifelse(!is.null(mark[1]) & show_legend, 0.09, 0.06));
+    cex = sizes$width * ifelse(!is.null(mark[1]) && show_legend, 0.075, 0.06));
   
   if (length(nadpisy.voleb2) > 0) {
     graphics::text(
       x = osa.x,
       y = zaklad.y,
       labels = nadpisy.voleb2,
-      cex = sizes$width * ifelse(!is.null(mark[1]) & show_legend, 0.05, 0.04));
+      cex = sizes$width * ifelse(!is.null(mark[1]) && show_legend, 0.05, 0.04));
   } # konec IF pro pripad, ze by chybely statistiky pro nadpisy.voleb2
-  
   
   # --- #
   
@@ -1007,16 +1181,22 @@ plot_continuity <- function(netdata,
       cex = 1)
   } # konec IF pro vlozeni podpory vlady
   
+  
+  # ------------------------------------------------------------------------- #
+  ## legenda zobrazena v prazdnem plotu vpravo ====
   # ------------------------------------------------------------------------- #
   
-  ## legenda zobrazena v prazdnem plotu vpravo ====
   if (show_legend && !is.null(mark)) {
     
-    graphics::par(mar = c(0,0,8,0));
+    if (separate_groups) {
+      graphics::par(mar = c(0,0,5,0));
+    } else {
+      graphics::par(mar = c(0,0,8,0));
+    } # konec IF-ELSE pro nastaveni margins v pripade separate groups
     
     legend_labels <- if (mark[1] == "cores" && !is.null(cores)) {
       
-      # odstraneni zavorky s procentem pomoci regularniho vyrazu:
+      # odstraneni zavorky s procentem pomoci regularniho vyrazu_
       # " "           = mezera
       # "\\(" a "\\)" = zavorky (musi se escapovat)
       # "\\d+"        = jedna nebo vice cislic
@@ -1035,7 +1215,7 @@ plot_continuity <- function(netdata,
     
     max_label_width <- max(graphics::strwidth(legend_labels, units = "figure", cex = 1));
     legend_cex <- min(1, 0.9 / max_label_width);
-  
+    
     plot(NULL ,xaxt='n',yaxt='n',bty='n',ylab='',xlab='', xlim=0:1, ylim=0:1);
     
     graphics::legend("topleft", legend = legend_labels, cex = legend_cex,
@@ -1047,4 +1227,185 @@ plot_continuity <- function(netdata,
                     side = 3, at = 0.085, adj = 0, line = 0, cex = legend_cex + 0.1)
     
   } # konec IF pro zobrazeni legendy
+  
+  
+  # ------------------------------------------------------------------------- #
+  ## snapshoty kandidatni site zobrazene v dolni casti plotu ====
+  # ------------------------------------------------------------------------- #
+  
+  if(show_candidate_networks) {
+    
+    zahrnuti.kandidati <- unique(netdata$bipartite$edgelist$from[
+      netdata$bipartite$edgelist$to %in% nodes$vertices]);
+    
+    cand.nodes <- netdata$candidates$node_attr[
+      netdata$candidates$node_attr$vertices %in% zahrnuti.kandidati,];
+    
+    cand.edges <- netdata$candidates$edgelist;
+    cand.edges <- cand.edges[cand.edges$from %in% cand.nodes$vertices &
+                               cand.edges$to %in% cand.nodes$vertices,];
+    
+    # --- #
+    
+    cand.g <- igraph::graph_from_data_frame(d = cand.edges,
+                                            vertices = cand.nodes,
+                                            directed = FALSE);
+    # --- #
+    
+    koord <- igraph::layout_with_kk(cand.g);
+    koord <- matrix(c(scales::rescale(koord[,1], to = c(-1,1)),
+                      scales::rescale(koord[,2], to = c(-1,1))),
+                    ncol = 2, byrow = FALSE,
+                    dimnames = list(V(cand.g)$name, c("x","y")));
+    
+    # --- #
+    
+    if (!is.null(mark[1]) && !is.null(skupiny)) {
+
+      cand.group <- if (mark[1] == "parties") {
+        cand.nodes$party
+      } else if (mark[1] == "cores") {
+        cand.nodes$cores
+      } else if (mark[1] == "candidates") {
+        if (!is.null(cand.nodes$party)) {
+          cand.nodes$party
+        } else {
+          rep("gray", nrow(cand.nodes))
+        }
+      } else {
+        rep(NA, nrow(cand.nodes))
+      }; # konec IF-ELSE IF-ELSE_IF ELSE pro stanoveni skupin
+      
+      barvy.kandidatu <- stats::setNames(barvy[cand.group],
+                                         cand.nodes$vertices);
+      
+      if (!is.null(mark)) {
+        if (mark[1] == "candidates") {
+          barvy.kandidatu[names(barvy.kandidatu) != mark[2]] <- "white";
+        }
+      } # konec IF pro odstraneni barev od kandidatu, kteri nejsou vybrani
+      
+      # --- #
+      
+      barvy.listin <- barvy.clenu.skupiny;
+      
+    } else {
+      
+      barvy.kandidatu <- stats::setNames(rep(NA, nrow(cand.nodes)),
+                                         cand.nodes$vertices);
+      
+      if (!is.null(mark)) {
+        if (mark[1] == "candidates") {
+          barvy.kandidatu[mark[2]] <- "gray";
+        }
+      } # konec IF pro prideleni sedive barvy vybranemu kandidatovi
+      
+      barvy.listin <- stats::setNames(rep(NA, nrow(nodes)),
+                                      nodes$vertices);
+      
+    } # konec IF-ELSE pro osetreni barev kandidatu a ohraniceni kandidatnich listin
+    
+    # --- #
+    
+    cisla.listin <- stats::setNames(1:length(barvy.listin),
+                                    names(barvy.listin));
+    
+    # --- #
+    
+    sub.sit.roku <- igraph::make_empty_graph(directed = FALSE);
+    
+    # --- #
+    
+    for (volby in included_elections) {
+
+      if (!volby %in% elections) {
+        
+        plot(NULL ,xaxt='n',yaxt='n',bty='n',ylab='',xlab='', xlim=0:1, ylim=0:1);
+        
+      } else {
+
+        bp.roku.el <- netdata$bipartite$edgelist[
+          netdata$bipartite$edgelist$elections == volby &
+            netdata$bipartite$edgelist$to %in% nodes$vertices,
+          c("from", "to")];
+        
+        bp.roku.att <- netdata$bipartite$node_attr[
+          netdata$bipartite$node_attr$vertices %in% c(bp.roku.el$from, bp.roku.el$to),
+          c("vertices", "type", "c_initials")];
+        bp.roku.att[bp.roku.att$type == FALSE, "barva"] <- barvy.kandidatu[
+          bp.roku.att$vertices[bp.roku.att$type == FALSE]];
+        bp.roku.att[bp.roku.att$type == TRUE, "barva"] <- barvy.listin[
+          bp.roku.att$vertices[bp.roku.att$type == TRUE]];
+        
+        bp.roku.net <- igraph::graph_from_data_frame(bp.roku.el, directed = FALSE,
+                                                     vertices = bp.roku.att);
+        bp.roku.proj <- igraph::bipartite_projection(bp.roku.net, which = "false");
+        
+        # --- #
+        
+        edgelist.roku <- igraph::as_edgelist(bp.roku.proj);
+        atributy.roku <- data.frame(vertices = igraph::vertex.attributes(bp.roku.proj)$name,
+                                    c_initials = igraph::vertex.attributes(bp.roku.proj)$c_initials,
+                                    barva = igraph::vertex.attributes(bp.roku.proj)$barva);
+        
+        novi.kandidati <- atributy.roku[!atributy.roku$vertices %in% V(sub.sit.roku)$name,];
+        
+        if (nrow(novi.kandidati) > 0) {
+          sub.sit.roku <- igraph::add_vertices(sub.sit.roku,
+                                               nv = nrow(novi.kandidati),
+                                               attr = list(name = novi.kandidati$vertices,
+                                                           c_initials = novi.kandidati$c_initials,
+                                                           barva = novi.kandidati$barva));
+        }; # konec IF pro doplneni novych kandidatu
+        
+        if (nrow(edgelist.roku) > 0) {
+          sub.sit.roku <- igraph::add_edges(sub.sit.roku, t(edgelist.roku));
+        } # konec IF pro doplneni novych propojeni
+        
+        sub.sit.roku <- igraph::simplify(sub.sit.roku);
+        koord.roku <- koord[V(sub.sit.roku)$name,];
+        kandidoval <- V(sub.sit.roku)$name %in% bp.roku.el$from;
+        
+        # --- #
+        
+        kand.listiny.roku <- stats::setNames(cisla.listin[bp.roku.el$to],
+                                             bp.roku.el$from);
+        
+        nekandidujici <- V(sub.sit.roku)$name[!V(sub.sit.roku)$name %in% bp.roku.el$from];
+        skupina.nekandidujicich <- stats::setNames(rep(length(cisla.listin) + 1, length(nekandidujici)),
+                                                   nekandidujici);
+
+        kand.listiny.roku.membership <- igraph::make_clusters(graph = sub.sit.roku,
+                                                              membership = c(kand.listiny.roku,
+                                                                             skupina.nekandidujicich));
+        
+        oznacene.listiny <- igraph::communities(kand.listiny.roku.membership)[as.character(unique(kand.listiny.roku))];
+        
+        # --- #
+
+        par(mar = c(0,0,0,0));
+
+        plot(x = kand.listiny.roku.membership,
+             y = sub.sit.roku,
+             vertex.label = ifelse(kandidoval, V(sub.sit.roku)$c_initials, NA),
+             vertex.size = ifelse(kandidoval, 20, 5),
+             vertex.frame.color = "black",
+             vertex.label.color = "black",
+             vertex.label.family = getOption("lpanda.plot_family", "sans"),
+             edge.color = "grey",
+             edge.width = 0.001,
+             col = ifelse(kandidoval, V(sub.sit.roku)$barva, adjustcolor("white", alpha.f = 0)),
+             layout = koord.roku,
+             mark.groups = oznacene.listiny,
+             mark.col = grDevices::adjustcolor(barvy.listin[as.numeric(names(oznacene.listiny))],
+                                               alpha.f = 0.5),
+             mark.border = "black",
+             xlim = range(koord.roku[,"x"]) + c(-0.2, 0.2),
+             ylim = range(koord.roku[,"y"]) + c(-0.2, 0.2),
+             rescale = FALSE);
+        
+      } # konec IF-ELSE pro zjisteni, jestli se ma zobrazit graf nebo ne
+    } # konec FOR loopu pro zobrazeni postupneho vyvoje (snapshotu)
+  } # konec IF pro zobrazeni postupneho vyvoje site kandidatu (snapshoty)
+  
 } # konec fce plot_continuity()
