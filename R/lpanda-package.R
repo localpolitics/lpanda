@@ -99,7 +99,7 @@
 #' [[Full text](https://dspace.cuni.cz/handle/20.500.11956/191991?locale-attribute=en)]
 #'
 #'
-#' @keywords internal
+#' @keywords package networks elections local-politics party-systems SNA
 "_PACKAGE"
 
 ## usethis namespace: start

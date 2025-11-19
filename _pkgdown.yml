@@ -43,6 +43,9 @@ reference:
       - sample_no_continuity
       - sample_no_switching
       - sample_no_pluralism
+  - title: "Package documentation"
+    contents:
+      - lpanda
 
 footer:
   structure:
