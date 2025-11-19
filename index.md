@@ -4,11 +4,17 @@
 
 ## Overview
 
-The R package ‘lpanda’ provides tools for preparing, analyzing and
+The R package `lpanda` provides tools for preparing, analyzing and
 visualizing diachronic network data from municipal election results. It
 is designed to make it easier to study local political actor networks,
 with a particular focus on the development of local party systems’
 format, especially in small municipalities.
+
+The core functionality centres on continuity diagrams that trace
+candidacies of local political actors across multiple elections. In
+addition, `lpanda` can visualise the evolving candidate-candidate
+network over time, helping to explore how electoral groupings emerge,
+stabilise, fragment or realign across successive elections.
 
 ## Installation
 
@@ -28,19 +34,22 @@ devtools::install_github("localpolitics/lpanda")
 ## Usage
 
 To create a basic continuity diagram of candidacies of local political
-actors, it is necessary to prepare data containing at least unique names
-of candidates (if they are the same, they need to be distinguished,
-e.g. by adding ‘jr.’ or numbers after the names of candidates - for
-example: ‘John Smith (2)’), the year of the election and the name of the
-candidate list they ran for. Then, just use the ‘plot_continuity()’
+actors, it is necessary to prepare election data containing at least
+unique names of candidates, unique names of the candidate lists they ran
+on, and the years of the elections. If the same names occur more than
+once, they need to be distinguished, e.g., by adding numbers after the
+names of candidates (for example, “Jane Doe (2)” or “Smith John, Jr.”)
+or candidate lists (for example, “Independents 3”). Then just use the
+[`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)
 function.
 
 ``` r
 library(lpanda)
+#> lpanda (0.1.1.9008) successfully loaded. Type ?lpanda for help.
 ## basic example code
 data(sample_data, package = "lpanda")
 df <- sample_data
-lpanda::plot_continuity(df)
+plot_continuity(df)
 ```
 
 ![](reference/figures/README-basic_continuity_diagram-1.png)
@@ -56,31 +65,7 @@ attributes that can be directly used for social network analysis. The
 last item contains statistics of the included elections.
 
 ``` r
-netdata <- lpanda::prepare_network_data(sample_data)
-#> ==========================================================
-#> Preparing Network Data for LPANDA
-#> ==========================================================
-#> 
-#> 1/ Checking the usability of input data and modifying it for
-#>    conversion to network data.
-#> Column 'const_size' was missing and will be created based on 'elected'.
-#> const_size was calculated from 'elected' for elections: 14, 18, 22.
-#>    Done.
-#> 2/ Creating an edgelist of a bimodal network. Done.
-#> 3/ Projecting a bimodal network and building edgelists for
-#>    the following networks: candidates, candidate lists,
-#>    continuity and elections. Done.
-#> 4/ Detecting 'political parties' (may take a while):
-#>   |                                                          |                                                  |   0%  |                                                          |■                                                 |   1%  |                                                          |■                                                 |   2%  |                                                          |■■                                                |   4%  |                                                          |■■                                                |   5%  |                                                          |■■■                                               |   6%  |                                                          |■■■■                                              |   8%  |                                                          |■■■■                                              |   9%  |                                                          |■■■■■                                             |  10%  |                                                          |■■■■■■                                            |  11%  |                                                          |■■■■■■                                            |  12%  |                                                          |■■■■■■■                                           |  14%  |                                                          |■■■■■■■■                                          |  15%  |                                                          |■■■■■■■■                                          |  16%  |                                                          |■■■■■■■■■                                         |  18%  |                                                          |■■■■■■■■■                                         |  19%  |                                                          |■■■■■■■■■■                                        |  20%  |                                                          |■■■■■■■■■■■                                       |  21%  |                                                          |■■■■■■■■■■■                                       |  22%  |                                                          |■■■■■■■■■■■■                                      |  24%  |                                                          |■■■■■■■■■■■■                                      |  25%  |                                                          |■■■■■■■■■■■■■                                     |  26%  |                                                          |■■■■■■■■■■■■■■                                    |  28%  |                                                          |■■■■■■■■■■■■■■                                    |  29%  |                                                          |■■■■■■■■■■■■■■■                                   |  30%  |                                                          |■■■■■■■■■■■■■■■■                                  |  31%  |                                                          |■■■■■■■■■■■■■■■■                                  |  32%  |                                                          |■■■■■■■■■■■■■■■■■                                 |  34%  |                                                          |■■■■■■■■■■■■■■■■■■                                |  35%  |                                                          |■■■■■■■■■■■■■■■■■■                                |  36%  |                                                          |■■■■■■■■■■■■■■■■■■■                               |  38%  |                                                          |■■■■■■■■■■■■■■■■■■■                               |  39%  |                                                          |■■■■■■■■■■■■■■■■■■■■                              |  40%  |                                                          |■■■■■■■■■■■■■■■■■■■■■                             |  41%  |                                                          |■■■■■■■■■■■■■■■■■■■■■                             |  42%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■                            |  44%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■                            |  45%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■                           |  46%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■                          |  48%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■                          |  49%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■                         |  50%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  51%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  52%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■                       |  54%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■                      |  55%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■                      |  56%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                     |  58%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                     |  59%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                    |  60%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                   |  61%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                   |  62%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                  |  64%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                  |  65%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                 |  66%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  68%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  69%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■               |  70%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■              |  71%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■              |  72%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■             |  74%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■            |  75%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■            |  76%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■           |  78%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■           |  79%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■          |  80%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■         |  81%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■         |  82%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  84%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  85%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■       |  86%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■      |  88%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■      |  89%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■     |  90%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    |  91%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    |  92%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■   |  94%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  |  95%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  |  96%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ |  98%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ |  99%  |                                                          |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100%
-#>    Selected algorithm: wt_1 (modularity 51.7 %).
-#>    Creating an edgelist of political party network. Done.
-#> 5/ Creating attribution data for networks: elections, 
-#>    candidates, lists (& continuity), bipartite net, parties.
-#>    Done.
-#> 
-#> ==========================================================
-#> FINISHED.
-#> ==========================================================
+netdata <- prepare_network_data(sample_data, verbose = FALSE)
 
 str(netdata, max.level = 2)
 #> List of 6
@@ -115,18 +100,20 @@ For diachronic analysis of the continuity of candidacies of local
 political actors, a number of parameters in the
 [`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)
 function can be used (see
-[`?plot_continuity`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)),
-which will help identify political parties (clusters of candidate
-lists), e.g., for calculating the stability of the party system using
-one of the volatility indices, or for tracking candidacies of a specific
-political actor.
+[`?plot_continuity`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)).
+These help identify political parties (clusters of candidate lists) and
+track the behaviour of individual actors across elections, for example
+when studying the stability of local party systems or the career paths
+of specific councillors.
 
 ``` r
-netdata <- lpanda::prepare_network_data(sample_data, verbose = FALSE)
-
 # identified "political parties"
-plot_continuity(netdata, mark = "parties", separate_groups = TRUE,
-                do_not_print_to_console = TRUE)
+plot_continuity(
+  netdata,
+  mark = "parties",
+  separate_groups = TRUE,
+  do_not_print_to_console = TRUE
+)
 ```
 
 ![](reference/figures/README-continuity_use-1.png)
@@ -134,8 +121,50 @@ plot_continuity(netdata, mark = "parties", separate_groups = TRUE,
 ``` r
 
 # tracking the candidacies of candidate "c03"
-plot_continuity(netdata, mark = c("candidate", "c03"),
-                do_not_print_to_console = TRUE)
+plot_continuity(
+  netdata,
+  mark = c("candidate", "c03"),
+  do_not_print_to_console = TRUE
+)
 ```
 
 ![](reference/figures/README-continuity_use-2.png)
+
+Adding the `show_candidate_networks` argument extends the continuity
+diagram with an additional bottom panel showing candidate-candidate
+network snapshots for each included election. Nodes are coloured by
+long-term group affiliation (e.g. detected “parties”), while node
+borders indicate the candidate lists used in each election. This makes
+it possible to inspect how electoral groupings are composed, how
+cohesive they are internally, and how they may fragment, merge, or
+realign over time.
+
+``` r
+# candidate network snapshots coloured by groups and bordered by lists
+plot_continuity(
+  netdata,
+  mark = "parties",
+  show_candidate_networks = TRUE,
+  do_not_print_to_console = TRUE
+)
+```
+
+![](reference/figures/README-continuity_snapshots-1.png)
+
+## Included datasets
+
+`lpanda` contains several sample datasets from Czech municipal
+elections. These include both small, fictitious samples (such as
+`sample_data`, used in the examples above) and real-world case studies
+of individual municipalities.
+
+The case-study datasets combine official election results with field
+research and previously published analyses of Czech local politics. They
+can be used to reproduce published continuity diagrams, to experiment
+with the workflow, or as templates for preparing your own data.
+
+You can see an overview of available datasets by running
+[`help("lpanda")`](https://localpolitics.github.io/lpanda/reference/lpanda-package.md)
+and inspect individual objects via their help pages (e.g.,
+[`?sample_data`](https://localpolitics.github.io/lpanda/reference/sample_data.md),
+[`?Doubice_DC_cz`](https://localpolitics.github.io/lpanda/reference/Doubice_DC_cz.md)).

@@ -22,6 +22,7 @@ plot_continuity(
   coloured = TRUE,
   group_colours = c(),
   show_legend = TRUE,
+  show_candidate_networks = FALSE,
   plot_title = NULL,
   ...
 )
@@ -73,7 +74,7 @@ plot_continuity(
   between those selected via the `elections` argument, even if no
   candidate lists are present for those years because of the selection.
   This is especially useful when visualizing groups that did not run in
-  every election — empty columns help preserve the visual continuity of
+  every election - empty columns help preserve the visual continuity of
   timelines. Setting this to FALSE will omit those gaps. Recommended to
   keep TRUE when analyzing individual groups or when filtering only a
   subset of elections.
@@ -134,6 +135,16 @@ plot_continuity(
 
   Logical. Whether to display the legend (only applies when groups are
   marked). Default is TRUE.
+
+- show_candidate_networks:
+
+  Logical. If TRUE, an additional bottom panel is drawn, displaying a
+  snapshot of the candidate-candidate network for each selected
+  election. Each snapshot shows the network structure of candidates
+  running in that specific election, contextualised by candidates who
+  appeared in previous selected elections (as determined by the
+  `elections` argument). Default is FALSE. See *Details* for more
+  information.
 
 - plot_title:
 
@@ -229,6 +240,53 @@ prominent individual rather than the whole candidate list). In the case
 of a limited number of preferential votes, such an interpretation may be
 debatable and should therefore be used with caution.
 
+### Candidate network snapshots
+
+When `show_candidate_networks = TRUE`, the plot includes an additional
+bottom panel visualising candidate-candidate network snapshots for the
+selected elections.
+
+Each snapshot displays the network of candidates running in that
+particular election, together with candidates who appeared in earlier
+selected elections. Candidates in the focal election are drawn as larger
+nodes, while candidates from previous elections who did not run in that
+election are shown as smaller background nodes. This allows users to
+inspect continuity, connectivity, and the gradual formation or
+dissolution of clusters, as well as other structural changes across
+electoral periods, even when the selected elections are not consecutive.
+
+If grouping information is available (e.g., community-detected *parties*
+or *cores*), node colours represent the long-term group affiliation of
+each candidate. Node boundaries, however, reflect the candidate lists
+used in the specific election represented in each snapshot. This
+combination helps reveal whether individual candidate lists are
+internally cohesive or composed of candidates from different longer-term
+groupings, potentially indicating later fragmentation (splits), mergers,
+or realignments in subsequent elections.
+
+The candidate network snapshots can also be combined with
+`mark = c("candidate", "<name>")`, which highlights the chosen candidate
+across the continuity diagram and in all snapshot networks. Marking
+works both with and without identified groupings.
+
+The snapshots do not require the selected elections to be consecutive;
+if non-adjacent elections are included, the panel still displays one
+snapshot per election based on the available data.
+
+### Additional arguments (`...`)
+
+The `...` argument is primarily intended for internal tuning and
+advanced use. It can be used to pass optional control parameters that
+are not part of the main user-facing interface and are therefore not
+listed in the formal argument list. These settings may change between
+versions and should generally not be needed in typical workflows.
+
+One such option is `do_not_print_to_console = TRUE`, which suppresses
+informational messages printed by `plot_continuity()` (for example, list
+of detected groups). This can be useful in automated scripts, examples,
+or pkgdown documentation where repeated console output would be
+distracting.
+
 ### Text encoding
 
 Text encoding is controlled by a global option `lpanda.text_encoding`
@@ -261,35 +319,58 @@ plot_continuity(netdata, mark = "parties")
 #> 2: C (100%)
 #> 3: B + D (50% + 50%)
 
-plot_continuity(netdata, mark = c("parties", 3), order_lists = "seats")
-#> Parties: 3
-#> 1: A (100%)
-#> 2: C (100%)
-#> 3: B + D (50% + 50%)
 
-plot_continuity(netdata, mark = "parties", separate_groups = TRUE, show_legend = FALSE)
+plot_continuity(
+  netdata,
+  mark = c("parties", 3),
+  order_lists_by = "seats",
+  do_not_print_to_console = TRUE
+)
 
-#> Parties: 3
-#> 1: A (100%)
-#> 2: C (100%)
-#> 3: B + D (50% + 50%)
+
+plot_continuity(
+  netdata,
+  mark = "parties",
+  separate_groups = TRUE,
+  show_legend = FALSE,
+  do_not_print_to_console = TRUE
+)
+
+
+# candidate network snapshots coloured by groups and bordered by lists
+plot_continuity(
+  netdata,
+  mark = "parties",
+  show_candidate_networks = TRUE,
+  do_not_print_to_console = TRUE
+)
+
 
 # candidate tracking
-plot_continuity(netdata, mark = c("candidate", "c03"))
+plot_continuity(
+  netdata,
+  mark = c("candidate", "c03"),
+  show_candidate_networks = TRUE,
+  do_not_print_to_console = TRUE
+)
 
-#> Parties: 3
-#> 1: A (100%)
-#> 2: C (100%)
-#> 3: B + D (50% + 50%)
 
 # filtering elections and parties
-plot_continuity(netdata, mark = "parties", elections = "18-")
-#> Parties: 3
-#> 1: A (100%)
-#> 2: C (100%)
-#> 3: B + D (50% + 50%)
+plot_continuity(
+  netdata,
+  mark = "parties",
+  elections = "18-",
+  do_not_print_to_console = TRUE
+)
 
-plot_continuity(netdata, elections = c(14, 22), links = "all", show_elections_between = FALSE)
+
+plot_continuity(
+  netdata,
+  elections = c(14, 22),
+  links = "all",
+  show_elections_between = FALSE
+)
+
 
 plot_continuity(netdata, parties = 1)
 

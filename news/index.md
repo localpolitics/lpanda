@@ -8,6 +8,16 @@
   - `sample_different_varnames` (formerly `sample_diff_varnames`).
   - `sample_no_switching` (formerly `sample_no_crossing`).
 
+### New features
+
+- [`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)
+  gains a new argument `show_candidate_networks`. It adds an additional
+  bottom panel visualising candidate network snapshots for each selected
+  election. The snapshots highlight candidates running in the focal
+  election, show earlier candidates as smaller background nodes, and
+  reflect group affiliations (e.g., parties or cores) through node
+  colours and candidate lists through node boundaries.
+
 ### New data
 
 - Added municipalities:
@@ -23,6 +33,14 @@
 - New sample dataset for testing:
   - `sample_no_pluralism` - variant of `sample_data` with only one
     candidate list per election.
+
+### Improvements
+
+- [`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)
+  no longer requires grouping information (e.g., parties) when marking a
+  specific candidate via `mark = c("candidate", "<name>")`. The function
+  now highlights the candidate and their lists even in ungrouped
+  datasets, avoiding unnecessary community detection.
 
 ### Bug fixes
 

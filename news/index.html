@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">lpanda</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9007</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9008</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +44,11 @@
 </ul></li>
 </ul></div>
 <div class="section level3">
+<h3 id="new-features-development-version">New features<a class="anchor" aria-label="anchor" href="#new-features-development-version"></a></h3>
+<ul><li>
+<code><a href="../reference/plot_continuity.html">plot_continuity()</a></code> gains a new argument <code>show_candidate_networks</code>. It adds an additional bottom panel visualising candidate network snapshots for each selected election. The snapshots highlight candidates running in the focal election, show earlier candidates as smaller background nodes, and reflect group affiliations (e.g., parties or cores) through node colours and candidate lists through node boundaries.</li>
+</ul></div>
+<div class="section level3">
 <h3 id="new-data-development-version">New data<a class="anchor" aria-label="anchor" href="#new-data-development-version"></a></h3>
 <ul><li>Added municipalities:
 <ul><li><code>Bublava_SO_cz</code></li>
@@ -60,6 +65,11 @@
 <ul><li>
 <code>sample_no_pluralism</code> - variant of <code>sample_data</code> with only one candidate list per election.</li>
 </ul></li>
+</ul></div>
+<div class="section level3">
+<h3 id="improvements-development-version">Improvements<a class="anchor" aria-label="anchor" href="#improvements-development-version"></a></h3>
+<ul><li>
+<code><a href="../reference/plot_continuity.html">plot_continuity()</a></code> no longer requires grouping information (e.g., parties) when marking a specific candidate via <code>mark = c("candidate", "&lt;name&gt;")</code>. The function now highlights the candidate and their lists even in ungrouped datasets, avoiding unnecessary community detection.</li>
 </ul></div>
 <div class="section level3">
 <h3 id="bug-fixes-development-version">Bug fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-development-version"></a></h3>

@@ -11,7 +11,7 @@ candidate transitions across elections."><meta property="og:image" content="http
 
     <a class="navbar-brand me-2" href="../index.html">lpanda</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9007</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9008</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,6 +60,7 @@ candidate transitions across elections.</p>
 <span>  coloured <span class="op">=</span> <span class="cn">TRUE</span>,</span>
 <span>  group_colours <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">)</span>,</span>
 <span>  show_legend <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  show_candidate_networks <span class="op">=</span> <span class="cn">FALSE</span>,</span>
 <span>  plot_title <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>  <span class="va">...</span></span>
 <span><span class="op">)</span></span></code></pre></div>
@@ -114,7 +115,7 @@ the <code>elections</code> argument, even if no candidate
 lists are present for those years because of the
 selection. This is especially useful when
 visualizing groups that did not run in every
-election — empty columns help preserve the visual
+election - empty columns help preserve the visual
 continuity of timelines. Setting this to FALSE
 will omit those gaps. Recommended to keep TRUE
 when analyzing individual groups or when filtering
@@ -180,6 +181,19 @@ will select the most appropriate colour palette.</p></dd>
 <dt id="arg-show-legend">show_legend<a class="anchor" aria-label="anchor" href="#arg-show-legend"></a></dt>
 <dd><p>Logical. Whether to display the legend (only applies when
 groups are marked). Default is TRUE.</p></dd>
+
+
+<dt id="arg-show-candidate-networks">show_candidate_networks<a class="anchor" aria-label="anchor" href="#arg-show-candidate-networks"></a></dt>
+<dd><p>Logical. If TRUE, an additional bottom panel
+is drawn, displaying a snapshot of the
+candidate-candidate network for each selected
+election. Each snapshot shows the network
+structure of candidates running in that specific
+election, contextualised by candidates who
+appeared in previous selected elections (as
+determined by the <code>elections</code> argument).
+Default is FALSE. See <em>Details</em> for more
+information.</p></dd>
 
 
 <dt id="arg-plot-title">plot_title<a class="anchor" aria-label="anchor" href="#arg-plot-title"></a></dt>
@@ -284,6 +298,52 @@ such an interpretation may be debatable and should therefore be used with cautio
 </div>
 
 <div class="section">
+<h3 id="candidate-network-snapshots">Candidate network snapshots<a class="anchor" aria-label="anchor" href="#candidate-network-snapshots"></a></h3>
+
+
+<p>When <code>show_candidate_networks = TRUE</code>, the plot includes an additional bottom
+panel visualising candidate-candidate network snapshots for the selected
+elections.</p>
+<p>Each snapshot displays the network of candidates running in that particular
+election, together with candidates who appeared in earlier selected elections.
+Candidates in the focal election are drawn as larger nodes, while candidates
+from previous elections who did not run in that election are shown as smaller
+background nodes. This allows users to inspect continuity, connectivity, and
+the gradual formation or dissolution of clusters, as well as other structural
+changes across electoral periods, even when the selected elections are not
+consecutive.</p>
+<p>If grouping information is available (e.g., community-detected <em>parties</em> or
+<em>cores</em>), node colours represent the long-term group affiliation of each candidate.
+Node boundaries, however, reflect the candidate lists used in the specific
+election represented in each snapshot. This combination helps reveal
+whether individual candidate lists are internally cohesive or composed of
+candidates from different longer-term groupings, potentially indicating later
+fragmentation (splits), mergers, or realignments in subsequent elections.</p>
+<p>The candidate network snapshots can also be combined with
+<code>mark = c("candidate", "&lt;name&gt;")</code>, which highlights the chosen candidate across
+the continuity diagram and in all snapshot networks. Marking works both with
+and without identified groupings.</p>
+<p>The snapshots do not require the selected elections to be consecutive; if
+non-adjacent elections are included, the panel still displays one snapshot per
+election based on the available data.</p>
+</div>
+
+<div class="section">
+<h3 id="additional-arguments-">Additional arguments (<code>...</code>)<a class="anchor" aria-label="anchor" href="#additional-arguments-"></a></h3>
+
+
+<p>The <code>...</code> argument is primarily intended for internal tuning and advanced use.
+It can be used to pass optional control parameters that are not part of the
+main user-facing interface and are therefore not listed in the formal
+argument list. These settings may change between versions and should
+generally not be needed in typical workflows.</p>
+<p>One such option is <code>do_not_print_to_console = TRUE</code>, which suppresses
+informational messages printed by <code>plot_continuity()</code> (for example, list
+of detected groups). This can be useful in automated scripts, examples,
+or pkgdown documentation where repeated console output would be distracting.</p>
+</div>
+
+<div class="section">
 <h3 id="text-encoding">Text encoding<a class="anchor" aria-label="anchor" href="#text-encoding"></a></h3>
 
 
@@ -318,38 +378,61 @@ change in future versions. Use with caution.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2: C (100%)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3: B + D (50% + 50%)</span>
 <span class="r-plt img"><img src="plot_continuity-2.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span><span class="va">netdata</span>, mark <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"parties"</span>, <span class="fl">3</span><span class="op">)</span>, order_lists <span class="op">=</span> <span class="st">"seats"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Parties: 3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1: A (100%)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2: C (100%)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3: B + D (50% + 50%)</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span></span></span>
+<span class="r-in"><span>  <span class="va">netdata</span>,</span></span>
+<span class="r-in"><span>  mark <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"parties"</span>, <span class="fl">3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  order_lists_by <span class="op">=</span> <span class="st">"seats"</span>,</span></span>
+<span class="r-in"><span>  do_not_print_to_console <span class="op">=</span> <span class="cn">TRUE</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="plot_continuity-3.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span><span class="va">netdata</span>, mark <span class="op">=</span> <span class="st">"parties"</span>, separate_groups <span class="op">=</span> <span class="cn">TRUE</span>, show_legend <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span></span></span>
+<span class="r-in"><span>  <span class="va">netdata</span>,</span></span>
+<span class="r-in"><span>  mark <span class="op">=</span> <span class="st">"parties"</span>,</span></span>
+<span class="r-in"><span>  separate_groups <span class="op">=</span> <span class="cn">TRUE</span>,</span></span>
+<span class="r-in"><span>  show_legend <span class="op">=</span> <span class="cn">FALSE</span>,</span></span>
+<span class="r-in"><span>  do_not_print_to_console <span class="op">=</span> <span class="cn">TRUE</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="plot_continuity-4.png" alt="" width="700" height="433"></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Parties: 3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1: A (100%)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2: C (100%)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3: B + D (50% + 50%)</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># candidate network snapshots coloured by groups and bordered by lists</span></span></span>
+<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span></span></span>
+<span class="r-in"><span>  <span class="va">netdata</span>,</span></span>
+<span class="r-in"><span>  mark <span class="op">=</span> <span class="st">"parties"</span>,</span></span>
+<span class="r-in"><span>  show_candidate_networks <span class="op">=</span> <span class="cn">TRUE</span>,</span></span>
+<span class="r-in"><span>  do_not_print_to_console <span class="op">=</span> <span class="cn">TRUE</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
+<span class="r-plt img"><img src="plot_continuity-5.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># candidate tracking</span></span></span>
-<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span><span class="va">netdata</span>, mark <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"candidate"</span>, <span class="st">"c03"</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="plot_continuity-5.png" alt="" width="700" height="433"></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Parties: 3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1: A (100%)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2: C (100%)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3: B + D (50% + 50%)</span>
+<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span></span></span>
+<span class="r-in"><span>  <span class="va">netdata</span>,</span></span>
+<span class="r-in"><span>  mark <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"candidate"</span>, <span class="st">"c03"</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  show_candidate_networks <span class="op">=</span> <span class="cn">TRUE</span>,</span></span>
+<span class="r-in"><span>  do_not_print_to_console <span class="op">=</span> <span class="cn">TRUE</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
+<span class="r-plt img"><img src="plot_continuity-6.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># filtering elections and parties</span></span></span>
-<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span><span class="va">netdata</span>, mark <span class="op">=</span> <span class="st">"parties"</span>, elections <span class="op">=</span> <span class="st">"18-"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Parties: 3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1: A (100%)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2: C (100%)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3: B + D (50% + 50%)</span>
-<span class="r-plt img"><img src="plot_continuity-6.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span><span class="va">netdata</span>, elections <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">14</span>, <span class="fl">22</span><span class="op">)</span>, links <span class="op">=</span> <span class="st">"all"</span>, show_elections_between <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span></span></span>
+<span class="r-in"><span>  <span class="va">netdata</span>,</span></span>
+<span class="r-in"><span>  mark <span class="op">=</span> <span class="st">"parties"</span>,</span></span>
+<span class="r-in"><span>  elections <span class="op">=</span> <span class="st">"18-"</span>,</span></span>
+<span class="r-in"><span>  do_not_print_to_console <span class="op">=</span> <span class="cn">TRUE</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="plot_continuity-7.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span><span class="va">netdata</span>, parties <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span></span></span>
+<span class="r-in"><span>  <span class="va">netdata</span>,</span></span>
+<span class="r-in"><span>  elections <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">14</span>, <span class="fl">22</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  links <span class="op">=</span> <span class="st">"all"</span>,</span></span>
+<span class="r-in"><span>  show_elections_between <span class="op">=</span> <span class="cn">FALSE</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="plot_continuity-8.png" alt="" width="700" height="433"></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">plot_continuity</span><span class="op">(</span><span class="va">netdata</span>, parties <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></span>
+<span class="r-plt img"><img src="plot_continuity-9.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
