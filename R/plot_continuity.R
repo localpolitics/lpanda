@@ -1265,7 +1265,7 @@ plot_continuity <- function(netdata,
       cand.group <- if (mark[1] == "parties") {
         cand.nodes$party
       } else if (mark[1] == "cores") {
-        cand.nodes$cores
+        cand.nodes$core
       } else if (mark[1] == "candidates") {
         if (!is.null(cand.nodes$party)) {
           cand.nodes$party
