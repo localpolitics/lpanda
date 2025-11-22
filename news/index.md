@@ -24,6 +24,7 @@
   - `Bublava_SO_cz`
   - `Cernosice_PZ_cz`
   - `Dasnice_SO_cz`
+  - `Horomerice_PZ_cz`
   - `Hradce_CB_cz`
   - `Kamenna_CB_cz`
   - `Nebanice_CH_cz`

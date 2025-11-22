@@ -22,6 +22,8 @@
   : Municipal Election Data: Dasnice (SO, CZ)
 - [`Doubice_DC_cz`](https://localpolitics.github.io/lpanda/reference/Doubice_DC_cz.md)
   : Municipal Election Data: Doubice (DC, CZ)
+- [`Horomerice_PZ_cz`](https://localpolitics.github.io/lpanda/reference/Horomerice_PZ_cz.md)
+  : Municipal Election Data: Horomerice (PZ, CZ)
 - [`Hradce_CB_cz`](https://localpolitics.github.io/lpanda/reference/Hradce_CB_cz.md)
   : Municipal Election Data: Hradce (CB, CZ)
 - [`Jilove_DC_cz`](https://localpolitics.github.io/lpanda/reference/Jilove_DC_cz.md)
