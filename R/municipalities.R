@@ -250,6 +250,72 @@
 
 # --------------------------------------------------------------------------- #
 
+#' @title Municipal Election Data: Horomerice (PZ, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Horomerice (district Praha-zapad, Czech
+#' Republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Horomerice |
+#' |District:                   | Praha-zapad |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 8 |
+#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022 |
+#' |Number of candidacies (rows): | 438 |
+#' |Note:                         | [Municipality website](https://www.horomerice.cz/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records.
+#'
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.horomerice.cz/)
+#' - Kadlecova, S. (2013). *Lokalni stranicky system v obci Horomerice*
+#'   (Local Party System in the Municipality of Horomerice).
+#'   Bachelor thesis. Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/9eylkt/?lang=en)]
+#' - Bares, M. (2009). *Spolecensky a politicky zivot v obci Horomerice*
+#'   (The Public Life and the Political Process in Horomerice).
+#'   Bachelor thesis. Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/8bgzon/?lang=en)]
+#'
+#' @references
+#' - Vobecka, J., & Kostelecky, T. (Eds.) (2007). *Politicke dusledky suburbanizace.*
+#'   (Political Consequences of Suburbanization). Prague: Institute of Sociology
+#'   of the Czech Academy of Sciences.
+#'   [[Full text](https://www.soc.cas.cz/en/publications/politicke-dusledky-suburbanizace-analyza-pripadovych-studii-promen-politickeho-chovani)]
+#' - Kadlecova, S. (2013). *Lokalni stranicky system v obci Horomerice*
+#'   (Local Party System in the Municipality of Horomerice).
+#'   Bachelor thesis. Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/9eylkt/?lang=en)]
+#' - Maxa, D. (2024). *Formovani organu místni samospravy v obci Horomerice.*
+#'   (The process of Setting Up the Local Government in the Municipality of
+#'   Horomerice). Bachelor thesis. Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/bfxe93/?lang=en)]
+#' - Novakova, N. (2025). *Politicke aspekty rizeni a rozvoje vybrane obce*
+#'   *(pripadova studie obce Horomerice)* (Political Aspects of Management
+#'   and the Development of the Chosen Municipality (Case Study of Horomerice).
+#'   Bachelor thesis. Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/2wmh4o/?lang=en)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Horomerice_PZ_cz)
+#'
+#' # Example of a basic continuity diagram (unformatted version)
+#' \donttest{plot_continuity(Horomerice_PZ_cz, elections = "2010-")}
+"Horomerice_PZ_cz"
+
+# --------------------------------------------------------------------------- #
+
 #' @title Municipal Election Data: Hradce (CB, CZ)
 #'
 #' @description

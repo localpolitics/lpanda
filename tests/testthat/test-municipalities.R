@@ -6,6 +6,7 @@ test_that("municipality datasets are valid election datasets", {
                               Cernosice_PZ_cz = Cernosice_PZ_cz,
                               Dasnice_SO_cz = Dasnice_SO_cz,
                               Doubice_DC_cz = Doubice_DC_cz,
+                              Horomerice_PZ_cz = Horomerice_PZ_cz,
                               Hradce_CB_cz = Hradce_CB_cz,
                               Jilove_DC_cz = Jilove_DC_cz,
                               Kamenna_CB_cz = Kamenna_CB_cz,
