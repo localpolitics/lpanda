@@ -76,6 +76,11 @@
 #'   (Citizens' Participation in the Public Life of Rural Municipalities in the Czech Republic).
 #'   Prague: Kernberg Publishing.
 #'   [[ResearchGate](https://www.researchgate.net/publication/323579376_Participace_obcanu_na_verejnem_zivote_venkovskych_obci_CR)]
+#' - Bubenicek, V. (2009). Aplikace indexu plurality na lokalni politicke urovni
+#'   (The Application of the Plurality Index in the Local Politics). In
+#'   Svatos, M., Lostak, M., & Zuzak, R. (Eds.) *Sbornik praci z mezinarodni vedecke*
+#'   *konference Agrarni perspektivy XVIII. Strategie pro budoucnost.* Prague: FEM CZU Prague.
+#'   [[Full text](https://www.researchgate.net/publication/323581471_Aplikace_indexu_plurality_na_lokalni_politicke_urovni)]
 #' - Bubenicek, V., Copik, J., Hajny, P., Kopriva, R., & Neumanova, T. (Eds.) (2005).
 #'   *Obce jako akteri politickeho procesu: komunitni studie regionalnich politickych systemu*
 #'   *a problematika metodiky jejich zpracovani* (Municipalities as Actors of the Political
@@ -296,7 +301,7 @@
 #'   (Local Party System in the Municipality of Horomerice).
 #'   Bachelor thesis. Czech University of Life Sciences Prague.
 #'   [[Full text](https://theses.cz/id/9eylkt/?lang=en)]
-#' - Maxa, D. (2024). *Formovani organu místni samospravy v obci Horomerice.*
+#' - Maxa, D. (2024). *Formovani organu mistni samospravy v obci Horomerice.*
 #'   (The process of Setting Up the Local Government in the Municipality of
 #'   Horomerice). Bachelor thesis. Czech University of Life Sciences Prague.
 #'   [[Full text](https://theses.cz/id/bfxe93/?lang=en)]

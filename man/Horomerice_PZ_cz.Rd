@@ -94,7 +94,7 @@ of the Czech Academy of Sciences.
 (Local Party System in the Municipality of Horomerice).
 Bachelor thesis. Czech University of Life Sciences Prague.
 [\href{https://theses.cz/id/9eylkt/?lang=en}{Full text}]
-\item Maxa, D. (2024). \emph{Formovani organu místni samospravy v obci Horomerice.}
+\item Maxa, D. (2024). \emph{Formovani organu mistni samospravy v obci Horomerice.}
 (The process of Setting Up the Local Government in the Municipality of
 Horomerice). Bachelor thesis. Czech University of Life Sciences Prague.
 [\href{https://theses.cz/id/bfxe93/?lang=en}{Full text}]

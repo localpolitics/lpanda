@@ -95,6 +95,11 @@ Czech University of Life Sciences Prague.
 (Citizens' Participation in the Public Life of Rural Municipalities in the Czech Republic).
 Prague: Kernberg Publishing.
 [\href{https://www.researchgate.net/publication/323579376_Participace_obcanu_na_verejnem_zivote_venkovskych_obci_CR}{ResearchGate}]
+\item Bubenicek, V. (2009). Aplikace indexu plurality na lokalni politicke urovni
+(The Application of the Plurality Index in the Local Politics). In
+Svatos, M., Lostak, M., & Zuzak, R. (Eds.) \emph{Sbornik praci z mezinarodni vedecke}
+\emph{konference Agrarni perspektivy XVIII. Strategie pro budoucnost.} Prague: FEM CZU Prague.
+[\href{https://www.researchgate.net/publication/323581471_Aplikace_indexu_plurality_na_lokalni_politicke_urovni}{Full text}]
 \item Bubenicek, V., Copik, J., Hajny, P., Kopriva, R., & Neumanova, T. (Eds.) (2005).
 \emph{Obce jako akteri politickeho procesu: komunitni studie regionalnich politickych systemu}
 \emph{a problematika metodiky jejich zpracovani} (Municipalities as Actors of the Political

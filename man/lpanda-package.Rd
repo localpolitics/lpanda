@@ -59,8 +59,9 @@ List of municipality datasets:
 \itemize{
 \item \code{\link{Bublava_SO_cz}}
 \item \code{\link{Cernosice_PZ_cz}}
-\item \code{\link{Doubice_DC_cz}}
 \item \code{\link{Dasnice_SO_cz}}
+\item \code{\link{Doubice_DC_cz}}
+\item \code{\link{Horomerice_PZ_cz}}
 \item \code{\link{Hradce_CB_cz}}
 \item \code{\link{Jilove_DC_cz}}
 \item \code{\link{Kamenna_CB_cz}}
