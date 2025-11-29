@@ -45,7 +45,7 @@ function.
 
 ``` r
 library(lpanda)
-#> lpanda (0.1.1.9008) successfully loaded. Type ?lpanda for help.
+#> lpanda (0.2.0) successfully loaded. Type ?lpanda for help.
 ## basic example code
 data(sample_data, package = "lpanda")
 df <- sample_data

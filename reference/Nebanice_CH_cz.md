@@ -75,7 +75,8 @@ candidate row for that election/constituency)
 - Hornek, J., & Juptner, P. (2020). Endangered Municipalities? Case
   Study of Three Small and Critically Indebted Czech Municipalities.
   *NISPAcee Journal of Public Administration and Policy*, 13(1), 35-59.
-  \[[Full text](https://doi.org/10.2478/nispa-2020-0002)\]
+  \[[Full
+  text](https://reference-global.com/article/10.2478/nispa-2020-0002)\]
 
 - Hornek, J. (2016). *Politicke dopady zadluzovani malych obci v Ceske
   republice* (Political Impacts of Indebtedness of Small Municipalities

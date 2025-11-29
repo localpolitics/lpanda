@@ -84,7 +84,7 @@ candidate row for that election/constituency)
   governance and its actors in a post-communist happyville. How to
   govern in favour of those who remain salient). *Acta Politologica*
   10(1), 57-85. \[[Full
-  text](https://www.researchgate.net/publication/323280769_Dobre_vladnuti_a_jeho_akteri_v_postkomunistickem_happyvillu_aneb_jak_rozhodovat_v_zajmu_tech_kteri_nejsou_slyset)\]
+  text](https://acpo.fsv.cuni.cz/ACPONEN-56-version1-acpo_2018_01_04.pdf)\]
 
 - Formackova, M. (2013). Vyvoj mistni samospravy v obci Cernosice (The
   Development of Local Government in the Municipality of Cernosice).

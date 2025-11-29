@@ -179,7 +179,7 @@ with up to seven network objects:
 
 - (`cores`): higher-level clusters of `parties`. Cores are currently
   experimental and will not appear in the standard output network data.
-  See **Note** below.
+  See **Note**.
 
 - `elections`: inter-election candidate flow and election-level stats
 

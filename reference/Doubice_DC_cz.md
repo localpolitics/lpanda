@@ -81,12 +81,12 @@ candidate row for that election/constituency)
 - Bubenicek, V. (2010). *Lokalni modely demokracie v malych obcich CR*
   (Local Models of Democracy in Small Municipalities). Dissertation
   thesis. Czech University of Life Sciences Prague. \[[Full
-  text](https://www.researchgate.net/publication/323573647_Lokalni_modely_demokracie_v_malych_obcich_CR)\]
+  text](https://www.pef.czu.cz/dl/46317)\]
 
 - Bubenicek, V., & Kubalek, M. (2010). Konfliktni linie v malych obcich
   (Cleavages in Small Municipalities). *Acta Politologica*, 2(3), 30-45.
   \[[Full
-  text](https://www.researchgate.net/publication/323573475_Konfliktni_linie_v_malych_obcich)\]
+  text](https://acpo.fsv.cuni.cz/ACPONEN-48-version1-acpo_2010_03_04.pdf)\]
 
 - Cmejrek, J., Bubenicek, V., & Copik, J. (2010). *Demokracie v lokalnim
   politickem prostoru* (Democracy in Local Political Area). Prague:
@@ -97,7 +97,12 @@ candidate row for that election/constituency)
   venkovskych obci CR* (Citizens' Participation in the Public Life of
   Rural Municipalities in the Czech Republic). Prague: Kernberg
   Publishing.
-  \[[ResearchGate](https://www.researchgate.net/publication/323579376_Participace_obcanu_na_verejnem_zivote_venkovskych_obci_CR)\]
+
+- Bubenicek, V. (2009). Aplikace indexu plurality na lokalni politicke
+  urovni (The Application of the Plurality Index in the Local Politics).
+  In Svatos, M., Lostak, M., & Zuzak, R. (Eds.) *Sbornik praci z
+  mezinarodni vedecke* *konference Agrarni perspektivy XVIII. Strategie
+  pro budoucnost.* Prague: FEM CZU Prague.
 
 - Bubenicek, V., Copik, J., Hajny, P., Kopriva, R., & Neumanova, T.
   (Eds.) (2005). *Obce jako akteri politickeho procesu: komunitni studie
@@ -105,7 +110,6 @@ candidate row for that election/constituency)
   zpracovani* (Municipalities as Actors of the Political Process: Case
   Studies of Regional Political Systems and Methodology of Their
   Elaboration). Prague: FEM CZU Prague.
-  \[[ResearchGate](https://www.researchgate.net/publication/40337386_Obce_jako_akteri_politickeho_procesu_Komunitni_studie_regionalnich_politickych_systemu_a_problematika_metodiky_jejich_zpracovani)\]
 
 ## Examples
 

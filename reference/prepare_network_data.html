@@ -21,7 +21,7 @@ applied to the bipartite network) and constructs their network."><meta property=
 
     <a class="navbar-brand me-2" href="../index.html">lpanda</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9010</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -180,8 +180,7 @@ objects:</p><ul><li><p><code>bipartite</code>: bipartite network (candidates-lis
 <li><p><code>parties</code>: network of detected party clusters (via community detection applied
 on <code>bipartite</code> network).</p></li>
 <li><p>(<code>cores</code>): higher-level clusters of <code>parties</code>. Cores are currently experimental
-and will not appear in the standard output network data. See <strong>Note</strong>
-below.</p></li>
+and will not appear in the standard output network data. See <strong>Note</strong>.</p></li>
 <li><p><code>elections</code>: inter-election candidate flow and election-level stats</p></li>
 </ul><p>Each object is a list with two components:</p><ul><li><p><code>edgelist</code>: a <a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a> representing network edges</p></li>
 <li><p><code>node_attr</code>: a <a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a> with attributes for each node</p></li>

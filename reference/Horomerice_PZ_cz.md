@@ -85,14 +85,14 @@ candidate row for that election/constituency)
 - Vobecka, J., & Kostelecky, T. (Eds.) (2007). *Politicke dusledky
   suburbanizace.* (Political Consequences of Suburbanization). Prague:
   Institute of Sociology of the Czech Academy of Sciences. \[[Full
-  text](https://www.soc.cas.cz/en/publications/politicke-dusledky-suburbanizace-analyza-pripadovych-studii-promen-politickeho-chovani)\]
+  text](https://www.soc.cas.cz/images/drupal/publikace/259_ss_07_08.pdf)\]
 
 - Kadlecova, S. (2013). *Lokalni stranicky system v obci Horomerice*
   (Local Party System in the Municipality of Horomerice). Bachelor
   thesis. Czech University of Life Sciences Prague. \[[Full
   text](https://theses.cz/id/9eylkt/?lang=en)\]
 
-- Maxa, D. (2024). *Formovani organu místni samospravy v obci
+- Maxa, D. (2024). *Formovani organu mistni samospravy v obci
   Horomerice.* (The process of Setting Up the Local Government in the
   Municipality of Horomerice). Bachelor thesis. Czech University of Life
   Sciences Prague. \[[Full text](https://theses.cz/id/bfxe93/?lang=en)\]

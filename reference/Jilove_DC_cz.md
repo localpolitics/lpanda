@@ -23,7 +23,7 @@ publicly available municipal records and diploma thesis cited below.
 
 - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
 
-- [Municipality website](https://www.mujilove.cz/)
+- [Municipality website](https://www.mujilove.cz/mujilove)
 
 - Pohlreich, D. (2023). *Vyvoj mistni samospravy ve meste Jilove* (The
   Development of Local Government in the Municipality of Jilove).
@@ -32,16 +32,16 @@ publicly available municipal records and diploma thesis cited below.
 
 ## Details
 
-|                               |                                                  |
-|-------------------------------|--------------------------------------------------|
-| **Dataset overview:**         |                                                  |
-| Municipality:                 | Jilove                                           |
-| District:                     | Decin                                            |
-| Country:                      | Czech Republic                                   |
-| Number of elections:          | 8                                                |
-| Elections covered:            | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022   |
-| Number of candidacies (rows): | 745                                              |
-| Note:                         | [Municipality website](https://www.mujilove.cz/) |
+|                               |                                                          |
+|-------------------------------|----------------------------------------------------------|
+| **Dataset overview:**         |                                                          |
+| Municipality:                 | Jilove                                                   |
+| District:                     | Decin                                                    |
+| Country:                      | Czech Republic                                           |
+| Number of elections:          | 8                                                        |
+| Elections covered:            | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022           |
+| Number of candidacies (rows): | 745                                                      |
+| Note:                         | [Municipality website](https://www.mujilove.cz/mujilove) |
 
 ## Description of variables
 

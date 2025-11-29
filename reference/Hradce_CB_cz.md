@@ -23,7 +23,7 @@ publicly available municipal records.
 
 - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
 
-- [Municipality website](https://www.hradce.cz/)
+- [Municipality website](https://www.hradce.cz/obec/)
 
 ## Details
 
@@ -36,7 +36,7 @@ publicly available municipal records.
 | Number of elections:          | 10                                                         |
 | Elections covered:            | 1994, 1998, 2002, 2006, 2010, 2014, 2016, 2017, 2018, 2022 |
 | Number of candidacies (rows): | 103                                                        |
-| Note:                         | [Municipality website](https://www.hradce.cz/)             |
+| Note:                         | [Municipality website](https://www.hradce.cz/obec/)        |
 
 ## Description of variables
 

@@ -79,8 +79,7 @@ candidate row for that election/constituency)
 
 - Kotaskova, S. K. (2016). Cleavages and political pluralism in the
   small municipality in Czech Republic. *Global Journal of Business,
-  Economics* *and Management: Current Issues*, 5(2), 63-69. \[[Full
-  text](https://doi.org/10.18844/gjbem.v5i2.369)\]
+  Economics* *and Management: Current Issues*, 5(2), 63-69.
 
 - Kotaskova, S. (2012). *Politicky proces v obci Kamenna* (The Political
   Process in the Municipality of Kamenna). Master thesis. Czech

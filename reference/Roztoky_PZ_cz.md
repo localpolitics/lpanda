@@ -76,7 +76,7 @@ candidate row for that election/constituency)
 - Kubalek, M., & Bubenicek, V. (2012). Charakter lokalni politiky v
   suburbannim politickem prostoru (The Nature of Local Politics in
   Suburban Political Space). *Acta Politologica*, 4(3), 284-305. \[[Full
-  text](https://www.researchgate.net/publication/323573707_Charakter_lokalni_politiky_v_suburbannim_politickem_prostoru)\]
+  text](https://acpo.fsv.cuni.cz/ACPONEN-50-version1-acpo_2012_03_05.pdf)\]
 
 ## Examples
 
