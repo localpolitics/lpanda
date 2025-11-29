@@ -65,28 +65,25 @@
 #' - Bubenicek, V. (2010). *Lokalni modely demokracie v malych obcich CR*
 #'   (Local Models of Democracy in Small Municipalities). Dissertation thesis.
 #'   Czech University of Life Sciences Prague.
-#'   [[Full text](https://www.researchgate.net/publication/323573647_Lokalni_modely_demokracie_v_malych_obcich_CR)]
+#'   [[Full text](https://www.pef.czu.cz/dl/46317)]
 #' - Bubenicek, V., & Kubalek, M. (2010). Konfliktni linie v malych obcich
 #'   (Cleavages in Small Municipalities). *Acta Politologica*, 2(3), 30-45.
-#'   [[Full text](https://www.researchgate.net/publication/323573475_Konfliktni_linie_v_malych_obcich)]
+#'   [[Full text](https://acpo.fsv.cuni.cz/ACPONEN-48-version1-acpo_2010_03_04.pdf)]
 #' - Cmejrek, J., Bubenicek, V., & Copik, J. (2010). *Demokracie v lokalnim politickem prostoru*
 #'   (Democracy in Local Political Area). Prague: Grada.
 #'   [[Publisher link](https://www.grada.cz/demokracie-v-lokalnim-politickem-prostoru-5880/)]
 #' - Cmejrek, J. et al. (2009). *Participace obcanu na verejnem zivote venkovskych obci CR*
 #'   (Citizens' Participation in the Public Life of Rural Municipalities in the Czech Republic).
 #'   Prague: Kernberg Publishing.
-#'   [[ResearchGate](https://www.researchgate.net/publication/323579376_Participace_obcanu_na_verejnem_zivote_venkovskych_obci_CR)]
 #' - Bubenicek, V. (2009). Aplikace indexu plurality na lokalni politicke urovni
 #'   (The Application of the Plurality Index in the Local Politics). In
 #'   Svatos, M., Lostak, M., & Zuzak, R. (Eds.) *Sbornik praci z mezinarodni vedecke*
 #'   *konference Agrarni perspektivy XVIII. Strategie pro budoucnost.* Prague: FEM CZU Prague.
-#'   [[Full text](https://www.researchgate.net/publication/323581471_Aplikace_indexu_plurality_na_lokalni_politicke_urovni)]
 #' - Bubenicek, V., Copik, J., Hajny, P., Kopriva, R., & Neumanova, T. (Eds.) (2005).
 #'   *Obce jako akteri politickeho procesu: komunitni studie regionalnich politickych systemu*
 #'   *a problematika metodiky jejich zpracovani* (Municipalities as Actors of the Political
 #'   Process: Case Studies of Regional Political Systems and Methodology of Their Elaboration).
 #'   Prague: FEM CZU Prague.
-#'   [[ResearchGate](https://www.researchgate.net/publication/40337386_Obce_jako_akteri_politickeho_procesu_Komunitni_studie_regionalnich_politickych_systemu_a_problematika_metodiky_jejich_zpracovani)]
 #'
 #' @examples
 #' # Basic inspection
@@ -132,7 +129,7 @@
 #' - Hornek, J., & Juptner, P. (2020). Endangered Municipalities? Case Study of Three Small
 #'   and Critically Indebted Czech Municipalities.
 #'   *NISPAcee Journal of Public Administration and Policy*, 13(1), 35-59.
-#'   [[Full text](https://doi.org/10.2478/nispa-2020-0002)]
+#'   [[Full text](https://reference-global.com/article/10.2478/nispa-2020-0002)]
 #' - Hornek, J. (2016). *Politicke dopady zadluzovani malych obci v Ceske republice*
 #'   (Political Impacts of Indebtedness of Small Municipalities in the Czech Republic).
 #'   Prague: Sociologicke nakladatelstvi (SLON).
@@ -191,7 +188,7 @@
 #'   happyvillu aneb jak rozhodovat v zajmu tech, kteri nejsou slyset (Good
 #'   governance and its actors in a post-communist happyville. How to govern in
 #'   favour of those who remain salient). *Acta Politologica* 10(1), 57-85.
-#'   [[Full text](https://www.researchgate.net/publication/323280769_Dobre_vladnuti_a_jeho_akteri_v_postkomunistickem_happyvillu_aneb_jak_rozhodovat_v_zajmu_tech_kteri_nejsou_slyset)]
+#'   [[Full text](https://acpo.fsv.cuni.cz/ACPONEN-56-version1-acpo_2018_01_04.pdf)]
 #' - Formackova, M. (2013). Vyvoj mistni samospravy v obci Cernosice (The Development
 #'   of Local Government in the Municipality of Cernosice). Master thesis.
 #'   Czech University of Life Sciences Prague.
@@ -296,7 +293,7 @@
 #' - Vobecka, J., & Kostelecky, T. (Eds.) (2007). *Politicke dusledky suburbanizace.*
 #'   (Political Consequences of Suburbanization). Prague: Institute of Sociology
 #'   of the Czech Academy of Sciences.
-#'   [[Full text](https://www.soc.cas.cz/en/publications/politicke-dusledky-suburbanizace-analyza-pripadovych-studii-promen-politickeho-chovani)]
+#'   [[Full text](https://www.soc.cas.cz/images/drupal/publikace/259_ss_07_08.pdf)]
 #' - Kadlecova, S. (2013). *Lokalni stranicky system v obci Horomerice*
 #'   (Local Party System in the Municipality of Horomerice).
 #'   Bachelor thesis. Czech University of Life Sciences Prague.
@@ -337,7 +334,7 @@
 #' |Number of elections:        | 10 |
 #' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2016, 2017, 2018, 2022 |
 #' |Number of candidacies (rows): | 103 |
-#' |Note:                         | [Municipality website](https://www.hradce.cz/) |
+#' |Note:                         | [Municipality website](https://www.hradce.cz/obec/) |
 #'
 #' @inheritSection Doubice_DC_cz Description of variables
 #'
@@ -348,7 +345,7 @@
 #' records.
 #' 
 #' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
-#' - [Municipality website](https://www.hradce.cz/)
+#' - [Municipality website](https://www.hradce.cz/obec/)
 #'
 #' @references
 #' - Krpalkova, S. (2024). *Permanentni opakovani komunalnich voleb: zablokovane obce?*
@@ -381,7 +378,7 @@
 #' |Number of elections:        | 8 |
 #' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022|
 #' |Number of candidacies (rows): | 745|
-#' |Note:                         | [Municipality website](https://www.mujilove.cz/) |
+#' |Note:                         | [Municipality website](https://www.mujilove.cz/mujilove) |
 #'
 #' @inheritSection Doubice_DC_cz Description of variables
 #'
@@ -392,7 +389,7 @@
 #' records and diploma thesis cited below.
 #'
 #' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
-#' - [Municipality website](https://www.mujilove.cz/)
+#' - [Municipality website](https://www.mujilove.cz/mujilove)
 #' - Pohlreich, D. (2023). *Vyvoj mistni samospravy ve meste Jilove*
 #'   (The Development of Local Government in the Municipality of Jilove).
 #'   Diploma thesis. Czech University of Life Sciences Prague.
@@ -450,7 +447,6 @@
 #' - Kotaskova, S. K. (2016). Cleavages and political pluralism in the small
 #'   municipality in Czech Republic. *Global Journal of Business, Economics*
 #'   *and Management: Current Issues*, 5(2), 63-69.
-#'   [[Full text](https://doi.org/10.18844/gjbem.v5i2.369)]
 #' - Kotaskova, S. (2012). *Politicky proces v obci Kamenna* (The Political
 #'   Process in the Municipality of Kamenna). Master thesis. Czech University
 #'   of Life Sciences Prague. [[Full text](https://theses.cz/id/5kd433/?lang=en)]
@@ -501,7 +497,7 @@
 #' - Hornek, J., & Juptner, P. (2020). Endangered Municipalities? Case Study of Three Small
 #'   and Critically Indebted Czech Municipalities.
 #'   *NISPAcee Journal of Public Administration and Policy*, 13(1), 35-59.
-#'   [[Full text](https://doi.org/10.2478/nispa-2020-0002)]
+#'   [[Full text](https://reference-global.com/article/10.2478/nispa-2020-0002)]
 #' - Hornek, J. (2016). *Politicke dopady zadluzovani malych obci v Ceske republice*
 #'   (Political Impacts of Indebtedness of Small Municipalities in the Czech Republic).
 #'   Prague: Sociologicke nakladatelstvi (SLON).
@@ -603,10 +599,10 @@
 #' - Hornek, J., & Juptner, P. (2020). Endangered Municipalities? Case Study of Three Small
 #'   and Critically Indebted Czech Municipalities.
 #'   *NISPAcee Journal of Public Administration and Policy*, 13(1), 35-59.
-#'   [[Full text](https://doi.org/10.2478/nispa-2020-0002)]
+#'   [[Full text](https://reference-global.com/article/10.2478/nispa-2020-0002)]
 #' - Hornek, J. (2019). Endangered European Municipalities: A Systematic Outline
 #'   of the Problem and Its Political Impact. *Politics in Central Europe*, 15(2), 219-256.
-#'   [[Full text](https://doi.org/10.2478/pce-2019-0016)]
+#'   [[Full text](https://reference-global.com/article/10.2478/pce-2019-0016)]
 #' - Hornek, J. (2016). *Politicke dopady zadluzovani malych obci v Ceske republice*
 #'   (Political Impacts of Indebtedness of Small Municipalities in the Czech Republic)
 #'   [[Publisher link](https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996)]
@@ -656,7 +652,7 @@
 #' - Kubalek, M., & Bubenicek, V. (2012). Charakter lokalni politiky v suburbannim
 #'   politickem prostoru (The Nature of Local Politics in Suburban Political Space).
 #'   *Acta Politologica*, 4(3), 284-305.
-#'   [[Full text](https://www.researchgate.net/publication/323573707_Charakter_lokalni_politiky_v_suburbannim_politickem_prostoru)]
+#'   [[Full text](https://acpo.fsv.cuni.cz/ACPONEN-50-version1-acpo_2012_03_05.pdf)]
 #'
 #' @examples
 #' # Basic inspection

@@ -71,11 +71,11 @@
 #' Bubenicek, V. (2010). *Lokalni modely demokracie v malych obcich CR*
 #' (Local Models of Democracy in Small Municipalities). Dissertation thesis.
 #' Czech University of Life Sciences Prague.
-#' [[Full text](https://www.researchgate.net/publication/323573647_Lokalni_modely_demokracie_v_malych_obcich_CR)]
+#' [[Full text](https://www.pef.czu.cz/dl/46317)]
 #'
 #' Bubenicek, V., & Kubalek, M. (2010). Konfliktni linie v malych obcich
 #' (Cleavages in Small Municipalities). *Acta Politologica*, 2(3), 30-45.
-#' [[Full text](https://www.researchgate.net/publication/323573475_Konfliktni_linie_v_malych_obcich)]
+#' [[Full text](https://acpo.fsv.cuni.cz/ACPONEN-48-version1-acpo_2010_03_04.pdf)]
 #'
 #' Cmejrek, J., Bubenicek, V., & Copik, J. (2010). *Demokracie v lokalnim politickem prostoru*
 #' (Democracy in Local Political Area). Prague: Grada.
@@ -84,11 +84,10 @@
 #' Kubalek, M., & Bubenicek, V. (2012). Charakter lokalni politiky v suburbannim
 #' politickem prostoru (The Nature of Local Politics in Suburban Political Space).
 #' *Acta Politologica*, 4(3), 284-305.
-#' [[Full text](https://www.researchgate.net/publication/323573707_Charakter_lokalni_politiky_v_suburbannim_politickem_prostoru)]
+#' [[Full text](https://acpo.fsv.cuni.cz/ACPONEN-50-version1-acpo_2012_03_05.pdf)]
 #'
 #' Kotaskova, S. K. (2016). Cleavages and political pluralism in the small
 #' municipality in Czech Republic. *Global Journal of Business, Economics and Management: Current Issues*, 5(2), 63-69.
-#' [[Full text](https://doi.org/10.18844/gjbem.v5i2.369)]
 #'
 #' Hornek, J. (2022). *Zhroucene obce v Ceske republice* (Failed Municipalities in the Czech Republic).
 #' Dissertation thesis. Charles University.

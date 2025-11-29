@@ -14,7 +14,7 @@ the Czech Statistical Office. Additional contextual or verification information
 records.
 \itemize{
 \item \href{https://www.volby.cz/index_en.htm}{Czech Statistical Office}
-\item \href{https://www.hradce.cz/}{Municipality website}
+\item \href{https://www.hradce.cz/obec/}{Municipality website}
 }
 }
 \usage{
@@ -34,7 +34,7 @@ Republic).
    Number of elections: \tab 10 \cr
    Elections covered: \tab 1994, 1998, 2002, 2006, 2010, 2014, 2016, 2017, 2018, 2022 \cr
    Number of candidacies (rows): \tab 103 \cr
-   Note: \tab \href{https://www.hradce.cz/}{Municipality website} \cr
+   Note: \tab \href{https://www.hradce.cz/obec/}{Municipality website} \cr
 }
 }
 \section{Description of variables}{

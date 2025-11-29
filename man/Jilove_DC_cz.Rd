@@ -14,7 +14,7 @@ the Czech Statistical Office. Additional contextual or verification information
 records and diploma thesis cited below.
 \itemize{
 \item \href{https://www.volby.cz/index_en.htm}{Czech Statistical Office}
-\item \href{https://www.mujilove.cz/}{Municipality website}
+\item \href{https://www.mujilove.cz/mujilove}{Municipality website}
 \item Pohlreich, D. (2023). \emph{Vyvoj mistni samospravy ve meste Jilove}
 (The Development of Local Government in the Municipality of Jilove).
 Diploma thesis. Czech University of Life Sciences Prague.
@@ -37,7 +37,7 @@ elections in the municipality of Jilove (district Decin, Czech Republic).
    Number of elections: \tab 8 \cr
    Elections covered: \tab 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022 \cr
    Number of candidacies (rows): \tab 745 \cr
-   Note: \tab \href{https://www.mujilove.cz/}{Municipality website} \cr
+   Note: \tab \href{https://www.mujilove.cz/mujilove}{Municipality website} \cr
 }
 }
 \section{Description of variables}{

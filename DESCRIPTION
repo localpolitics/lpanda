@@ -1,10 +1,11 @@
 Package: lpanda
 Title: Local Political Actor Network Diachronic Analysis Tools
-Version: 0.1.1.9010
+Version: 0.2.0
 Authors@R: c(
     person("Vaclav", "Bubenicek", email = "bubenicek@pef.czu.cz",
     role = c("aut", "cre", "cph"),
-    comment = c(ORCID = "0000-0002-0906-0750")))
+    comment = c(ORCID = "0000-0002-0906-0750",
+    affiliation = "Czech University of Life Sciences Prague (CZU)")))
 Description: Provides functions to prepare, visualize, and analyse diachronic
     network data on local political actors, with a particular focus on
     the development of local party systems and identification of actor groups.
@@ -19,9 +20,9 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-Imports: 
-    dplyr,
+Imports:
     igraph (>= 2.1.0),
+    dplyr,
     magrittr,
     RColorBrewer,
     scales

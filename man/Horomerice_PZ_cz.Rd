@@ -89,7 +89,7 @@ str(Horomerice_PZ_cz)
 \item Vobecka, J., & Kostelecky, T. (Eds.) (2007). \emph{Politicke dusledky suburbanizace.}
 (Political Consequences of Suburbanization). Prague: Institute of Sociology
 of the Czech Academy of Sciences.
-[\href{https://www.soc.cas.cz/en/publications/politicke-dusledky-suburbanizace-analyza-pripadovych-studii-promen-politickeho-chovani}{Full text}]
+[\href{https://www.soc.cas.cz/images/drupal/publikace/259_ss_07_08.pdf}{Full text}]
 \item Kadlecova, S. (2013). \emph{Lokalni stranicky system v obci Horomerice}
 (Local Party System in the Municipality of Horomerice).
 Bachelor thesis. Czech University of Life Sciences Prague.

@@ -22,7 +22,7 @@ keywords:
   - diachronic analysis
   - continuity diagram
 repository-code: 'https://github.com/localpolitics/lpanda'
-url: 'https://CRAN.R-project.org/package=lpanda'
+url: 'https://localpolitics.github.io/lpanda/'
 identifiers:
   - type: doi
     value: 10.32614/CRAN.package.lpanda
@@ -38,7 +38,6 @@ preferred-citation:
       family-names: Bubenicek
       orcid: 'https://orcid.org/0000-0002-0906-0750'
   year: 2025
-  version: 0.1.1
-  notes: 'R package version 0.1.1'
-  url: 'https://CRAN.R-project.org/package=lpanda'
+  notes: 'R package.'
+  url: 'https://localpolitics.github.io/lpanda/'
   doi: 10.32614/CRAN.package.lpanda

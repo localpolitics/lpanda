@@ -84,28 +84,25 @@ str(Doubice_DC_cz)
 \item Bubenicek, V. (2010). \emph{Lokalni modely demokracie v malych obcich CR}
 (Local Models of Democracy in Small Municipalities). Dissertation thesis.
 Czech University of Life Sciences Prague.
-[\href{https://www.researchgate.net/publication/323573647_Lokalni_modely_demokracie_v_malych_obcich_CR}{Full text}]
+[\href{https://www.pef.czu.cz/dl/46317}{Full text}]
 \item Bubenicek, V., & Kubalek, M. (2010). Konfliktni linie v malych obcich
 (Cleavages in Small Municipalities). \emph{Acta Politologica}, 2(3), 30-45.
-[\href{https://www.researchgate.net/publication/323573475_Konfliktni_linie_v_malych_obcich}{Full text}]
+[\href{https://acpo.fsv.cuni.cz/ACPONEN-48-version1-acpo_2010_03_04.pdf}{Full text}]
 \item Cmejrek, J., Bubenicek, V., & Copik, J. (2010). \emph{Demokracie v lokalnim politickem prostoru}
 (Democracy in Local Political Area). Prague: Grada.
 [\href{https://www.grada.cz/demokracie-v-lokalnim-politickem-prostoru-5880/}{Publisher link}]
 \item Cmejrek, J. et al. (2009). \emph{Participace obcanu na verejnem zivote venkovskych obci CR}
 (Citizens' Participation in the Public Life of Rural Municipalities in the Czech Republic).
 Prague: Kernberg Publishing.
-[\href{https://www.researchgate.net/publication/323579376_Participace_obcanu_na_verejnem_zivote_venkovskych_obci_CR}{ResearchGate}]
 \item Bubenicek, V. (2009). Aplikace indexu plurality na lokalni politicke urovni
 (The Application of the Plurality Index in the Local Politics). In
 Svatos, M., Lostak, M., & Zuzak, R. (Eds.) \emph{Sbornik praci z mezinarodni vedecke}
 \emph{konference Agrarni perspektivy XVIII. Strategie pro budoucnost.} Prague: FEM CZU Prague.
-[\href{https://www.researchgate.net/publication/323581471_Aplikace_indexu_plurality_na_lokalni_politicke_urovni}{Full text}]
 \item Bubenicek, V., Copik, J., Hajny, P., Kopriva, R., & Neumanova, T. (Eds.) (2005).
 \emph{Obce jako akteri politickeho procesu: komunitni studie regionalnich politickych systemu}
 \emph{a problematika metodiky jejich zpracovani} (Municipalities as Actors of the Political
 Process: Case Studies of Regional Political Systems and Methodology of Their Elaboration).
 Prague: FEM CZU Prague.
-[\href{https://www.researchgate.net/publication/40337386_Obce_jako_akteri_politickeho_procesu_Komunitni_studie_regionalnich_politickych_systemu_a_problematika_metodiky_jejich_zpracovani}{ResearchGate}]
 }
 }
 \keyword{datasets}

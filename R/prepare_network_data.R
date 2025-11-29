@@ -123,8 +123,7 @@
 #' - `parties`: network of detected party clusters (via community detection applied
 #'              on `bipartite` network).
 #' - (`cores`): higher-level clusters of `parties`. Cores are currently experimental
-#'              and will not appear in the standard output network data. See **Note**
-#'              below.
+#'              and will not appear in the standard output network data. See **Note**.
 #' - `elections`: inter-election candidate flow and election-level stats
 #'
 #' Each object is a list with two components:

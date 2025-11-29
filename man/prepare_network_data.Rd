@@ -143,8 +143,7 @@ objects:
 \item \code{parties}: network of detected party clusters (via community detection applied
 on \code{bipartite} network).
 \item (\code{cores}): higher-level clusters of \code{parties}. Cores are currently experimental
-and will not appear in the standard output network data. See \strong{Note}
-below.
+and will not appear in the standard output network data. See \strong{Note}.
 \item \code{elections}: inter-election candidate flow and election-level stats
 }
 

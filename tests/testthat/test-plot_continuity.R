@@ -184,9 +184,13 @@ test_that("show_candidate_networks works with party and candidate highlighting",
 })
 
 test_that("show_candidate_networks must be a logical scalar", {
-  expect_error(plot_continuity(nd, show_candidate_networks = "jasne",
-                               do_not_print_to_console = TRUE));
   
-  expect_error(plot_continuity(nd, show_candidate_networks = c(TRUE, FALSE),
-                               do_not_print_to_console = TRUE));
+  # suppressWarnings() je tak kvuli ulozeni starych grafickych parametru:
+  # "Warning in graphics::par(old_par) : calling par(new=TRUE) with no plot"
+  
+  expect_error(suppressWarnings(plot_continuity(nd, show_candidate_networks = "jasne",
+                                                do_not_print_to_console = TRUE)));
+  
+  expect_error(suppressWarnings(plot_continuity(nd, show_candidate_networks = c(TRUE, FALSE),
+                                                do_not_print_to_console = TRUE)));
 })

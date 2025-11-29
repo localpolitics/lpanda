@@ -84,7 +84,6 @@ str(Kamenna_CB_cz)
 \item Kotaskova, S. K. (2016). Cleavages and political pluralism in the small
 municipality in Czech Republic. \emph{Global Journal of Business, Economics}
 \emph{and Management: Current Issues}, 5(2), 63-69.
-[\href{https://doi.org/10.18844/gjbem.v5i2.369}{Full text}]
 \item Kotaskova, S. (2012). \emph{Politicky proces v obci Kamenna} (The Political
 Process in the Municipality of Kamenna). Master thesis. Czech University
 of Life Sciences Prague. [\href{https://theses.cz/id/5kd433/?lang=en}{Full text}]

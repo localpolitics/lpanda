@@ -83,10 +83,10 @@ Dissertation thesis. Charles University.
 \item Hornek, J., & Juptner, P. (2020). Endangered Municipalities? Case Study of Three Small
 and Critically Indebted Czech Municipalities.
 \emph{NISPAcee Journal of Public Administration and Policy}, 13(1), 35-59.
-[\href{https://doi.org/10.2478/nispa-2020-0002}{Full text}]
+[\href{https://reference-global.com/article/10.2478/nispa-2020-0002}{Full text}]
 \item Hornek, J. (2019). Endangered European Municipalities: A Systematic Outline
 of the Problem and Its Political Impact. \emph{Politics in Central Europe}, 15(2), 219-256.
-[\href{https://doi.org/10.2478/pce-2019-0016}{Full text}]
+[\href{https://reference-global.com/article/10.2478/pce-2019-0016}{Full text}]
 \item Hornek, J. (2016). \emph{Politicke dopady zadluzovani malych obci v Ceske republice}
 (Political Impacts of Indebtedness of Small Municipalities in the Czech Republic)
 [\href{https://karolinum.cz/en/books/hornek-politicke-dopady-zadluzovani-malych-obci-v-ceske-republice-24996}{Publisher link}]
