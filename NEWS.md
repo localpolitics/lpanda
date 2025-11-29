@@ -6,12 +6,12 @@
   - `sample_no_switching` (formerly `sample_no_crossing`).
 
 ## New features
-* `plot_continuity()` gains a new argument `show_candidate_networks`. It adds
+* `plot_continuity()` gains a new argument, `show_candidate_networks`. It adds
   an additional bottom panel visualising candidate network snapshots for each
   selected election. The snapshots highlight candidates running in the focal
   election, show earlier candidates as smaller background nodes, and reflect
   group affiliations (e.g., parties or cores) through node colours and candidate
-  lists through node boundaries.
+  lists through group boundaries around the nodes.
 
 ## New data
 * Added municipalities:
@@ -44,12 +44,12 @@
     non-interactive or CI environments, or when the device cannot render UTF-8.
   - Added global options:
     - `lpanda.text_encoding` — `"auto"` (default) | `"utf8"` | `"ascii"`
-    - `lpanda.plot_family` — default `"sans"`
-    - `lpanda.force_ascii` — default `FALSE`
+    - `lpanda.plot_family` — `"sans"` (default)
+    - `lpanda.force_ascii` — `FALSE` (default)
   - Text encoding can also be specified as a `text_encoding` argument via `...`
     in plotting functions.
-* `plot_continuity()` now properly resets layout to prevent occasional
-  overlapping plots.
+* `plot_continuity()` now properly resets the graphics layout to prevent
+  occasional overlapping plots.
 
 ## Documentation
 * `help("lpanda")` / `?lpanda` now provide basic package information, including
