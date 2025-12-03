@@ -16,8 +16,8 @@ status](https://www.r-pkg.org/badges/version/lpanda)](https://CRAN.R-project.org
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/lpanda)](https://CRAN.R-project.org/package=lpanda)
 [![project
 DOI](https://img.shields.io/badge/project%20DOI-10.32614/CRAN.package.lpanda-blue.svg)](https://doi.org/10.32614/CRAN.package.lpanda)
-[![version 0.1.1
-DOI](https://img.shields.io/badge/version%200.1.1%20DOI-10.5281/zenodo.17049363-yellow.svg)](https://doi.org/10.5281/zenodo.17049363)
+[![version 0.2.0
+DOI](https://img.shields.io/badge/version%200.2.0%20DOI-10.5281/zenodo.17808040-yellow.svg)](https://doi.org/10.5281/zenodo.17808040)
 <!-- badges: end -->
 
 ## Overview
@@ -62,7 +62,7 @@ or candidate lists (for example, “Independents 3”). Then just use the
 
 ``` r
 library(lpanda)
-#> lpanda (0.2.0) successfully loaded. Type ?lpanda for help.
+#> lpanda (0.2.1) successfully loaded. Type ?lpanda for help.
 ## basic example code
 data(sample_data, package = "lpanda")
 df <- sample_data

@@ -1,3 +1,9 @@
+# lpanda 0.2.1
+
+## Bug fixes
+* Improved handling of non-ASCII characters in plot text to avoid rare
+  text conversion issues on some platforms.
+
 # lpanda 0.2.0 (2025-11-28)
 
 ## Changes
