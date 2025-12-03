@@ -53,7 +53,8 @@ should_use_ascii <- function(text_encoding = getOption("lpanda.text_encoding", "
 #' @description
 #' Converts UTF-8 strings to ASCII using `iconv(..., "ASCII//TRANSLIT")`.
 #' Any elements that still fail to convert are cleaned by removing non-ASCII
-#' characters to avoid plot errors.
+#' characters to avoid plot errors. If, after cleaning, no characters remain
+#' for a non-NA input, the result is set to NA.
 #'
 #' @param x Character vector.
 #'
@@ -64,8 +65,9 @@ should_use_ascii <- function(text_encoding = getOption("lpanda.text_encoding", "
 #'
 convert_utf8_to_ascii <- function(x) {
   
+  x <- as.character(x);
   y <- iconv(x, from = "", to = "ASCII//TRANSLIT", sub = "");
-  
+
   y <- gsub("([~`'\\^\\x{00A8}\"])\\s*([A-Za-z])", "\\2", y, perl = TRUE);
   y <- gsub("([A-Za-z])\\s*([~`'\\^\\x{00A8}\"])", "\\1", y, perl = TRUE);
   
@@ -73,6 +75,9 @@ convert_utf8_to_ascii <- function(x) {
     idx <- is.na(y);
     y[idx] <- gsub("[^ -~]", "", x[idx]);
   };
+  
+  y <- gsub("[^ -~]", "", y);
+  y[!is.na(y) & !nzchar(y)] <- NA_character_;
   
   return(y)
 } # konec fce convert_urf8_to_ascii
