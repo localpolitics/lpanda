@@ -2,6 +2,8 @@
 
 ## lpanda 0.2.0 (2025-11-28)
 
+CRAN release: 2025-11-29
+
 ### Changes
 
 - Renamed sample datasets used for testing:
@@ -11,12 +13,12 @@
 ### New features
 
 - [`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)
-  gains a new argument `show_candidate_networks`. It adds an additional
+  gains a new argument, `show_candidate_networks`. It adds an additional
   bottom panel visualising candidate network snapshots for each selected
   election. The snapshots highlight candidates running in the focal
   election, show earlier candidates as smaller background nodes, and
   reflect group affiliations (e.g., parties or cores) through node
-  colours and candidate lists through node boundaries.
+  colours and candidate lists through group boundaries around the nodes.
 
 ### New data
 
@@ -55,12 +57,13 @@
   - Added global options:
     - `lpanda.text_encoding` — `"auto"` (default) \| `"utf8"` \|
       `"ascii"`
-    - `lpanda.plot_family` — default `"sans"`
-    - `lpanda.force_ascii` — default `FALSE`
+    - `lpanda.plot_family` — `"sans"` (default)
+    - `lpanda.force_ascii` — `FALSE` (default)
   - Text encoding can also be specified as a `text_encoding` argument
     via `...` in plotting functions.
 - [`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)
-  now properly resets layout to prevent occasional overlapping plots.
+  now properly resets the graphics layout to prevent occasional
+  overlapping plots.
 
 ### Documentation
 

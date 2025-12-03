@@ -33,7 +33,7 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.2.0" id="lpanda-020-2025-11-28">lpanda 0.2.0 (2025-11-28)<a class="anchor" aria-label="anchor" href="#lpanda-020-2025-11-28"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.2.0" id="lpanda-020-2025-11-28">lpanda 0.2.0 (2025-11-28)<a class="anchor" aria-label="anchor" href="#lpanda-020-2025-11-28"></a></h2><p class="text-muted">CRAN release: 2025-11-29</p>
 <div class="section level3">
 <h3 id="changes-0-2-0">Changes<a class="anchor" aria-label="anchor" href="#changes-0-2-0"></a></h3>
 <ul><li>Renamed sample datasets used for testing:
@@ -46,7 +46,7 @@
 <div class="section level3">
 <h3 id="new-features-0-2-0">New features<a class="anchor" aria-label="anchor" href="#new-features-0-2-0"></a></h3>
 <ul><li>
-<code><a href="../reference/plot_continuity.html">plot_continuity()</a></code> gains a new argument <code>show_candidate_networks</code>. It adds an additional bottom panel visualising candidate network snapshots for each selected election. The snapshots highlight candidates running in the focal election, show earlier candidates as smaller background nodes, and reflect group affiliations (e.g., parties or cores) through node colours and candidate lists through node boundaries.</li>
+<code><a href="../reference/plot_continuity.html">plot_continuity()</a></code> gains a new argument, <code>show_candidate_networks</code>. It adds an additional bottom panel visualising candidate network snapshots for each selected election. The snapshots highlight candidates running in the focal election, show earlier candidates as smaller background nodes, and reflect group affiliations (e.g., parties or cores) through node colours and candidate lists through group boundaries around the nodes.</li>
 </ul></div>
 <div class="section level3">
 <h3 id="new-data-0-2-0">New data<a class="anchor" aria-label="anchor" href="#new-data-0-2-0"></a></h3>
@@ -83,16 +83,14 @@
 <code>lpanda.text_encoding</code> — <code>"auto"</code> (default) | <code>"utf8"</code> | <code>"ascii"</code>
 </li>
 <li>
-<code>lpanda.plot_family</code> — default <code>"sans"</code>
-</li>
+<code>lpanda.plot_family</code> — <code>"sans"</code> (default)</li>
 <li>
-<code>lpanda.force_ascii</code> — default <code>FALSE</code>
-</li>
+<code>lpanda.force_ascii</code> — <code>FALSE</code> (default)</li>
 </ul></li>
 <li>Text encoding can also be specified as a <code>text_encoding</code> argument via <code>...</code> in plotting functions.</li>
 </ul></li>
 <li>
-<code><a href="../reference/plot_continuity.html">plot_continuity()</a></code> now properly resets layout to prevent occasional overlapping plots.</li>
+<code><a href="../reference/plot_continuity.html">plot_continuity()</a></code> now properly resets the graphics layout to prevent occasional overlapping plots.</li>
 </ul></div>
 <div class="section level3">
 <h3 id="documentation-0-2-0">Documentation<a class="anchor" aria-label="anchor" href="#documentation-0-2-0"></a></h3>
