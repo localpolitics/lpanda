@@ -9,7 +9,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/localpolitics/lpanda/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/localpolitics/lpanda/blob/v0.2.0/inst/CITATION)
 
 Bubenicek, V. (2025). lpanda: Local Political Actor Network Diachronic
 Analysis Tools. R package. https://doi.org/10.32614/CRAN.package.lpanda.
