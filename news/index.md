@@ -1,5 +1,7 @@
 # Changelog
 
+## lpanda (development version)
+
 ## lpanda 0.2.1 (2025-12-04)
 
 ### Bug fixes
