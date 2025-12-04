@@ -80,4 +80,4 @@ convert_utf8_to_ascii <- function(x) {
   y[!is.na(y) & !nzchar(y)] <- NA_character_;
   
   return(y)
-} # konec fce convert_urf8_to_ascii
+} # konec fce convert_urf8_to_ascii()
