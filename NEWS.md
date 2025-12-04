@@ -1,4 +1,4 @@
-# lpanda 0.2.1
+# lpanda 0.2.1 (2025-12-04)
 
 ## Bug fixes
 * Improved handling of non-ASCII characters in plot text to avoid rare
