@@ -69,6 +69,7 @@ List of municipality datasets:
 \item \code{\link{Potucky_KV_cz}}
 \item \code{\link{Prameny_CH_cz}}
 \item \code{\link{Roztoky_PZ_cz}}
+\item \code{\link{Ustek_LT_cz}}
 }
 }
 

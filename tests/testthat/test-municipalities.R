@@ -7,13 +7,14 @@ test_that("municipality datasets are valid election datasets", {
                               Dasnice_SO_cz = Dasnice_SO_cz,
                               Doubice_DC_cz = Doubice_DC_cz,
                               Horomerice_PZ_cz = Horomerice_PZ_cz,
-                              Hradce_CB_cz = Hradce_CB_cz,
-                              Jilove_DC_cz = Jilove_DC_cz,
+                              Hradce_CB_cz  = Hradce_CB_cz,
+                              Jilove_DC_cz  = Jilove_DC_cz,
                               Kamenna_CB_cz = Kamenna_CB_cz,
                               Nebanice_CH_cz = Nebanice_CH_cz,
                               Potucky_KV_cz = Potucky_KV_cz,
                               Prameny_CH_cz = Prameny_CH_cz,
-                              Roztoky_PZ_cz = Roztoky_PZ_cz);
+                              Roztoky_PZ_cz = Roztoky_PZ_cz,
+                              Ustek_LT_cz   = Ustek_LT_cz);
   
   expected_cols <- c("elections", "candidate", "list_name", "list_pos",
                      "pref_votes", "elected", "nom_party", "pol_affil",

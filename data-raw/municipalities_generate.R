@@ -12,7 +12,8 @@ municipalities <- c("Bublava_SO_cz",
                     "Nebanice_CH_cz",
                     "Potucky_KV_cz",
                     "Prameny_CH_cz",
-                    "Roztoky_PZ_cz");
+                    "Roztoky_PZ_cz",
+                    "Ustek_LT_cz");
 
 for (m in municipalities) {
   adresa.csv <- file.path("data-raw", paste0(m, ".csv"));

@@ -663,3 +663,52 @@
 "Roztoky_PZ_cz"
 
 # --------------------------------------------------------------------------- #
+
+#' @title Municipal Election Data: Ustek (LT, CZ)
+#'
+#' @description
+#' A dataset containing individual-level candidacy records from municipal
+#' elections in the municipality of Ustek (district Litomerice, Czech Republic).
+#'
+#' @details
+#' |**Dataset overview:** ||
+#' |---------------------------|--------|
+#' |Municipality:               | Ustek |
+#' |District:                   | Litomerice |
+#' |Country:                    | Czech Republic |
+#' |Number of elections:        | 8 |
+#' |Elections covered:          | 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022 |
+#' |Number of candidacies (rows): | 742 |
+#' |Note:                         | [Municipality website](https://www.mesto-ustek.cz/) |
+#'
+#' @inheritSection Doubice_DC_cz Description of variables
+#'
+#' @source
+#' The dataset was compiled primarily from official election results published by
+#' the Czech Statistical Office. Additional contextual or verification information
+#' (such as post-election roles) was obtained from publicly available municipal
+#' records and the master thesis cited below.
+#' - [Czech Statistical Office](https://www.volby.cz/index_en.htm)
+#' - [Municipality website](https://www.mesto-ustek.cz/)
+#' - Buch, M. (2024). *Vyvoj mistni samospravy ve meste Ustek* (The Development
+#'   of Local Self-Government in the Municipality of Ustek). Master thesis.
+#'   Czech University of Life Sciences Prague. [[Full text](https://theses.cz/id/hnlo21/?lang=en)]
+#'
+#' @references
+#' - Buch, M. (2024). *Vyvoj mistni samospravy ve meste Ustek* (The Development
+#'   of Local Self-Government in the Municipality of Ustek). Master thesis.
+#'   Czech University of Life Sciences Prague. [[Full text](https://theses.cz/id/hnlo21/?lang=en)]
+#' - Buch, M. (2022). *Proces rozhodovani mistni samospravy ve meste Ustek*
+#'   (The Decision Making Process of Local Government in the Municipality of Ustek).
+#'   Bachelor thesis. Czech University of Life Sciences Prague.
+#'   [[Full text](https://theses.cz/id/5vowyn/?lang=en)]
+#'
+#' @examples
+#' # Basic inspection
+#' str(Ustek_LT_cz)
+#'
+#' # Example of a basic continuity diagram (unformatted version)
+#' \donttest{plot_continuity(Ustek_LT_cz, elections = "-2002")}
+"Ustek_LT_cz"
+
+# --------------------------------------------------------------------------- #

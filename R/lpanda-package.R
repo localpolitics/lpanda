@@ -54,6 +54,7 @@
 #' - \code{\link{Potucky_KV_cz}}
 #' - \code{\link{Prameny_CH_cz}}
 #' - \code{\link{Roztoky_PZ_cz}}
+#' - \code{\link{Ustek_LT_cz}}
 #'
 #'
 #' @references
