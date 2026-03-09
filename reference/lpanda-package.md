@@ -85,6 +85,8 @@ List of municipality datasets:
 
 - [`Roztoky_PZ_cz`](https://localpolitics.github.io/lpanda/reference/Roztoky_PZ_cz.md)
 
+- [`Ustek_LT_cz`](https://localpolitics.github.io/lpanda/reference/Ustek_LT_cz.md)
+
 ## References
 
 The continuity diagram approach implemented in `lpanda` builds on

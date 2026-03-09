@@ -2,7 +2,14 @@
 
 ## lpanda (development version)
 
+### New data
+
+- Added municipalities:
+  - `Ustek_LT_cz`
+
 ## lpanda 0.2.1 (2025-12-04)
+
+CRAN release: 2025-12-04
 
 ### Bug fixes
 

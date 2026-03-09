@@ -209,6 +209,8 @@ and inspect individual objects via their help pages (e.g.,
   : Municipal Election Data: Prameny (CH, CZ)
 - [`Roztoky_PZ_cz`](https://localpolitics.github.io/lpanda/reference/Roztoky_PZ_cz.md)
   : Municipal Election Data: Roztoky (PZ, CZ)
+- [`Ustek_LT_cz`](https://localpolitics.github.io/lpanda/reference/Ustek_LT_cz.md)
+  : Municipal Election Data: Ustek (LT, CZ)
 
 ### Examples for testing
 
