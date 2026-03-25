@@ -20,7 +20,19 @@ for (m in municipalities) {
   adresa.rda <- file.path("data", paste0(m, ".rda"));
 
   if (file.exists(adresa.csv)) {
-    message("Loading data for: ", m)
+    
+    if (file.exists(adresa.rda)) {
+      
+      csv.time <- file.mtime(adresa.csv);
+      rda.time <- file.mtime(adresa.rda);
+      
+      if (rda.time >= csv.time) {
+        message("Up-to-date, skipping: ", m);
+        next
+      }
+    }; # konec IF pro preskoceni datasetu, ktery jiz existuje a je aktualni
+    
+    message("Loading data for: ", m);
 
     df <- read.csv(adresa.csv, header = TRUE, sep = ";");
 
