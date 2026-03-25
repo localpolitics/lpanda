@@ -90,6 +90,18 @@
 #' @param show_legend Logical. Whether to display the legend (only applies when
 #'                    groups are marked). Default is TRUE.
 #'
+#' @param show_executive_posts Logical. If TRUE, symbols are added to the
+#'                             upper-right corner of candidate list nodes to
+#'                             indicate executive posts. A filled circle denotes
+#'                             that the list produced the mayor, while an open
+#'                             circle denotes that the list produced one or more
+#'                             deputy mayors. Default is TRUE.
+#'
+#' @param show_gov_support Logical. If TRUE, a filled square is added to the
+#'                         lower-right corner of candidate list nodes to indicate
+#'                         support for the governing coalition or executive body.
+#'                         Default is TRUE.
+#'
 #' @param show_candidate_networks Logical. If TRUE, an additional bottom panel
 #'                                is drawn, displaying a snapshot of the
 #'                                candidate-candidate network for each selected
@@ -323,6 +335,8 @@ plot_continuity <- function(netdata,
                             coloured = TRUE,
                             group_colours = c(),
                             show_legend = TRUE,
+                            show_executive_posts = TRUE,
+                            show_gov_support = TRUE,
                             show_candidate_networks = FALSE,
                             plot_title = NULL,
                             ...
@@ -491,6 +505,14 @@ plot_continuity <- function(netdata,
   args$text_encoding <- NULL;
   
   use_ascii <- should_use_ascii(text_encoding);
+  
+  # --- #
+  
+  show_executive_posts <- isTRUE(show_executive_posts);
+  
+  # --- #
+  
+  show_gov_support <- isTRUE(show_gov_support);
   
   # --- #
   
@@ -1151,8 +1173,8 @@ plot_continuity <- function(netdata,
   
   # --- #
   
-  if ("mayor" %in% names(nodes)) {
-    starostove <- V(g)$mayor >= 1
+  if (show_executive_posts && "mayor" %in% names(nodes)) {
+    starostove <- !is.na(V(g)$mayor) & V(g)$mayor >= 1;
     graphics::points(
       x = koordinaty[,"x"][starostove] + 0.004 * sizes$width,
       y = koordinaty[,"y"][starostove] + 0.003 * sizes$height,
@@ -1161,8 +1183,8 @@ plot_continuity <- function(netdata,
       cex = 1)
   } # konec IF pro vlozeni starostu
   
-  if ("dep_mayors" %in% names(nodes)) {
-    mistostarostove <- V(g)$dep_mayors >= 1
+  if (show_executive_posts && "dep_mayors" %in% names(nodes)) {
+    mistostarostove <- !is.na(V(g)$dep_mayors) & V(g)$dep_mayors >= 1;
     graphics::points(
       x = koordinaty[,"x"][mistostarostove] + 0.004 * sizes$width,
       y = koordinaty[,"y"][mistostarostove] + 0.001 * sizes$height,
@@ -1171,8 +1193,8 @@ plot_continuity <- function(netdata,
       cex = 1)
   } # konec IF pro vlozeni mistostarostu
   
-  if ("gov_support" %in% names(nodes)) {
-    podpora_vlady <- V(g)$gov_support;
+  if (show_gov_support && "gov_support" %in% names(nodes)) {
+    podpora_vlady <- !is.na(V(g)$gov_support) & V(g)$gov_support;
     graphics::points(
       x = koordinaty[,"x"][podpora_vlady] + 0.004 * sizes$width,
       y = koordinaty[,"y"][podpora_vlady] - 0.003 * sizes$height,

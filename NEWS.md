@@ -1,5 +1,10 @@
 # lpanda (development version)
 
+## New features
+* `plot_continuity()` gains two new arguments, `show_executive_posts` and
+  `show_gov_support`, allowing users to control whether node symbols indicating
+  executive posts and governing support are displayed in the continuity diagram.
+
 ## New data
 * Added municipalities:
   - `Ustek_LT_cz`
