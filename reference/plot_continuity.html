@@ -60,6 +60,8 @@ candidate transitions across elections.</p>
 <span>  coloured <span class="op">=</span> <span class="cn">TRUE</span>,</span>
 <span>  group_colours <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">)</span>,</span>
 <span>  show_legend <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  show_executive_posts <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  show_gov_support <span class="op">=</span> <span class="cn">TRUE</span>,</span>
 <span>  show_candidate_networks <span class="op">=</span> <span class="cn">FALSE</span>,</span>
 <span>  plot_title <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>  <span class="va">...</span></span>
@@ -181,6 +183,22 @@ will select the most appropriate colour palette.</p></dd>
 <dt id="arg-show-legend">show_legend<a class="anchor" aria-label="anchor" href="#arg-show-legend"></a></dt>
 <dd><p>Logical. Whether to display the legend (only applies when
 groups are marked). Default is TRUE.</p></dd>
+
+
+<dt id="arg-show-executive-posts">show_executive_posts<a class="anchor" aria-label="anchor" href="#arg-show-executive-posts"></a></dt>
+<dd><p>Logical. If TRUE, symbols are added to the
+upper-right corner of candidate list nodes to
+indicate executive posts. A filled circle denotes
+that the list produced the mayor, while an open
+circle denotes that the list produced one or more
+deputy mayors. Default is TRUE.</p></dd>
+
+
+<dt id="arg-show-gov-support">show_gov_support<a class="anchor" aria-label="anchor" href="#arg-show-gov-support"></a></dt>
+<dd><p>Logical. If TRUE, a filled square is added to the
+lower-right corner of candidate list nodes to indicate
+support for the governing coalition or executive body.
+Default is TRUE.</p></dd>
 
 
 <dt id="arg-show-candidate-networks">show_candidate_networks<a class="anchor" aria-label="anchor" href="#arg-show-candidate-networks"></a></dt>
