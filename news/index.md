@@ -2,6 +2,14 @@
 
 ## lpanda (development version)
 
+### New features
+
+- [`plot_continuity()`](https://localpolitics.github.io/lpanda/reference/plot_continuity.md)
+  gains two new arguments, `show_executive_posts` and
+  `show_gov_support`, allowing users to control whether node symbols
+  indicating executive posts and governing support are displayed in the
+  continuity diagram.
+
 ### New data
 
 - Added municipalities:
