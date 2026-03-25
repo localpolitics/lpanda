@@ -19,6 +19,8 @@ plot_continuity(
   coloured = TRUE,
   group_colours = c(),
   show_legend = TRUE,
+  show_executive_posts = TRUE,
+  show_gov_support = TRUE,
   show_candidate_networks = FALSE,
   plot_title = NULL,
   ...
@@ -109,6 +111,18 @@ will select the most appropriate colour palette.}
 
 \item{show_legend}{Logical. Whether to display the legend (only applies when
 groups are marked). Default is TRUE.}
+
+\item{show_executive_posts}{Logical. If TRUE, symbols are added to the
+upper-right corner of candidate list nodes to
+indicate executive posts. A filled circle denotes
+that the list produced the mayor, while an open
+circle denotes that the list produced one or more
+deputy mayors. Default is TRUE.}
+
+\item{show_gov_support}{Logical. If TRUE, a filled square is added to the
+lower-right corner of candidate list nodes to indicate
+support for the governing coalition or executive body.
+Default is TRUE.}
 
 \item{show_candidate_networks}{Logical. If TRUE, an additional bottom panel
 is drawn, displaying a snapshot of the
